@@ -7,7 +7,7 @@ link: "https://beehiiv.com"
 image:
     url: '../src/assets/everythingframer.png'
     alt: 'The full Astro logo.'
-categories: ["email platform", "growth"]
+categories: ["email platform", "news"]
 ---
 
 

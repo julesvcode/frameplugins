@@ -1,15 +1,23 @@
 ---
-import ButtonSecondary from "./ButtonSecondary.astro";
+
+import ButtonPrimary from "./ButtonPrimary.astro";
 
 
 ---
 
-<header class="w-full bg-blue-500 h-12 flex justify-between items-center">
+<header class="w-full h-12 flex justify-between items-center">
     <div>
-        <b>newsletter</b>supply
+
+        <a 
+            href="/"
+            title="Return to home page"
+            class="text-2xl text-zinc-950 font-thin"
+        >
+            <span class="font-bold">newsletter</span>supply
+        </a>
     </div>
 
-    <ButtonSecondary
+    <ButtonPrimary
         title="Submit"
         link="https://google.com"
         target="_blank"
