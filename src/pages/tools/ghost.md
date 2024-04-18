@@ -5,9 +5,9 @@ updateDate: 2024-04-02
 description: 'The newsletter platform built for growth'
 link: "https://beehiiv.com"
 image:
-    url: '../src/assets/everythingframer.png'
+    url: '../src/assets/beehiiv_thumb.png'
     alt: 'The full Astro logo.'
-categories: ["email platform", "news"]
+categories: ["email platform", "news", "there", "will", "be", "much", "more"]
 ---
 
 
