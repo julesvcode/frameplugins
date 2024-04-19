@@ -1,14 +1,14 @@
 ---
 layout: ../../layouts/ToolsLayout.astro
-title: 'Beehiiv'
+title: 'MailerLite'
 updateDate: 2024-04-02
-description: 'The newsletter platform built for growth'
-link: "https://beehiiv.com"
+description: 'The newsletter platform built for MailerLite'
+link: "https://mailerlite.com"
 image:
     url: '../src/assets/beehiiv_thumb.png'
     alt: 'The full Astro logo.'
-categories: ["email platform", "growth"]
-icon: 'beehiiv'
+categories: ["email platform", "growth", "special"]
+icon: 'mailerlite'
 ---
 
 

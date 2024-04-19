@@ -1,13 +1,14 @@
 ---
 layout: ../../layouts/ToolsLayout.astro
-title: 'Beehiiv'
+title: 'Ghost'
 updateDate: 2024-04-02
-description: 'The newsletter platform built for growth'
-link: "https://beehiiv.com"
+description: 'The newsletter platform built for ghost'
+link: "https://ghost.com"
 image:
     url: '../src/assets/beehiiv_thumb.png'
     alt: 'The full Astro logo.'
-categories: ["email platform", "news", "there", "will", "be", "much", "more"]
+categories: ["email platform", "growth", "another", "tag"]
+icon: 'ghost'
 ---
 
 
