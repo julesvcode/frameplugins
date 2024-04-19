@@ -1,6 +1,8 @@
 ---
 import { Icon } from 'astro-icon/components'
 
+import Tag from "./Tag.astro"
+
 const { link, icon, title, description, category } = Astro.props
 
 ---
@@ -19,7 +21,7 @@ const { link, icon, title, description, category } = Astro.props
             {description}
         </p>
     </div>
-    <p class="text-zinc-500 text-xs leading-0 bg-zinc-100 border border-zinc-300 rounded-sm w-fit py-1 px-2">
-        {category}
-    </p>
+    <Tag 
+        category={category}
+    />
 </a>
