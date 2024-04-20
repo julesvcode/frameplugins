@@ -1,7 +1,28 @@
 ---
 
+import { Icon } from 'astro-icon/components'
+
 ---
 
-<footer class="w-full bg-green-500 h-12">
-    Footer
+<footer class="py-4 flex flex-col gap-4 sm:gap-0 items-start justify-between border-t border-zinc-300">
+    <!-- Copyright -->
+    <div class="w-full flex flex-col md:flex-row justify-between items-start gap-4 md:gap-2 text-sm">
+        <div class="flex flex-col gap-2 md:basis-1/2">
+            <span class="text-2xl text-zinc-950 font-thin">
+                <span class="font-bold">newsletter</span>supply
+            </span>
+            <span>© {new Date().getFullYear()} - All rights reserved.</span>
+        </div>
+        <!-- Social icons -->
+        <div class="flex gap-4 items-center">
+            <a class="text-secondary hover:opacity-75 underline" href="mailto:contact@newslettr.com">Contact</a>
+            <a href="#">
+                <Icon name="beehiiv" />
+            </a>
+            <a href="#">
+                <Icon name="beehiiv" />
+            </a>
+        </div>
+    </div>
+    <span class="pt-2 w-full md:w-1/2 text-xs italic text-zinc-600">Disclaimer: this website includes affiliate links. The commission we make comes at no extra cost to you and helps to cover running costs.</span>
 </footer>
