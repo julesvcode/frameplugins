@@ -10,8 +10,13 @@ const allTools = await Astro.glob('../pages/tools/*.md');
 
 <BaseLayout title="Welcome to Astro.">
 	<main>
+		<div class="w-full flex gap-4 py-8">
+			<div class="flex flex-col md:basis-2/3 gap-4">
+				<h1>Everything you need to launch, grow and monetize your newsletter.</h1>
+				<p>Discover a curated list of tools, apps and software to help you run your newsletter like a pro. Sign up for weekly updates:</p>
+			</div>
+		</div>
 		<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-
 			{allTools.map((tool) => 
 				<ToolCard
 					
