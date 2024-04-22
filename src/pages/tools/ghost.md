@@ -2,18 +2,22 @@
 layout: ../../layouts/ToolsLayout.astro
 title: 'Ghost'
 updateDate: 2024-04-02
-description: 'The newsletter platform built for ghost'
-link: "https://ghost.com"
+description: 'A platform for writers & bloggers wanting to run a blog or newsletter and monetize it with memberships.'
+link: "https://ghost.org"
+features: "https://ghost.org/creators/"
 image:
-    url: '../src/assets/beehiiv_thumb.png'
-    alt: 'The full Astro logo.'
-categories: ["email platform", "growth", "another", "tag"]
+    url: '../src/assets/ghost_thumb.png'
+    alt: 'Screenshot of the Ghost website'
+categories: ["email platform", "launch", "grow", "monetise"]
 icon: 'ghost'
 ---
 
 
 ## Main features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Turn your blog into a newslettter and vice-versa
+- A great writing experience within the app.
+- A gallerry of beautiful Ghost themes and integrations.
+
+
+

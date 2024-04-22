@@ -35,7 +35,7 @@ const categories = frontmatter.categories
 		<div class="mx-auto flex min-h-screen max-w-[60rem] flex-col gap-12 p-4 md:p-8">
 			<Header />
 			<main class="w-full flex flex-col gap-6 md:flex-row">
-				<div class="w-full flex flex-col md:basis-2/3 gap-8">
+				<div class="w-full flex flex-col md:basis-2/3 gap-12">
 					<div class="flex flex-col gap-4">
 						<h1 class="text-zinc-950 text-4xl font-bold">{frontmatter.title}</h1>
 						<p class="text-zinc-700 text-lg leading-relaxed">{frontmatter.description}</p>
@@ -59,7 +59,7 @@ const categories = frontmatter.categories
 					<div class="flex flex-col gap-4">
 						<slot />
 						<ButtonPrimary
-							link={frontmatter.link}
+							link={frontmatter.features}
 							title="View all features"
 							target="_blank"
 						/>
@@ -76,14 +76,14 @@ const categories = frontmatter.categories
 									)}
 								</div>
 							</div>
-							<div class="flex flex-col gap-2">
+							<!-- <div class="flex flex-col gap-2">
 								<h4>Browse more categories:</h4>
 								<div class="flex flex-wrap gap-2">
 									{allCategories.map((category) => 
 										<p class="text-zinc-500 text-xs leading-relaxed bg-zinc-100 border border-zinc-300 rounded-sm w-fit py-1 px-2">{category}</p>
 									)}
 								</div>
-							</div>
+							</div> -->
 						</div>
 						<PromoCard />
 					</div>
