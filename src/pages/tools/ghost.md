@@ -15,7 +15,7 @@ icon: 'ghost'
 
 ## Main features
 
-- Turn your blog into a newslettter and vice-versa
+- Turn your blog into a newslettter and vice-versa.
 - A great writing experience within the app.
 - A gallerry of beautiful Ghost themes and integrations.
 
