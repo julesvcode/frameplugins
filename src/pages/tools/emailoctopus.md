@@ -15,7 +15,7 @@ icon: 'emailoctopus'
 
 ## Main features
 
-EmailOctopus' features are focused around 5 main axis.
+EmailOctopus' features are focused around 5 main axis:
 
 - Grow your subscribers list: import your existing audience and capture new subscribers with stunning landing pages and customisable forms.
 - Design beautiful emails with pre-made templates or build your own email from scratch.
