@@ -6,7 +6,7 @@ description: 'An email platform built for creators to grow and connect with thei
 link: "https://convertkit.com/"
 features: "https://convertkit.com/features"
 image:
-    url: '../src/assets/converkit_thumb.png'
+    url: '../src/assets/convertkit_thumb.png'
     alt: 'Screenshot of the ConvertKit website'
 categories: ["email platform", "launch", "grow", "monetise"]
 icon: 'convertkit'
