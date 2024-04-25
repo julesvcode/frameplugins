@@ -1,4 +1,5 @@
 ---
+import ButtonPrimary from '../components/ButtonPrimary.astro';
 import PromoBanner from '../components/PromoBanner.astro';
 import ToolCard from '../components/ToolCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -28,10 +29,15 @@ const allTools = await Astro.glob('../pages/tools/*.md');
 						monetize
 					</span>your newsletter.
 				</h1>
-				<p>Discover a curated list of tools, apps and software to help you run your newsletter like a pro. Sign up for weekly updates:</p>
+				<p class="max-w-md text-lg">Discover a curated list of tools, apps and software to help you run your newsletter like a pro.</p>
+				<ButtonPrimary 
+					title="Browse tools"
+					link="/#tools"
+					target="_self"
+				>
 			</div>
 		</div>
-		<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+		<div id="tools" class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12 pt-4">
 			{allTools.map((tool) => 
 				<ToolCard
 					
