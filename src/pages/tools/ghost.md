@@ -6,7 +6,7 @@ description: 'A platform for writers & bloggers wanting to run a blog or newslet
 link: "https://ghost.org"
 features: "https://ghost.org/creators/"
 image:
-    url: '../src/assets/ghost_thumb.png'
+    url: 'src/assets/ghost_thumb.png'
     alt: 'Screenshot of the Ghost website'
 categories: ["email platform", "launch", "grow", "monetise"]
 icon: 'ghost'

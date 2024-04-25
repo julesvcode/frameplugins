@@ -6,7 +6,7 @@ description: 'A free newsletter platform that let you publish posts directly to 
 link: "https://substack.com/"
 features: "https://substack.com/"
 image:
-    url: '../src/assets/substack_thumb.png'
+    url: 'src/assets/substack_thumb.png'
     alt: 'Screenshot of the Substack website'
 categories: ["email platform", "launch", "grow", "personal"]
 icon: 'substack'

@@ -6,7 +6,7 @@ description: 'A simple and affordable email marketing tool to grow your business
 link: "https://emailoctopus.com"
 features: "https://emailoctopus.com/features"
 image:
-    url: '../src/assets/emailoctopus_thumb.png'
+    url: 'src/assets/emailoctopus_thumb.png'
     alt: 'Screenshot of the EmailOctopus website'
 categories: ["email platform", "launch", "grow", "business"]
 icon: 'emailoctopus'

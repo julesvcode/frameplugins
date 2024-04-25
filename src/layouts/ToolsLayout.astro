@@ -2,6 +2,8 @@
 
 import '../styles/global.css';
 
+import { Image } from 'astro:assets';
+
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import ButtonPrimary from "../components/ButtonPrimary.astro"
@@ -53,7 +55,7 @@ const description = "Newslettr Supply - All the tools you need to launch ,grow a
 			id="pianjs"
 			data-code="JYU9tHVflDF2tvIhthliOIYjoUhYcFo2">
 		</script>
-		
+
 	</head>
 	<body>
 		<div class="mx-auto flex min-h-screen max-w-[60rem] flex-col gap-12 p-4 md:p-8">
@@ -74,11 +76,13 @@ const description = "Newslettr Supply - All the tools you need to launch ,grow a
 						target="_blank"
 						class="hover:opacity-80"
 					>
-						<img 
-							src={frontmatter.image.url} 
+						<Image 
+							src=`/${frontmatter.image.url}` 
 							alt={frontmatter.image.alt}
 							class="border rounded-md"
-						>
+							width={582}
+							height={328}
+						/>
 					</a>
 					<div class="flex flex-col gap-4">
 						<slot />

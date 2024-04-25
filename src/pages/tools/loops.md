@@ -6,7 +6,7 @@ description: 'A modern email marketing tool with a focus on SaaS businesses. Loo
 link: "https://loops.so/"
 features: "https://loops.so/"
 image:
-    url: '../src/assets/loops_thumb.png'
+    url: 'src/assets/loops_thumb.png'
     alt: 'Screenshot of the Loops website'
 categories: ["email platform", "launch", "grow", "business"]
 icon: 'loops'
