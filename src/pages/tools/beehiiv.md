@@ -4,8 +4,8 @@ title: 'Beehiiv'
 updateDate: 2024-04-02
 description: 'Beehiiv is a modern newsletter platform well know for help businesses and content creators grow their audience.
 Its ease to use and impressive list of features makes it one of the most popular plarforms for creators.'
-link: "https://beehiiv.com"
-features: "https://www.beehiiv.com/features"
+link: "https://beehiiv.com?via=88pixels"
+features: "https://www.beehiiv.com/features?via=88pixels"
 image:
     url: '../src/assets/beehiiv_thumb.png'
     alt: 'Screenshot of the Beehiiv website'
