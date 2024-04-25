@@ -6,7 +6,7 @@ description: 'The all in one solution to grow and monetise your audience with em
 link: "https://mailerlite.com"
 features: "https://www.mailerlite.com/features"
 image:
-    url: 'src/assets/mailerlite_thumb.png'
+    url: 'https://i.postimg.cc/RZS7MGX6/mailerlite-thumb.png'
     alt: 'Screenshot of the MailerLite website'
 categories: ["email platform", "launch", "grow", "monetise"]
 icon: 'mailerlite'

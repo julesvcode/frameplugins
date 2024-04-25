@@ -7,7 +7,7 @@ Its ease to use and impressive list of features makes it one of the most popular
 link: "https://beehiiv.com?via=88pixels"
 features: "https://www.beehiiv.com/features?via=88pixels"
 image:
-    url: 'src/assets/beehiiv_thumb.png'
+    url: 'https://i.postimg.cc/c4M7yPMG/beehiiv-thumb.png'
     alt: 'Screenshot of the Beehiiv website'
 categories: ["email platform", "launch", "grow", "monetise"]
 icon: 'beehiiv'
