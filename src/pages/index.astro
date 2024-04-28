@@ -1,5 +1,6 @@
 ---
 import ButtonPrimary from '../components/ButtonPrimary.astro';
+import GoalCard from '../components/GoalCard.astro';
 import PromoBanner from '../components/PromoBanner.astro';
 import ToolCard from '../components/ToolCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -7,13 +8,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 const allTools = await Astro.glob('../pages/tools/*.md');
 
+const allGoals = allTools.map((tool) => tool.frontmatter.categories).flat()
+
+const processedGoals = allGoals.reduce((acc, goal) => {
+    const value = acc[goal] || 0
+
+    return {
+        ...acc,
+        [goal]: value + 1
+    }
+}, {})
+
+const launchCount = processedGoals.launch
+const growCount = processedGoals.grow
+const monetiseCount = processedGoals.monetise
+
 ---
 
 <BaseLayout
 	title=""
 	description="All the tools you need to launch ,grow and monetize your newsletter.">
 	<main>
-		<div class="w-full flex gap-4 py-8">
+		<section class="w-full flex gap-4 py-8">
 			<div class="flex flex-col md:basis-2/3 gap-4">
 				<h1>All the tools you need to 
 					<span class="relative">
@@ -36,8 +52,30 @@ const allTools = await Astro.glob('../pages/tools/*.md');
 					target="_self"
 				>
 			</div>
-		</div>
-		<div id="tools" class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12 pt-4">
+		</section>
+		<section class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12 pt-4">
+			<GoalCard 
+				link="google.com"
+				icon="launch"
+				title="Launch"
+				quantity={launchCount}
+			/>
+			<GoalCard 
+				link="google.com"
+				icon="grow"
+				title="Grow"
+				quantity={growCount}
+			/>
+			<GoalCard 
+				link="google.com"
+				icon="monetise"
+				title="Monetise"
+				quantity={monetiseCount}
+			/>
+		</section>
+		<section id="tools">
+			<h2 class="mt-12">Latest tools</h2>
+			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
 			{allTools.map((tool) => 
 				<ToolCard
 					
@@ -48,7 +86,7 @@ const allTools = await Astro.glob('../pages/tools/*.md');
 					category={tool.frontmatter.categories[0]}
 				/>
 			)}
-		</div>
+		</section>
 		<div class="w-full mt-12">
 			<PromoBanner />
 		</div>
