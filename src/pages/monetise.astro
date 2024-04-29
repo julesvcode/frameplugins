@@ -1,32 +1,17 @@
 ---
 import ButtonPrimary from '../components/ButtonPrimary.astro';
-import GoalCard from '../components/GoalCard.astro';
-import PromoBanner from '../components/PromoBanner.astro';
 import ToolCard from '../components/ToolCard.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
-
+import CategoryLayout from '../layouts/CategoryLayout.astro';
 
 const allTools = await Astro.glob('../pages/tools/*.md');
 
-const allGoals = allTools.map((tool) => tool.frontmatter.categories).flat()
-
-const processedGoals = allGoals.reduce((acc, goal) => {
-    const value = acc[goal] || 0
-
-    return {
-        ...acc,
-        [goal]: value + 1
-    }
-}, {})
-
-const launchCount = processedGoals.launch
-const growCount = processedGoals.grow
-const monetiseCount = processedGoals.monetise
+const categoryToFilter = 'monetise';
+const filteredTools = allTools.filter(post => post.frontmatter.categories.includes(categoryToFilter));
 
 ---
 
-<BaseLayout
-	title=""
+<CategoryLayout
+	title={categoryToFilter}
 	description="All the tools you need to launch ,grow and monetize your newsletter.">
 	<main>
 		<section class="w-full flex gap-4 py-8">
@@ -46,37 +31,12 @@ const monetiseCount = processedGoals.monetise
 					</span>your newsletter.
 				</h1>
 				<p class="max-w-md text-lg">Discover a curated list of tools, apps and software to help you run your newsletter like a pro.</p>
-				<ButtonPrimary 
-					title="Browse tools"
-					link="/#tools"
-					target="_self"
-				>
 			</div>
-		</section>
-		<section class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12 pt-4">
-			<GoalCard 
-				link="/launch"
-				icon="launch"
-				title="Launch"
-				quantity={launchCount}
-			/>
-			<GoalCard 
-				link="/grow"
-				icon="grow"
-				title="Grow"
-				quantity={growCount}
-			/>
-			<GoalCard 
-				link="/monetise"
-				icon="monetise"
-				title="Monetise"
-				quantity={monetiseCount}
-			/>
 		</section>
 		<section id="tools">
 			<h2 class="mt-12">Latest tools</h2>
 			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
-			{allTools.map((tool) => 
+			{filteredTools.map((tool) => 
 				<ToolCard
 					
 					link={tool.url}
@@ -87,10 +47,8 @@ const monetiseCount = processedGoals.monetise
 				/>
 			)}
 		</section>
-		<div class="w-full mt-12">
-			<PromoBanner />
-		</div>
+		
 	</main>
-</BaseLayout>
+</CategoryLayout>
 
 
