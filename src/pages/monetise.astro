@@ -1,0 +1,48 @@
+---
+import ButtonPrimary from '../components/ButtonPrimary.astro';
+import ToolCard from '../components/ToolCard.astro';
+import CategoryLayout from '../layouts/CategoryLayout.astro';
+
+const allTools = await Astro.glob('../pages/tools/*.md');
+
+const categoryToFilter = 'monetise';
+const filteredTools = allTools.filter(post => post.frontmatter.categories.includes(categoryToFilter));
+const categoryToFilterCapitalized =
+  categoryToFilter.charAt(0).toUpperCase()
+  + categoryToFilter.slice(1)
+
+---
+
+<CategoryLayout
+	title=`${categoryToFilterCapitalized} your newsletter`
+	description=`All the tools you need to ${categoryToFilter} your newsletter.`>
+	<main>
+		<section class="w-full flex gap-4 py-8">
+			<div class="flex flex-col gap-4">
+				<h1>
+					<span class="relative capitalize">
+						<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-3 -rotate-1 opacity-50 -z-10"></span>
+						{categoryToFilter}
+					</span>your newsletter.
+				</h1>
+				<p class="text-lg">Browse through all the tools you need to {categoryToFilter} your newsletter.</p>
+			</div>
+		</section>
+		<section id="tools">
+			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+			{filteredTools.map((tool) => 
+				<ToolCard
+					
+					link={tool.url}
+					icon={tool.frontmatter.icon}
+					title={tool.frontmatter.title}
+					description={tool.frontmatter.description}
+					category={tool.frontmatter.categories[0]}
+				/>
+			)}
+		</section>
+		
+	</main>
+</CategoryLayout>
+
+

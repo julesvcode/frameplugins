@@ -1,0 +1,13 @@
+---
+
+import { Icon } from 'astro-icon/components'
+
+const { category } = Astro.props
+
+---
+
+<a 
+    href=`/categories/${category}`
+    class="flex gap-1 items-center text-zinc-500 text-xs leading-0 bg-zinc-100 border border-zinc-300 rounded-sm w-fit py-1 px-2">
+    <Icon name="tag" /> {category}
+</a>
