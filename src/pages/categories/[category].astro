@@ -25,7 +25,7 @@ const { tools } = Astro.props;
     title={category}
     description="">
     <section id="tools">
-        <h2 class="mt-12">Tools tagged with {category}</h2>
+        <h2 class="mt-12">Tools tagged with "{category}"</h2>
         <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
       {tools.map((tool) => 
         <ToolCard

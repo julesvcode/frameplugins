@@ -8,6 +8,7 @@ import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import ButtonPrimary from "../components/ButtonPrimary.astro"
 import PromoCard from "../components/PromoCard.astro"
+import Tags from "../components/Tags.astro"
 
 // interface Props {
 // 	title: string;
@@ -100,7 +101,7 @@ const description = "Newslettr Supply - All the tools you need to launch ,grow a
 								<h4>Categories:</h4>
 								<div class="flex flex-wrap gap-2">
 									{categories.map((category) => 
-										<p class="text-zinc-500 text-xs leading-relaxed bg-zinc-100 border border-zinc-300 rounded-sm w-fit py-1 px-2">{category}</p>
+										<Tags category={category} />
 									)}
 								</div>
 							</div>

@@ -7,34 +7,29 @@ const allTools = await Astro.glob('../pages/tools/*.md');
 
 const categoryToFilter = 'grow';
 const filteredTools = allTools.filter(post => post.frontmatter.categories.includes(categoryToFilter));
+const categoryToFilterCapitalized =
+  categoryToFilter.charAt(0).toUpperCase()
+  + categoryToFilter.slice(1)
 
 ---
 
 <CategoryLayout
-	title={categoryToFilter}
-	description="All the tools you need to launch ,grow and monetize your newsletter.">
+	title=`${categoryToFilterCapitalized} your newsletter`
+	description=`All the tools you need to ${categoryToFilter} your newsletter.`>
 	<main>
 		<section class="w-full flex gap-4 py-8">
-			<div class="flex flex-col md:basis-2/3 gap-4">
-				<h1>All the tools you need to 
-					<span class="relative">
+			<div class="flex flex-col gap-4">
+				<h1>
+					<span class="relative capitalize">
 						<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-3 -rotate-1 opacity-50 -z-10"></span>
-						launch
-					</span>,
-					<span class="relative">
-						<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-3 -rotate-1 opacity-50 -z-10"></span>
-						grow
-					</span> and
-					<span class="relative">
-						<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-3 -rotate-1 opacity-50 -z-10"></span>
-						monetize
+						{categoryToFilter}
 					</span>your newsletter.
 				</h1>
-				<p class="max-w-md text-lg">Discover a curated list of tools, apps and software to help you run your newsletter like a pro.</p>
+				<p class="text-lg">Browse through all the tools you need to {categoryToFilter} your newsletter.</p>
+				<!-- from email platform, to branding and copywriting. -->
 			</div>
 		</section>
 		<section id="tools">
-			<h2 class="mt-12">Latest tools</h2>
 			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
 			{filteredTools.map((tool) => 
 				<ToolCard
