@@ -13,7 +13,6 @@ categories: ["email platform", "launch", "grow", "monetise"]
 icon: 'beehiiv'
 ---
 
-
 ## Main features
 
 Some of the main features of Beehiiv include:

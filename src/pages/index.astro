@@ -53,25 +53,28 @@ const monetiseCount = processedGoals.monetise
 				>
 			</div>
 		</section>
-		<section class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6  pt-4">
-			<GoalCard 
-				link="/launch"
-				icon="launch"
-				title="Launch"
-				quantity={launchCount}
-			/>
-			<GoalCard 
-				link="/grow"
-				icon="grow"
-				title="Grow"
-				quantity={growCount}
-			/>
-			<GoalCard 
-				link="/monetise"
-				icon="monetise"
-				title="Monetise"
-				quantity={monetiseCount}
-			/>
+		<section>
+			<h2 class="">Get setup in 3 steps</h2>
+			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+				<GoalCard 
+					link="/launch"
+					icon="launch"
+					title="Launch"
+					quantity={launchCount}
+				/>
+				<GoalCard 
+					link="/grow"
+					icon="grow"
+					title="Grow"
+					quantity={growCount}
+				/>
+				<GoalCard 
+					link="/monetise"
+					icon="monetise"
+					title="Monetise"
+					quantity={monetiseCount}
+				/>
+			</div>
 		</section>
 		<section id="tools">
 			<h2 class="">Latest tools</h2>
