@@ -8,7 +8,7 @@ features: "https://substack.com/"
 image:
     url: 'https://i.postimg.cc/j57N81d9/substack-thumb.png'
     alt: 'Screenshot of the Substack website'
-categories: ["email platform", "launch", "grow", "personal"]
+categories: ["email platform", "launch", "grow"]
 icon: 'substack'
 ---
 
