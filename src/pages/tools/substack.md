@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/ToolsLayout.astro
 title: 'Substack'
+feat: 'false'
 updateDate: 2024-04-02
 description: 'A free newsletter platform that let you publish posts directly to subscribers with text, video, audio, and video. Anyone can start a publication on Substack in minutes.'
 link: "https://substack.com/"
@@ -8,7 +9,7 @@ features: "https://substack.com/"
 image:
     url: 'https://i.postimg.cc/j57N81d9/substack-thumb.png'
     alt: 'Screenshot of the Substack website'
-categories: ["email platform", "launch", "grow"]
+categories: ["email-platform", "launch", "grow"]
 icon: 'substack'
 ---
 

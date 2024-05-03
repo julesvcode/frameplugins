@@ -19,22 +19,28 @@ export async function getStaticPaths() {
 const { category } = Astro.params;
 const { tools } = Astro.props;
 
+const categoryCapitalize = category.charAt(0).toUpperCase() + category.slice(1)
+const categoryDisplay = category.replace(/-/g, ' ')
+const categoryCapitalizeDisplay = categoryCapitalize.replace(/-/g, ' ')
 ---
 
 <BaseLayout 
-    title={category}
-    description="">
+    title={categoryCapitalizeDisplay}
+    description={`A collection of the best ${category} tools.`}>
     <section id="tools">
-        <h2 class="mt-12">Tools tagged with "{category}"</h2>
-        <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
-      {tools.map((tool) => 
-        <ToolCard
-            link={tool.url}
-            icon={tool.frontmatter.icon}
-            title={tool.frontmatter.title}
-            description={tool.frontmatter.description}
-            category={tool.frontmatter.categories[0]}
-        />
-      )}
+      <div class="flex flex-col md:basis-2/3 gap-4">
+        <h1 class="mt-12">Best <span class="capitalize">{categoryDisplay}</span> Tools for Newsletters</h1>
+        <p class="max-w-2xl text-lg">A collection of the best {categoryDisplay} tools. Find the best {categoryDisplay} tools to run your newsletter.</p>
+      </div>
+      <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+        {tools.map((tool) => 
+          <ToolCard
+              link={tool.url}
+              icon={tool.frontmatter.icon}
+              title={tool.frontmatter.title}
+              description={tool.frontmatter.description}
+              category={tool.frontmatter.categories[0]}
+          />
+        )}
     </section>
   </BaseLayout>

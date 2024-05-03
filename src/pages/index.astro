@@ -9,9 +9,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const allTools = await Astro.glob('../pages/tools/*.md');
 const allCategories = [...new Set(allTools.map((tool) => tool.frontmatter.categories).flat())];
 
-const categoryToFilter = 'featured';
-const filteredTools = allTools.filter(post => post.frontmatter.categories.includes(categoryToFilter));
-
 
 const mainGoals = allTools.map((tool) => tool.frontmatter.categories).flat()
 const processedGoals = mainGoals.reduce((acc, goal) => {
@@ -26,6 +23,8 @@ const processedGoals = mainGoals.reduce((acc, goal) => {
 const launchCount = processedGoals.launch
 const growCount = processedGoals.grow
 const monetiseCount = processedGoals.monetise
+
+let categoryDisplay
 
 ---
 
@@ -95,16 +94,17 @@ const monetiseCount = processedGoals.monetise
 				Tools
 			</h2>
 			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
-			{filteredTools.map((tool) => 
-				<ToolCard
-					
-					link={tool.url}
-					icon={tool.frontmatter.icon}
-					title={tool.frontmatter.title}
-					description={tool.frontmatter.description}
-					category={tool.frontmatter.categories[0]}
-				/>
-			)}
+				{allTools.map((tool) => 
+					(tool.frontmatter.feat === "true") && 
+						<ToolCard
+							link={tool.url}
+							icon={tool.frontmatter.icon}
+							title={tool.frontmatter.title}
+							description={tool.frontmatter.description}
+							category={tool.frontmatter.categories[0]}
+						/>
+				)}
+			</div>
 		</section>
 		<section id="categories">
 			<h2>
@@ -116,9 +116,12 @@ const monetiseCount = processedGoals.monetise
 			</h2>
 			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
 				{allCategories.map((category) =>
+					(categoryDisplay = (category.charAt(0).toUpperCase() + category.slice(1)).replace(/-/g, ' ')) &&
+
 					<CategoryCard 
+						icon={category}
 						link={`/categories/${category}`}
-						title={category}
+						title={categoryDisplay}
 					/>
 				)}
 			</div>

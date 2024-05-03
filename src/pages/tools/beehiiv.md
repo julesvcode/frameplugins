@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/ToolsLayout.astro
 title: 'Beehiiv'
+feat: 'true'
 updateDate: 2024-04-02
 description: 'Beehiiv is a modern newsletter platform well know for help businesses and content creators grow their audience.
 Its ease to use and impressive list of features makes it one of the most popular plarforms for creators.'
@@ -9,7 +10,7 @@ features: "https://www.beehiiv.com/features?via=88pixels"
 image:
     url: 'https://i.postimg.cc/c4M7yPMG/beehiiv-thumb.png'
     alt: 'Screenshot of the Beehiiv website'
-categories: ["email platform", "launch", "grow", "monetise", "featured"]
+categories: ["email-platform", "launch", "grow", "monetise"]
 icon: 'beehiiv'
 ---
 

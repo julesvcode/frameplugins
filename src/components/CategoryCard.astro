@@ -1,6 +1,8 @@
 ---
 
-const { link, title } = Astro.props
+import { Icon } from 'astro-icon/components'
+
+const { link, icon, title } = Astro.props
 
 
 ---
@@ -8,6 +10,7 @@ const { link, title } = Astro.props
 <a 
     href={link}
     class="relative flex flex-col justify-end gap-6 group overflow-hidden p-8 rounded-lg bg-zinc-200 border border-zinc-200 w-full cursor-pointer hover:border-zinc-300 hover:bg-zinc-200 min-h-40">
+    <Icon name={`cat-${icon}`} class="text-zinc-950 text-2xl"/>
     <div class="flex flex-col w-full">
         <h3 class="text-zinc-950 text-xl font-bold leading-8 capitalize">
             {title}
