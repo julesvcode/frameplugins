@@ -7,7 +7,7 @@ description: 'An AI writing assistant that can be used to create and improve you
 link: "https://www.jasper.ai"
 features: "https://www.jasper.ai/products/campaigns"
 image:
-    url: 'https://i.postimg.cc/c4Sv9jSM/jasper-thumb.png'
+    url: 'https://i.postimg.cc/YSGGNHSw/jasper-thumb.png'
     alt: 'Screenshot of the Jasper website'
 categories: ["copywriting", "ai"]
 topics: ["launch", "grow"]
