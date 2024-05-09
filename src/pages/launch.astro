@@ -5,27 +5,27 @@ import CategoryLayout from '../layouts/CategoryLayout.astro';
 
 const allTools = await Astro.glob('../pages/tools/*.md');
 
-const categoryToFilter = 'launch';
-const filteredTools = allTools.filter(post => post.frontmatter.categories.includes(categoryToFilter));
-const categoryToFilterCapitalized =
-  categoryToFilter.charAt(0).toUpperCase()
-  + categoryToFilter.slice(1)
+const topic = 'launch';
+const filteredTools = allTools.filter(post => post.frontmatter.topics.includes(topic));
+const topicCapitalized =
+  topic.charAt(0).toUpperCase()
+  + topic.slice(1)
 
 ---
 
 <CategoryLayout
-	title=`${categoryToFilterCapitalized} your newsletter`
-	description=`All the tools you need to ${categoryToFilter} your newsletter.`>
+	title=`${topicCapitalized} your newsletter`
+	description=`All the tools you need to ${topic} your newsletter.`>
 	<main>
 		<section class="w-full flex gap-4 py-8">
 			<div class="flex flex-col gap-4">
 				<h1>
 					<span class="relative capitalize">
 						<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-3 -rotate-1 opacity-50 -z-10"></span>
-						{categoryToFilter}
+						{topic}
 					</span>your newsletter.
 				</h1>
-				<p class="text-lg">Browse through all the tools you need to {categoryToFilter} your newsletter.</p>
+				<p class="text-lg">Browse through all the tools you need to {topic} your newsletter.</p>
 				<!-- from email platform, to branding and copywriting. -->
 			</div>
 		</section>
