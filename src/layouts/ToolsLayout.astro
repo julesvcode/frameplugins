@@ -9,6 +9,7 @@ import Footer from "../components/Footer.astro"
 import ButtonPrimary from "../components/ButtonPrimary.astro"
 import PromoCard from "../components/PromoCard.astro"
 import Tags from "../components/Tags.astro"
+import Topics from "../components/Topics.astro"
 
 // interface Props {
 // 	title: string;
@@ -19,8 +20,10 @@ import Tags from "../components/Tags.astro"
 const { frontmatter } = Astro.props;
 
 const allTools = await Astro.glob('../pages/tools/*.md');
-const allCategories = [...new Set(allTools.map((tool) => tool.frontmatter.categories).flat())];
 const categories = frontmatter.categories
+const topics = frontmatter.topics
+
+console.log(topics)
 
 const makeTitle = `${frontmatter.title} | Newsletter Supply`
 const description = "Newslettr Supply - All the tools you need to launch, grow and monetize your newsletter."
@@ -104,6 +107,14 @@ const description = "Newslettr Supply - All the tools you need to launch, grow a
 								<div class="flex flex-wrap gap-2">
 									{categories.map((category) => 
 										<Tags category={category} />
+									)}
+								</div>
+							</div>
+							<div class="flex flex-col gap-2">
+								<h4>Topics:</h4>
+								<div class="flex flex-wrap gap-2">
+									{topics.map((topic) => 
+										<Topics topic={topic} />
 									)}
 								</div>
 							</div>
