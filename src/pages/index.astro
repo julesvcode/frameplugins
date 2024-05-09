@@ -8,23 +8,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 const allTools = await Astro.glob('../pages/tools/*.md');
 const allCategories = [...new Set(allTools.map((tool) => tool.frontmatter.categories).flat())];
+const allTopics = [...new Set(allTools.map((tool) => tool.frontmatter.topics).flat())];
 
 
-const mainGoals = allTools.map((tool) => tool.frontmatter.categories).flat()
-const processedGoals = mainGoals.reduce((acc, goal) => {
-    const value = acc[goal] || 0
+const mainTopics = allTools.map((tool) => tool.frontmatter.topics).flat()
+const processedTopics = mainTopics.reduce((acc, topic) => {
+    const value = acc[topic] || 0
 
     return {
         ...acc,
-        [goal]: value + 1
+        [topic]: value + 1
     }
 }, {})
 
-const launchCount = processedGoals.launch
-const growCount = processedGoals.grow
-const monetiseCount = processedGoals.monetise
-
 let categoryDisplay
+let topicDisplay
 
 ---
 
@@ -65,24 +63,15 @@ let categoryDisplay
 				Categories
 			</h2>
 			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
-				<GoalCard 
-					link="/launch"
-					icon="launch"
-					title="Launch"
-					quantity={launchCount}
-				/>
-				<GoalCard 
-					link="/grow"
-					icon="grow"
-					title="Grow"
-					quantity={growCount}
-				/>
-				<GoalCard 
-					link="/monetise"
-					icon="monetise"
-					title="Monetise"
-					quantity={monetiseCount}
-				/>
+				{allTopics.map((topic) =>
+					(topicDisplay = (topic.charAt(0).toUpperCase() + topic.slice(1)).replace(/-/g, ' ')) &&
+					<GoalCard 
+						icon={topic}
+						link={`/${topic}`}
+						title={topicDisplay}
+						quantity={processedTopics[topic]}
+					/>
+				)}
 			</div>
 		</section>
 		<section>

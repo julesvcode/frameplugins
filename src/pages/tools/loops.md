@@ -9,7 +9,8 @@ features: "https://loops.so/"
 image:
     url: 'https://i.postimg.cc/pd7ch361/loops-thumb.png'
     alt: 'Screenshot of the Loops website'
-categories: ["email-platform", "launch", "grow", "business"]
+categories: ["email-platform", "business"]
+topics: ["launch", "grow"]
 icon: 'loops'
 ---
 

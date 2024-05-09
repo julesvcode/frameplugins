@@ -9,7 +9,8 @@ features: "https://ghost.org/creators/"
 image:
     url: 'https://i.postimg.cc/2S043vKH/ghost-thumb.png'
     alt: 'Screenshot of the Ghost website'
-categories: ["email-platform", "launch", "grow", "monetise"]
+categories: ["email-platform", "website-builder", "blog"]
+topics: ["launch", "grow", "monetise"]
 icon: 'ghost'
 ---
 

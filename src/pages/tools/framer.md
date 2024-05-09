@@ -9,7 +9,8 @@ features: "https://www.framer.com/features/design-layout?via=julesvcode"
 image:
     url: 'https://i.postimg.cc/zvHxBH7q/framer-thumb.png'
     alt: 'Screenshot of the Framer website'
-categories: ["website-builder", "launch", "grow"]
+categories: ["website-builder"]
+topics: ["launch", "grow"]
 icon: 'framer'
 ---
 

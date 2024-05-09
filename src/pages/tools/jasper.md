@@ -9,7 +9,8 @@ features: "https://www.jasper.ai/products/campaigns"
 image:
     url: 'https://i.postimg.cc/c4Sv9jSM/jasper-thumb.png'
     alt: 'Screenshot of the Jasper website'
-categories: ["copywriting", "launch", "grow"]
+categories: ["copywriting", "ai"]
+topics: ["launch", "grow"]
 icon: 'jasper'
 ---
 

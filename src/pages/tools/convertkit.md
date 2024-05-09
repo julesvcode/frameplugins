@@ -9,7 +9,8 @@ features: "https://convertkit.com/features"
 image:
     url: 'https://i.postimg.cc/pd7zJvxz/convertkit-thumb.png'
     alt: 'Screenshot of the ConvertKit website'
-categories: ["email-platform", "launch", "grow", "monetise"]
+categories: ["email-platform"]
+topics: ["launch", "grow", "monetise"]
 icon: 'convertkit'
 ---
 

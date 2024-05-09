@@ -9,7 +9,8 @@ features: "https://emailoctopus.com/features"
 image:
     url: 'https://i.postimg.cc/zf3Thvmq/emailoctopus-thumb.png'
     alt: 'Screenshot of the EmailOctopus website'
-categories: ["email-platform", "launch", "grow", "business"]
+categories: ["email-platform", "business"]
+topics: ["launch", "grow"]
 icon: 'emailoctopus'
 ---
 

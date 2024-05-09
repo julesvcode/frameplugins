@@ -9,7 +9,8 @@ features: "https://www.mailerlite.com/features"
 image:
     url: 'https://i.postimg.cc/RZS7MGX6/mailerlite-thumb.png'
     alt: 'Screenshot of the MailerLite website'
-categories: ["email-platform", "launch", "grow", "monetise"]
+categories: ["email-platform"]
+topics: ["launch", "grow", "monetise"]
 icon: 'mailerlite'
 ---
 

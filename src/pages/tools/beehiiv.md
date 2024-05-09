@@ -10,7 +10,8 @@ features: "https://www.beehiiv.com/features?via=88pixels"
 image:
     url: 'https://i.postimg.cc/c4M7yPMG/beehiiv-thumb.png'
     alt: 'Screenshot of the Beehiiv website'
-categories: ["email-platform", "launch", "grow", "monetise"]
+categories: ["email-platform", "website-builder"]
+topics: ["launch", "grow", "monetise"]
 icon: 'beehiiv'
 ---
 
