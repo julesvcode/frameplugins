@@ -16,7 +16,7 @@ icon: 'convertkit'
 
 ConvertKit is a user-friendly platform designed for creators and newsletter publishers. It simplifies email marketing with tools that help you grow and engage your audience.
 
-Key features and benefits:
+<b>Key features and benefits:</b>
 
 - Easy-to-use email editor: Create eye-catching emails without needing to be a design pro.
 - Automated email sequences: Set up welcome series or courses that send automatically to new subscribers.

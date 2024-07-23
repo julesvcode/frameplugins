@@ -15,10 +15,15 @@ topics: ["launch", "grow", "monetise"]
 icon: 'beehiiv'
 ---
 
-## Main features
+Beehiiv is a user-friendly platform designed specifically for creating and managing newsletters. It offers a range of features to help content creators grow their audience and monetize their work efficiently.
 
-Some of the main features of Beehiiv include:
-- Email automation.
-- Website builder and SEO tools.
-- A strong focus on helping creators to monetise their newsletters.
-- A generous free plan and very advantageous paid plans.
+<b>Key features and benefits:</b>
+
+- Easy-to-use editor: Write and design your newsletters with a simple, intuitive interface.
+- Built-in analytics: Track your newsletter's performance with detailed metrics and insights.
+- Audience growth tools: Utilize referral programs and social sharing options to expand your readership.
+- Monetization options: Implement paid subscriptions and sponsorships to earn money from your content.
+- Customizable landing pages: Create attractive sign-up pages to capture new subscribers.
+- Email automation: Set up automated welcome series and drip campaigns to engage your audience.
+
+Beehiiv streamlines the process of running a newsletter, making it easier for creators to focus on producing great content. Whether you're just starting out or looking to take your newsletter to the next level, Beehiiv provides the tools you need to succeed.

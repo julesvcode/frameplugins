@@ -17,10 +17,15 @@ icon: 'emailoctopus'
 
 ## Main features
 
-EmailOctopus' features are focused around 5 main axis:
+EmailOctopus is a cost-effective email marketing tool designed for businesses and individuals. It offers a range of features to help you create, send, and track email campaigns without breaking the bank.
 
-- Grow your subscribers list: import your existing audience and capture new subscribers with stunning landing pages and customisable forms.
-- Design beautiful emails with pre-made templates or build your own email from scratch.
-- Automate your workflows to save time and provide value to your subscribers.
-- Analyse your results to see what's working and improve future email campaigns.
-- Integrate EmailOctopus with the apps you use to run your business (e.g. Shopify, Gravity Forms and Carrd).
+<b>Key features and benefits:</b>
+
+- User-friendly interface: Create and manage email campaigns with an easy-to-use dashboard.
+- Customizable templates: Design eye-catching emails using pre-made templates or build your own.
+- List management: Organize and segment your subscribers for targeted messaging.
+- Automation: Set up automated email sequences to engage your audience at the right time.
+- Detailed analytics: Track open rates, click-through rates, and other important metrics.
+- Affordable pricing: Offers competitive rates, especially for larger subscriber lists.
+
+EmailOctopus provides newsletter creators with essential email marketing tools at a budget-friendly price point. It's particularly useful for those looking to grow their subscriber base without incurring high costs typically associated with larger email platforms.

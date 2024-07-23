@@ -69,13 +69,15 @@ const description = "Newslettr Supply - All the tools you need to launch, grow a
 			<main class="w-full flex flex-col gap-6 md:flex-row">
 				<div class="w-full flex flex-col md:basis-2/3 gap-12">
 					<div class="flex flex-col gap-4">
-						<h1 class="text-zinc-950 text-4xl font-bold">{frontmatter.title}</h1>
+						<div class="flex items-center justify-between">
+							<h1 class="text-zinc-950 text-4xl font-bold">{frontmatter.title}</h1>
+							<ButtonPrimary
+								link={frontmatter.link}
+								title="Website"
+								target="_blank"
+							/>			
+							</div>
 						<p class="text-zinc-700 text-lg leading-relaxed">{frontmatter.description}</p>
-						<ButtonPrimary
-							link={frontmatter.link}
-							title="Website"
-							target="_blank"
-						/>
 					</div>
 					<a 
 						href={frontmatter.link}
@@ -90,7 +92,7 @@ const description = "Newslettr Supply - All the tools you need to launch, grow a
 							height={328}
 						/>
 					</a>
-					<div class="flex flex-col gap-4">
+					<div class="flex flex-col gap-4 leading-7">
 						<slot />
 						<ButtonPrimary
 							link={frontmatter.features}

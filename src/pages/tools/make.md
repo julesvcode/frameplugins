@@ -15,7 +15,8 @@ icon: 'make'
 ---
 
 Make (formerly Integromat) is a powerful platform that connects apps and automates workflows without needing to code. It allows you to create complex automation scenarios by linking various online services and tools.
-Key features and benefits:
+
+<b>Key features and benefits:</b>
 
 - Visual workflow builder: Design your automations using an intuitive drag-and-drop interface.
 - Wide range of app integrations: Connect over 1000 apps to create custom workflows tailored to your needs.
