@@ -75,13 +75,20 @@ let topicDisplay
 			</div>
 		</section>
 		<section>
-			<h2 class="">
-				<span class="relative">
-					<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-2 -rotate-1 opacity-50 -z-10"></span>
-					Featured
-				</span>
-				Tools
-			</h2>
+			<div class="group flex items-end justify-between">
+				<h2 class="">
+					<span class="relative">
+						<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-2 -rotate-1 opacity-50 -z-10"></span>
+						Featured
+					</span>
+					Tools
+				</h2>
+				<a href="/browse"
+					class="text-sm hover:underline"
+				>
+					View all →
+				</a>
+			</div>
 			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
 				{allTools.map((tool) => 
 					(tool.frontmatter.feat === "true") && 
