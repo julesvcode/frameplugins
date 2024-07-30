@@ -15,11 +15,18 @@ icon: 'ghost'
 ---
 
 
-## Main features
+Ghost is a powerful, independent platform designed for creating and managing online content. It offers a clean, user-friendly interface with features specifically tailored for professional publishers and newsletter creators.
 
-- Turn your blog into a newslettter and vice-versa.
-- A great writing experience within the app.
-- A gallerry of beautiful Ghost themes and integrations.
+<b>Key features and benefits:</b>
+
+- Built-in newsletter tools: Send and manage email newsletters directly from the platform.
+- Customizable themes: Choose from various designs or create your own to match your brand.
+- Membership and subscriptions: Easily set up paid subscriptions for your content.
+- SEO optimization: Includes tools to help your content rank well in search engines.
+- Integration options: Connect with popular services and tools to extend functionality.
+- Full content ownership: Your content and data remain yours, with no algorithm controlling reach.
+
+Ghost provides newsletter creators with a flexible, all-in-one solution for publishing and distributing their work. It's particularly suitable for those who want more control over their platform and are looking to monetize their content effectively.
 
 
 
