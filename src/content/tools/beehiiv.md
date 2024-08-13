@@ -10,7 +10,7 @@ thumbnailImage: './images/beehiiv-thumb.png'
 thumbnailAlt: 'Screenshot of the Beehiiv website'
 categories: ["email-platform", "website-builder"]
 topics: ["launch", "grow", "monetise"]
-icon: './images/beehiiv-thumb.png'
+icon: './favicons/beehiiv.png'
 ---
 
 Beehiiv is a user-friendly platform designed specifically for creating and managing newsletters. It offers a range of features to help content creators grow their audience and monetize their work efficiently.
