@@ -7,7 +7,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
 
-// const allTools = await Astro.glob('../pages/tools/*.md');
 const allTools = await getCollection("tools");
 
 const allCategories = [...new Set(allTools.map((tool) => tool.data.categories).flat())];

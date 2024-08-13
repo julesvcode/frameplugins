@@ -1,12 +1,12 @@
 ---
-import ButtonPrimary from '../components/ButtonPrimary.astro';
+import { getCollection } from 'astro:content';
 import ToolCard from '../components/ToolCard.astro';
 import CategoryLayout from '../layouts/CategoryLayout.astro';
 
-const allTools = await Astro.glob('../pages/tools/*.md');
+const allTools = await getCollection("tools");
 
 const topic = 'monetise';
-const filteredTools = allTools.filter(post => post.frontmatter.topics.includes(topic));
+const filteredTools = allTools.filter(tool => tool.data.topics.includes(topic));
 const topicCapitalized =
   topic.charAt(0).toUpperCase()
   + topic.slice(1)
@@ -31,14 +31,7 @@ const topicCapitalized =
 		<section id="tools">
 			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
 			{filteredTools.map((tool) => 
-				<ToolCard
-					
-					link={tool.url}
-					icon={tool.frontmatter.icon}
-					title={tool.frontmatter.title}
-					description={tool.frontmatter.description}
-					category={tool.frontmatter.categories[0]}
-				/>
+				<ToolCard tools={tool}/>
 			)}
 		</section>
 		
