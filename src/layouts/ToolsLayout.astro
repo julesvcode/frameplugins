@@ -1,24 +1,13 @@
 ---
 
 import '../styles/global.css';
-
-import { Image } from 'astro:assets';
-import { getCollection, type CollectionEntry } from "astro:content";
-
-import ButtonPrimary from "../components/ButtonPrimary.astro"
-import PromoCard from "../components/PromoCard.astro"
-
 import BaseLayout from './BaseLayout.astro';
 
-const { title, link, description, features } = Astro.props
+const { title } = Astro.props
 
-// const categories = categories
-// const topics = topics
 
-// console.log(topics)
-
-// const makeTitle = `${title} | Newsletter Supply`
-// const description = "Newslettr Supply - All the tools you need to launch, grow and monetize your newsletter."
+const makeTitle = `${title} | Newsletter Supply`
+const description = "Newslettr Supply - All the tools you need to launch, grow and monetize your newsletter."
 
 ---
 
