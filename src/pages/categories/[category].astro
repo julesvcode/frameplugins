@@ -1,19 +1,22 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ToolCard from '../../components/ToolCard.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+
 
 export async function getStaticPaths() {
-  const allTools = await Astro.glob('../tools/*.md');
+  const allTools = await getCollection("tools");
 
-  const uniqueCategory = [...new Set(allTools.map((category) => category.frontmatter.categories).flat())];
+  const uniqueCategory = [...new Set(allTools.map((category) => category.data.categories).flat())];
 
   return uniqueCategory.map((category) => {
-    const filteredTools = allTools.filter((tool) => tool.frontmatter.categories.includes(category));
+    const filteredTools = allTools.filter((tool) => tool.data.categories.includes(category));
         return {
-        params: { category },
-        props: { tools: filteredTools },
+          params: { category },
+          props: { tools: filteredTools },
         };
-    });
+  });
 }
 
 const { category } = Astro.params;
@@ -34,13 +37,7 @@ const categoryCapitalizeDisplay = categoryCapitalize.replace(/-/g, ' ')
       </div>
       <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
         {tools.map((tool) => 
-          <ToolCard
-              link={tool.url}
-              icon={tool.frontmatter.icon}
-              title={tool.frontmatter.title}
-              description={tool.frontmatter.description}
-              category={tool.frontmatter.categories[0]}
-          />
+          <ToolCard tools={tool} />
         )}
     </section>
   </BaseLayout>

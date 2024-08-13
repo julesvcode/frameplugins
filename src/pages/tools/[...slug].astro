@@ -5,7 +5,7 @@ import ButtonPrimary from '../../components/ButtonPrimary.astro';
 import PromoCard from '../../components/PromoCard.astro';
 import ToolsLayout from '../../layouts/ToolsLayout.astro';
 import { Image } from 'astro:assets';
-import Tag from '../../components/Tag.astro';
+import Tags from '../../components/Tag.astro';
 
 export async function getStaticPaths() {
   const tools = await getCollection("tools");
@@ -23,6 +23,7 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 
 const categories = entry.data.categories
+const topics = entry.data.topics
 
 
 ---
@@ -64,11 +65,18 @@ const categories = entry.data.categories
           <h4>Categories:</h4>
           <div class="flex gap-1 leading-7">
             {categories.map(category => (
-              <Tag category={category}/>
+              <Tags category={category}/>
             ))}
           </div>
         </div>
-
+        <div class="flex flex-col gap-4 leading-7">
+          <h4>Topics:</h4>
+          <div class="flex gap-1 leading-7">
+            {topics.map(topic => 
+              <Tags category={topic} />
+            )}
+          </div>
+        </div>
         <div class="py-4 group">
           <span class="text-sm text-zinc-700 group-hover:text-zinc-950 transition-colors">← </span>
           <a class="text-sm text-zinc-700 hover:text-zinc-950 group-hover:underline transition-colors" href="/browse">Back to all tools</a>
@@ -78,20 +86,14 @@ const categories = entry.data.categories
         <div class="sticky top-4 flex flex-col gap-4">
           <div class="flex flex-col gap-8 group overflow-hidden p-6 rounded-lg bg-zinc-50 border border-zinc-200 w-full cursor-pointer">
             <div class="flex flex-col gap-2">
-              <h4>Categories:</h4>
-              <!-- <div class="flex flex-wrap gap-2">
-                {categories.map((category) => 
-                  <Tags category={category} />
-                )}
-              </div> -->
             </div>
             <div class="flex flex-col gap-2">
               <h4>Topics:</h4>
-              <!-- <div class="flex flex-wrap gap-2">
+              <div class="flex flex-wrap gap-2">
                 {topics.map((topic) => 
-                  <Topics topic={topic} />
+                  <Tags topic={topic} />
                 )}
-              </div> -->
+              </div>
             </div>
             <!-- <div class="flex flex-col gap-2">
               <h4>Browse more categories:</h4>

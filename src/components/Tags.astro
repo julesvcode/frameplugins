@@ -1,13 +1,17 @@
 ---
+import type { CollectionEntry } from "astro:content"
 
-import { Icon } from 'astro-icon/components'
+type Props = {
+    tools: CollectionEntry<"tools">
+}
 
-const { category } = Astro.props
+const { tools } = Astro.props;
+const category = tools.data.categories
 
 ---
 
 <a 
-    href=`/categories/${category}`
+    href={`/categories/${category}`}
     class="flex gap-1 items-center text-zinc-700 text-xs leading-0 bg-zinc-100 border border-zinc-300 rounded-sm w-fit py-1 px-2">
-    <Icon name="tag" /> {category}
+    {category}
 </a>
