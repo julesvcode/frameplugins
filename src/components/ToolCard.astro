@@ -11,7 +11,7 @@ type Props = {
 const { tools } = Astro.props;
 const { icon, title, description, categories } = tools.data
 
-
+const categoryDisplay = categories[0].replace(/-/g, ' ')
 
 ---
 <a 
@@ -29,5 +29,5 @@ const { icon, title, description, categories } = tools.data
             {description}
         </p>
     </div>
-    <Tag category={categories[0]} />
+    <Tag category={categoryDisplay} />
 </a>

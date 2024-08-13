@@ -5,7 +5,8 @@ import ButtonPrimary from '../../components/ButtonPrimary.astro';
 import PromoCard from '../../components/PromoCard.astro';
 import ToolsLayout from '../../layouts/ToolsLayout.astro';
 import { Image } from 'astro:assets';
-import Tags from '../../components/Tag.astro';
+import CategoryTag from '../../components/CategoryTag.astro';
+import TopicTag from '../../components/TopicTag.astro';
 
 export async function getStaticPaths() {
   const tools = await getCollection("tools");
@@ -24,7 +25,6 @@ const { Content } = await entry.render();
 
 const categories = entry.data.categories
 const topics = entry.data.topics
-
 
 ---
 <ToolsLayout title={entry.data.title}>
@@ -65,16 +65,16 @@ const topics = entry.data.topics
           <h4>Categories:</h4>
           <div class="flex gap-1 leading-7">
             {categories.map(category => (
-              <Tags category={category}/>
+              <CategoryTag link={category} />
             ))}
           </div>
         </div>
         <div class="flex flex-col gap-4 leading-7">
           <h4>Topics:</h4>
           <div class="flex gap-1 leading-7">
-            {topics.map(topic => 
-              <Tags category={topic} />
-            )}
+            {topics.map(topic => (
+              <TopicTag link={topic} />
+            ))}
           </div>
         </div>
         <div class="py-4 group">
@@ -87,14 +87,14 @@ const topics = entry.data.topics
           <div class="flex flex-col gap-8 group overflow-hidden p-6 rounded-lg bg-zinc-50 border border-zinc-200 w-full cursor-pointer">
             <div class="flex flex-col gap-2">
             </div>
-            <div class="flex flex-col gap-2">
+            <!-- <div class="flex flex-col gap-2">
               <h4>Topics:</h4>
               <div class="flex flex-wrap gap-2">
                 {topics.map((topic) => 
-                  <Tags topic={topic} />
+                  <TopicTag link={topic} />
                 )}
               </div>
-            </div>
+            </div> -->
             <!-- <div class="flex flex-col gap-2">
               <h4>Browse more categories:</h4>
               <div class="flex flex-wrap gap-2">
