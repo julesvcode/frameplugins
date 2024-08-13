@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import ButtonPrimary from '../../components/ButtonPrimary.astro';
 import PromoCard from '../../components/PromoCard.astro';
 import ToolsLayout from '../../layouts/ToolsLayout.astro';
+import { Image } from 'astro:assets';
 
 export async function getStaticPaths() {
   const tools = await getCollection("tools");
@@ -23,7 +24,7 @@ const { Content, headings } = await entry.render();
 
 
 ---
-<ToolsLayout>
+<ToolsLayout title={entry.data.title}>
       <div class="w-full flex flex-col md:basis-2/3 gap-12">
         <div class="flex flex-col gap-4">
           <div class="flex items-center justify-between">
@@ -41,13 +42,13 @@ const { Content, headings } = await entry.render();
           target="_blank"
           class="hover:opacity-80"
         >
-          <!-- <Image 
-            src={thumbnailImage}
-            alt={thumbnailAlt}
+          <Image 
+            src={entry.data.thumbnailImage}
+            alt={entry.data.thumbnailAlt}
             class="border rounded-md"
             width={582}
             height={328}
-          /> -->
+          />
         </a>
         <div class="flex flex-col gap-4 leading-7">
           <Content />
