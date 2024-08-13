@@ -5,6 +5,7 @@ import ButtonPrimary from '../../components/ButtonPrimary.astro';
 import PromoCard from '../../components/PromoCard.astro';
 import ToolsLayout from '../../layouts/ToolsLayout.astro';
 import { Image } from 'astro:assets';
+import Tag from '../../components/Tag.astro';
 
 export async function getStaticPaths() {
   const tools = await getCollection("tools");
@@ -19,7 +20,9 @@ type Props = {
 }
 
 const { entry } = Astro.props;
-const { Content, headings } = await entry.render();
+const { Content } = await entry.render();
+
+const categories = entry.data.categories
 
 
 ---
@@ -57,6 +60,15 @@ const { Content, headings } = await entry.render();
             target="_blank"
           />
         </div>
+        <div class="flex flex-col gap-4 leading-7">
+          <h4>Categories:</h4>
+          <div class="flex gap-1 leading-7">
+            {categories.map(category => (
+              <Tag category={category}/>
+            ))}
+          </div>
+        </div>
+
         <div class="py-4 group">
           <span class="text-sm text-zinc-700 group-hover:text-zinc-950 transition-colors">← </span>
           <a class="text-sm text-zinc-700 hover:text-zinc-950 group-hover:underline transition-colors" href="/browse">Back to all tools</a>
