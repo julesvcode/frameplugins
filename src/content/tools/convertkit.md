@@ -1,17 +1,15 @@
 ---
-layout: ../../layouts/ToolsLayout.astro
 title: 'ConvertKit'
 feat: 'false'
 updateDate: 2024-04-02
 description: 'An email platform built for creators to grow and connect with their audience, as well as run their whole email marketing strategy and earn money from digital products.'
 link: "https://convertkit.com/"
 features: "https://convertkit.com/features"
-image:
-    url: 'https://i.postimg.cc/pd7zJvxz/convertkit-thumb.png'
-    alt: 'Screenshot of the ConvertKit website'
+thumbnailImage: './images/convertkit-thumb.png'
+thumbnailAlt: 'Screenshot of the ConvertKit website'
 categories: ["email-platform"]
 topics: ["launch", "grow", "monetise"]
-icon: 'convertkit'
+icon: './images/convertkit-thumb.png'
 ---
 
 ConvertKit is a user-friendly platform designed for creators and newsletter publishers. It simplifies email marketing with tools that help you grow and engage your audience.

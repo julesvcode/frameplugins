@@ -1,17 +1,15 @@
 ---
-layout: ../../layouts/ToolsLayout.astro
 title: 'MailerLite'
 feat: 'true'
 updateDate: 2024-04-02
 description: 'The all in one solution to grow and monetise your audience with email marketing. Collect email addresses from customers and strengthen your relationships with them via a wide range of features.'
 link: "https://mailerlite.com"
 features: "https://www.mailerlite.com/features"
-image:
-    url: 'https://i.postimg.cc/RZS7MGX6/mailerlite-thumb.png'
-    alt: 'Screenshot of the MailerLite website'
+thumbnailImage: './images/mailerlite-thumb.png'
+thumbnailAlt: 'Screenshot of the MailerLite website'
 categories: ["email-platform"]
 topics: ["launch", "grow", "monetise"]
-icon: 'mailerlite'
+icon: './images/mailerlite-thumb.png'
 ---
 
 

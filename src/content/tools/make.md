@@ -1,17 +1,15 @@
 ---
-layout: ../../layouts/ToolsLayout.astro
 title: 'Make'
 feat: 'false'
 updateDate: 2024-07-22
 description: 'Build and automate anything, from tasks and workflows to apps and systems.'
 link: "https://make.com/"
 features: "https://www.make.com/en/product"
-image:
-    url: 'https://i.postimg.cc/HL9JxQM8/make-thumb.png'
-    alt: 'Screenshot of the Make website'
+thumbnailImage: './images/make-thumb.png'
+thumbnailAlt: 'Screenshot of the Make website'
 categories: ["automation"]
 topics: ["grow", "monetise"]
-icon: 'make'
+icon: './images/make-thumb.png'
 ---
 
 Make (formerly Integromat) is a powerful platform that connects apps and automates workflows without needing to code. It allows you to create complex automation scenarios by linking various online services and tools.
