@@ -25,6 +25,8 @@ const { title, link, description, features } = Astro.props
 <BaseLayout
   title="title"
   description='Description'>
-	<slot />
+  <main class="w-full flex flex-col gap-6 md:flex-row">
+	  <slot />
+  </main>
 </BaseLayout>
 
