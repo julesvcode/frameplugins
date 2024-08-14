@@ -14,5 +14,7 @@ const { title, link, target } = Astro.props;
     href={link}
     title={title}
     target={target}
-    class="w-fit inline-flex items-center justify-center bg-zinc-50 text-zinc-950 border font-medium border-zinc-50 text-sm leading-0 rounded-md py-2 px-4 cursor-pointer hover:bg-transparent hover:text-zinc-50">{title}
+    class="w-fit inline-flex items-center justify-center bg-transparent border font-medium border-zinc-500 text-sm leading-0 rounded-md py-1 px-2 cursor-pointer hover:bg-transparent hover:text-zinc-950 hover:border-zinc-950"
+    >
+    + {title}
 </a>
