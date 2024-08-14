@@ -9,7 +9,7 @@ thumbnailImage: './images/framer-thumb.png'
 thumbnailAlt: 'Screenshot of the Framer website'
 categories: ["website-builder"]
 topics: ["launch", "grow"]
-icon: './images/framer-thumb.png'
+icon: './favicons/framer.png'
 ---
 
 Framer is a user-friendly tool for designers to design and publish websites without coding. It offers a drag-and-drop interface along with advanced features for creating responsive and interactive web designs.

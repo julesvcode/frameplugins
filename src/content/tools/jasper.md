@@ -9,7 +9,7 @@ thumbnailImage: './images/jasper-thumb.png'
 thumbnailAlt: 'Screenshot of the Jasper website'
 categories: ["copywriting", "ai"]
 topics: ["launch", "grow"]
-icon: './images/jasper-thumb.png'
+icon: './favicons/jasper.png'
 ---
 
 Jasper is an artificial intelligence tool that helps create various types of content quickly. It uses advanced language models to generate human-like text based on your inputs and prompts.

@@ -9,7 +9,7 @@ thumbnailImage: './images/ghost-thumb.png'
 thumbnailAlt: 'Screenshot of the Ghost website'
 categories: ["email-platform", "website-builder", "blog"]
 topics: ["launch", "grow", "monetise"]
-icon: './images/ghost-thumb.png'
+icon: './favicons/ghost.png'
 ---
 
 

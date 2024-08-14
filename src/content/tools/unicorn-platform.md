@@ -9,7 +9,7 @@ thumbnailImage: './images/unicornplatform-thumb.png'
 thumbnailAlt: 'Screenshot of the Unicorn Platform website'
 categories: ["website-builder"]
 topics: ["launch", "grow", "monetise"]
-icon: './images/unicornplatform-thumb.png'
+icon: './favicons/unicorn.png'
 ---
 
 Unicorn Platform is a straightforward tool for creating landing pages without coding skills. It focuses on simplicity and speed, allowing users to quickly set up professional-looking pages for their projects or businesses.

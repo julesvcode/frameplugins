@@ -9,7 +9,7 @@ thumbnailImage: './images/convertkit-thumb.png'
 thumbnailAlt: 'Screenshot of the ConvertKit website'
 categories: ["email-platform"]
 topics: ["launch", "grow", "monetise"]
-icon: './images/convertkit-thumb.png'
+icon: './favicons/convertkit.png'
 ---
 
 ConvertKit is a user-friendly platform designed for creators and newsletter publishers. It simplifies email marketing with tools that help you grow and engage your audience.

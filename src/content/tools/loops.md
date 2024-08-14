@@ -9,7 +9,7 @@ thumbnailImage: './images/loops-thumb.png'
 thumbnailAlt: 'Screenshot of the Loops website'
 categories: ["email-platform", "business"]
 topics: ["launch", "grow"]
-icon: './images/loops-thumb.png'
+icon: './favicons/loops.png'
 ---
 
 

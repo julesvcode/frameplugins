@@ -9,7 +9,7 @@ thumbnailImage: './images/substack-thumb.png'
 thumbnailAlt: 'Screenshot of the Substack website'
 categories: ["email-platform"]
 topics: ["launch", "grow", "monetise"]
-icon: './images/substack-thumb.png'
+icon: './favicons/substack.png'
 ---
 
 

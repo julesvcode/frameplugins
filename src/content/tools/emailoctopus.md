@@ -9,7 +9,7 @@ thumbnailImage: './images/emailoctopus-thumb.png'
 thumbnailAlt: 'Screenshot of the EmailOctopus website'
 categories: ["email-platform", "business"]
 topics: ["launch", "grow"]
-icon: './images/emailoctopus-thumb.png'
+icon: './favicons/emailoctopus.png'
 ---
 
 

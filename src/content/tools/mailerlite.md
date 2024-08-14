@@ -9,7 +9,7 @@ thumbnailImage: './images/mailerlite-thumb.png'
 thumbnailAlt: 'Screenshot of the MailerLite website'
 categories: ["email-platform"]
 topics: ["launch", "grow", "monetise"]
-icon: './images/mailerlite-thumb.png'
+icon: './favicons/mailerlite.webp'
 ---
 
 

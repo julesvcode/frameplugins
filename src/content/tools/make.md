@@ -9,7 +9,7 @@ thumbnailImage: './images/make-thumb.png'
 thumbnailAlt: 'Screenshot of the Make website'
 categories: ["automation"]
 topics: ["grow", "monetise"]
-icon: './images/make-thumb.png'
+icon: './favicons/make.png'
 ---
 
 Make (formerly Integromat) is a powerful platform that connects apps and automates workflows without needing to code. It allows you to create complex automation scenarios by linking various online services and tools.
