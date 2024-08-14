@@ -1,0 +1,36 @@
+---
+import { getCollection } from "astro:content"
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import CategoryCard from "../../components/CategoryCard.astro"
+
+
+const allTools = await getCollection("tools")
+const allCategories = [...new Set(allTools.map((tool) => tool.data.categories).flat())];
+
+let categoryDisplay
+
+---
+
+<BaseLayout
+    title="All Categories"
+    description="Browse all categories"
+>
+    <main class="flex flex-col gap-6">
+        <section class="w-full flex gap-4 py-8">
+            <div class="flex flex-col md:basis-2/3 gap-4">
+                <h1>All categories</h1>
+                <p class="text-lg">All the categories you need to launch, grow and monetize your newsletter.</p>
+            </div>
+        </section>
+        <section>
+            <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+                {allCategories.map((category) =>
+					(categoryDisplay = (category.charAt(0).toUpperCase() + category.slice(1)).replace(/-/g, ' ')) &&
+					<CategoryCard 
+                        link={category}
+                        category={categoryDisplay}/>
+				)}
+            </div>
+        </section>
+    </main>
+</BaseLayout>
