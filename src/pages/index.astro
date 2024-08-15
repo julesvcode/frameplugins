@@ -31,97 +31,97 @@ let topicDisplay
 <BaseLayout
 	title=""
 	description="All the tools you need to launch ,grow and monetize your newsletter.">
-	<section class="w-full flex gap-4 py-8">
-		<div class="flex flex-col md:basis-2/3 gap-4">
-			<h1>All the tools you need to 
-				<span class="relative">
-					<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-3 -rotate-1 opacity-50 -z-10"></span>
-					launch
-				</span>,
-				<span class="relative">
-					<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-3 -rotate-1 opacity-50 -z-10"></span>
-					grow
-				</span> and
-				<span class="relative">
-					<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-3 -rotate-1 opacity-50 -z-10"></span>
-					monetize
-				</span>your newsletter.
-			</h1>
-			<p class="max-w-md text-lg">Discover a curated list of tools, apps and software to help you run your newsletter like a pro.</p>
-			<ButtonPrimary 
-				title="Browse all categories"
-				link="/#categories"
-				target="_self"
-			>
-		</div>
-	</section>
-	<section>
-		<h2 class="">
-			<span class="relative">
-				<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-2 -rotate-1 opacity-50 -z-10"></span>
-				Top
-			</span>
-			Categories
-		</h2>
-		<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
-			{allTopics.map((topic) =>
-				(topicDisplay = (topic.charAt(0).toUpperCase() + topic.slice(1)).replace(/-/g, ' ')) &&
-				<GoalCard 
-					icon={topic}
-					link={`/${topic}`}
-					title={topicDisplay}
-					quantity={processedTopics[topic]}
-				/>
-			)}
-		</div>
-	</section>
-	<section>
-		<div class="group flex items-end justify-between">
+		<section class="w-full flex gap-4 pt-8 pb-16">
+			<div class="flex flex-col md:basis-2/3 gap-4">
+				<h1>All the tools you need to 
+					<span class="relative">
+						<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-3 -rotate-1 opacity-50 -z-10"></span>
+						launch
+					</span>,
+					<span class="relative">
+						<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-3 -rotate-1 opacity-50 -z-10"></span>
+						grow
+					</span> and
+					<span class="relative">
+						<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-3 -rotate-1 opacity-50 -z-10"></span>
+						monetize
+					</span>your newsletter.
+				</h1>
+				<p class="max-w-md text-lg">Discover a curated list of tools, apps and software to help you run your newsletter like a pro.</p>
+				<ButtonPrimary 
+					title="Browse all categories"
+					link="/#categories"
+					target="_self"
+				>
+			</div>
+		</section>
+		<section>
 			<h2 class="">
 				<span class="relative">
 					<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-2 -rotate-1 opacity-50 -z-10"></span>
-					Featured
-				</span>
-				Tools
-			</h2>
-			<a href="/browse"
-				class="text-sm hover:underline"
-			>
-				View all →
-			</a>
-		</div>
-		<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
-			{allTools.map((tool) => 
-				(tool.data.feat === "true") && 
-					<ToolCard tools={tool} />
-			)}
-		</div>
-	</section>
-	<section id="categories">
-		<div class="group flex items-end justify-between">
-			<h2>
-				<span class="relative">
-					<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-2 -rotate-1 opacity-50 -z-10"></span>
-					All
+					Top
 				</span>
 				Categories
 			</h2>
-			<a href="/categories"
-				class="text-sm hover:underline"
-			>
-				View all →
-			</a>
-		</div>
-		<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
-			{allCategories.map((category) =>
-				(categoryDisplay = (category.charAt(0).toUpperCase() + category.slice(1)).replace(/-/g, ' ')) &&
-				<CategoryCard 
-					link={category}
-					category={categoryDisplay}
-				/>
-			)}
-		</div>
-	</section>
+			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+				{allTopics.map((topic) =>
+					(topicDisplay = (topic.charAt(0).toUpperCase() + topic.slice(1)).replace(/-/g, ' ')) &&
+					<GoalCard 
+						icon={topic}
+						link={`/${topic}`}
+						title={topicDisplay}
+						quantity={processedTopics[topic]}
+					/>
+				)}
+			</div>
+		</section>
+		<section>
+			<div class="group flex items-end justify-between">
+				<h2 class="">
+					<span class="relative">
+						<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-2 -rotate-1 opacity-50 -z-10"></span>
+						Featured
+					</span>
+					Tools
+				</h2>
+				<a href="/browse"
+					class="text-sm hover:underline"
+				>
+					View all →
+				</a>
+			</div>
+			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+				{allTools.map((tool) => 
+					(tool.data.feat === "true") && 
+						<ToolCard tools={tool} />
+				)}
+			</div>
+		</section>
+		<section id="categories">
+			<div class="group flex items-end justify-between">
+				<h2>
+					<span class="relative">
+						<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-2 -rotate-1 opacity-50 -z-10"></span>
+						All
+					</span>
+					Categories
+				</h2>
+				<a href="/categories"
+					class="text-sm hover:underline"
+				>
+					View all →
+				</a>
+			</div>
+			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+				{allCategories.map((category) =>
+					(categoryDisplay = (category.charAt(0).toUpperCase() + category.slice(1)).replace(/-/g, ' ')) &&
+					<CategoryCard 
+						link={category}
+						category={categoryDisplay}
+					/>
+				)}
+			</div>
+		</section>
 </BaseLayout>
 
 

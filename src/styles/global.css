@@ -31,7 +31,7 @@
 
     p {
       @apply text-base;
-      @apply text-zinc-700;
+      @apply text-zinc-600;
       @apply leading-relaxed;
     }
 
