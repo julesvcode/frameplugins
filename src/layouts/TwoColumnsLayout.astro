@@ -1,0 +1,30 @@
+---
+
+import PromoCard from '../components/PromoCard.astro';
+import '../styles/global.css';
+import BaseLayout from './BaseLayout.astro';
+
+const { title } = Astro.props
+
+
+const makeTitle = `${title} | Newsletter Supply`
+const description = "Newslettr Supply - All the tools you need to launch, grow and monetize your newsletter."
+
+---
+
+<BaseLayout
+  title={title}
+  description={description}>
+  <div class="w-full flex flex-col gap-6 md:flex-row">
+    <div class="w-full flex flex-col md:basis-2/3 gap-12">
+	    <slot />
+    </div>
+    <div class="w-full flex flex-col md:basis-1/3 gap-4">
+      <div class="sticky top-4 flex flex-col gap-4">
+        <PromoCard />
+        Hello
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
