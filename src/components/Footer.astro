@@ -1,4 +1,7 @@
 ---
+import { Image } from "astro:assets";
+import xIcon from '../icons/x.svg';
+import beehiivIcon from '../icons/beehiiv.svg';
 
 ---
 
@@ -20,7 +23,7 @@
                 title="Follow us on X for daily updates"
                 target="_blank"
             >
-                <!-- <Icon name="x" /> -->
+                 <Image src={xIcon} alt="X icon" height={14}>
             </a>
             <a
                 href="https://newslettersupply.beehiiv.com/"
@@ -28,7 +31,7 @@
                 title="Sign up for weekly updates"
                 target="_blank"
             >
-                <!-- <Icon name="beehiiv" /> -->
+                <Image src={beehiivIcon} alt="Beehiiv icon" height={14}>
             </a>
         </div>
     </div>
