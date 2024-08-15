@@ -1,8 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
-import ButtonPrimary from '../components/ButtonPrimary.astro';
 import ToolCard from '../components/ToolCard.astro';
-import CategoryLayout from '../layouts/CategoryLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 const allTools = await getCollection("tools");
 
@@ -14,30 +13,28 @@ const topicCapitalized =
 
 ---
 
-<CategoryLayout
+<BaseLayout
 	title=`${topicCapitalized} your newsletter`
-	description=`All the tools you need to ${topic} your newsletter.`>
-	<main>
-		<section class="w-full flex gap-4 py-8">
-			<div class="flex flex-col gap-4">
-				<h1>
-					<span class="relative capitalize">
-						<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-3 -rotate-1 opacity-50 -z-10"></span>
-						{topic}
-					</span>your newsletter.
-				</h1>
-				<p class="text-lg">Browse through all the tools you need to {topic} your newsletter.</p>
-				<!-- from email platform, to branding and copywriting. -->
-			</div>
-		</section>
-		<section id="tools">
-			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
-			{filteredTools.map((tool) => 
-				<ToolCard tools={tool}/>
-			)}
-		</section>
-		
-	</main>
-</CategoryLayout>
+	description=`All the tools you need to ${topic} your newsletter.`
+>
+	<section class="w-full flex gap-4 py-8">
+		<div class="flex flex-col gap-4">
+			<h1>
+				<span class="relative capitalize">
+					<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-3 -rotate-1 opacity-50 -z-10"></span>
+					{topic}
+				</span>your newsletter.
+			</h1>
+			<p class="text-lg">Browse through all the tools you need to {topic} your newsletter.</p>
+			<!-- from email platform, to branding and copywriting. -->
+		</div>
+	</section>
+	<section id="tools">
+		<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+		{filteredTools.map((tool) => 
+			<ToolCard tools={tool}/>
+		)}
+	</section>
+</BaseLayout>
 
 

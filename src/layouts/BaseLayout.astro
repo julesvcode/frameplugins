@@ -56,7 +56,9 @@ const makeTitle = title
 	<body>
 		<div class="mx-auto flex min-h-screen max-w-[60rem] flex-col gap-12 p-4 md:p-8">
 			<Header />
-			<slot />
+			<main class="flex flex-col gap-8">
+				<slot />
+			</main>
 			<PromoBanner />
 			<Footer />
 		</div>
