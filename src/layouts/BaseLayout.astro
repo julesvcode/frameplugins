@@ -53,15 +53,13 @@ const makeTitle = title
 		</script>
 		
 	</head>
-	<body>
-		<div class="mx-auto flex min-h-screen max-w-[60rem] flex-col gap-12 p-4 md:px-8 md:py-4">
-			<Header />
-			<main class="flex flex-col gap-">
-				<slot />
-			</main>
-			<PromoBanner />
-			<Footer />
-		</div>
+	<body class="mx-auto flex min-h-screen max-w-[60rem] flex-col gap-12 p-4 md:px-8 md:py-6">
+		<Header />
+		<main class="flex flex-col gap-8">
+			<slot />
+		</main>
+		<PromoBanner />
+		<Footer />
 	</body>
 </html>
 
