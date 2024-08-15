@@ -17,6 +17,16 @@ const toolCollection = defineCollection({
   }),
 });
 
+const terms = defineCollection({
+  type: 'content',
+  schema: () => z.object({
+    title: z.string(),
+    description: z.string(),
+  }),
+});
+
+
 export const collections = {
   'tools': toolCollection,
+  'terms': terms,
 };
