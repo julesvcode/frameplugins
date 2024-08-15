@@ -1,0 +1,25 @@
+---
+import type { CollectionEntry } from 'astro:content'
+
+
+type Props = {
+    terms: CollectionEntry<"terms">
+}
+
+const { terms } = Astro.props
+const { title, description } = terms.data
+
+
+---
+
+<div class='flex flex-col gap-2'>
+    <div class='flex flex-col gap-1'>   
+        <a href={`/terms/${terms.slug}`} class="hover:underline">
+            <h2>{title}</h2>
+        </a>
+        <p>{description}</p>
+    </div>
+    <a href={`/terms/${terms.slug}`} class="underline">
+        Read more
+    </a>
+</div>
