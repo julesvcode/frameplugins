@@ -4,14 +4,16 @@ import GoalCard from '../components/GoalCard.astro';
 import CategoryCard from '../components/CategoryCard.astro';
 import ToolCard from '../components/ToolCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
 
 
-const allTools = await Astro.glob('../pages/tools/*.md');
-const allCategories = [...new Set(allTools.map((tool) => tool.frontmatter.categories).flat())];
-const allTopics = [...new Set(allTools.map((tool) => tool.frontmatter.topics).flat())];
+const allTools = await getCollection("tools");
+
+const allCategories = [...new Set(allTools.map((tool) => tool.data.categories).flat())];
+const allTopics = [...new Set(allTools.map((tool) => tool.data.topics).flat())];
 
 
-const mainTopics = allTools.map((tool) => tool.frontmatter.topics).flat()
+const mainTopics = allTools.map((tool) => tool.data.topics).flat()
 const processedTopics = mainTopics.reduce((acc, topic) => {
     const value = acc[topic] || 0
 
@@ -91,33 +93,32 @@ let topicDisplay
 			</div>
 			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
 				{allTools.map((tool) => 
-					(tool.frontmatter.feat === "true") && 
-						<ToolCard
-							link={tool.url}
-							icon={tool.frontmatter.icon}
-							title={tool.frontmatter.title}
-							description={tool.frontmatter.description}
-							category={tool.frontmatter.categories[0]}
-						/>
+					(tool.data.feat === "true") && 
+						<ToolCard tools={tool} />
 				)}
 			</div>
 		</section>
 		<section id="categories">
-			<h2>
-				<span class="relative">
-					<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-2 -rotate-1 opacity-50 -z-10"></span>
-					All
-				</span>
-				Categories
-			</h2>
+			<div class="group flex items-end justify-between">
+				<h2>
+					<span class="relative">
+						<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-2 -rotate-1 opacity-50 -z-10"></span>
+						All
+					</span>
+					Categories
+				</h2>
+				<a href="/categories"
+					class="text-sm hover:underline"
+				>
+					View all →
+				</a>
+			</div>
 			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
 				{allCategories.map((category) =>
 					(categoryDisplay = (category.charAt(0).toUpperCase() + category.slice(1)).replace(/-/g, ' ')) &&
-
 					<CategoryCard 
-						icon={category}
-						link={`/categories/${category}`}
-						title={categoryDisplay}
+						link={category}
+						category={categoryDisplay}
 					/>
 				)}
 			</div>

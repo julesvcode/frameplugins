@@ -1,17 +1,15 @@
 ---
-layout: ../../layouts/ToolsLayout.astro
 title: 'Framer'
 feat: 'true'
 updateDate: 2024-05-02
 description: 'A website builder that empowers users to design and publish stunning websites without the need to code.'
 link: "https://framer.com?via=julesvcode"
 features: "https://www.framer.com/features/design-layout?via=julesvcode"
-image:
-    url: 'https://i.postimg.cc/zvHxBH7q/framer-thumb.png'
-    alt: 'Screenshot of the Framer website'
+thumbnailImage: './images/framer-thumb.png'
+thumbnailAlt: 'Screenshot of the Framer website'
 categories: ["website-builder"]
 topics: ["launch", "grow"]
-icon: 'framer'
+icon: './favicons/framer.png'
 ---
 
 Framer is a user-friendly tool for designers to design and publish websites without coding. It offers a drag-and-drop interface along with advanced features for creating responsive and interactive web designs.

@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/ToolsLayout.astro
 title: 'Beehiiv'
 feat: 'true'
 updateDate: 2024-04-02
@@ -7,12 +6,11 @@ description: 'Beehiiv is a modern newsletter platform well know for help busines
 Its ease to use and impressive list of features makes it one of the most popular plarforms for creators.'
 link: "https://beehiiv.com?via=88pixels"
 features: "https://www.beehiiv.com/features?via=88pixels"
-image:
-    url: 'https://i.postimg.cc/c4M7yPMG/beehiiv-thumb.png'
-    alt: 'Screenshot of the Beehiiv website'
+thumbnailImage: './images/beehiiv-thumb.png'
+thumbnailAlt: 'Screenshot of the Beehiiv website'
 categories: ["email-platform", "website-builder"]
 topics: ["launch", "grow", "monetise"]
-icon: 'beehiiv'
+icon: './favicons/beehiiv.png'
 ---
 
 Beehiiv is a user-friendly platform designed specifically for creating and managing newsletters. It offers a range of features to help content creators grow their audience and monetize their work efficiently.

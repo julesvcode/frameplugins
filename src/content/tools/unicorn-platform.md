@@ -1,17 +1,15 @@
 ---
-layout: ../../layouts/ToolsLayout.astro
 title: 'Unicorn Platform'
 feat: 'false'
-updateDate: 2024-07-023
+updateDate: 2024-07-23
 description: 'Create websites with this AI website builder, without design or development skills.'
 link: "https://unicornplatform.com/"
 features: "https://unicornplatform.com/"
-image:
-    url: 'https://i.postimg.cc/nLkf2wWG/unicornplatform-thumb.png'
-    alt: 'Screenshot of the Unicorn Platform website'
+thumbnailImage: './images/unicornplatform-thumb.png'
+thumbnailAlt: 'Screenshot of the Unicorn Platform website'
 categories: ["website-builder"]
 topics: ["launch", "grow", "monetise"]
-icon: 'beehiiv'
+icon: './favicons/unicorn.png'
 ---
 
 Unicorn Platform is a straightforward tool for creating landing pages without coding skills. It focuses on simplicity and speed, allowing users to quickly set up professional-looking pages for their projects or businesses.

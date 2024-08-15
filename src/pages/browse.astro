@@ -1,10 +1,11 @@
 ---
 
+import { getCollection } from 'astro:content';
 import ToolCard from '../components/ToolCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 
-const allTools = await Astro.glob('../pages/tools/*.md');
+const allTools = await getCollection("tools");
 
 
 ---
@@ -22,14 +23,7 @@ const allTools = await Astro.glob('../pages/tools/*.md');
 		<section>
 			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
 				{allTools.map((tool) => 
-					<ToolCard
-						
-						link={tool.url}
-						icon={tool.frontmatter.icon}
-						title={tool.frontmatter.title}
-						description={tool.frontmatter.description}
-						category={tool.frontmatter.categories[0]}
-					/>
+					<ToolCard tools={tool} />
 				)}
 			</div>
 		</section>

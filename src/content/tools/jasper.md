@@ -1,17 +1,15 @@
 ---
-layout: ../../layouts/ToolsLayout.astro
 title: 'Jasper'
 feat: 'false'
 updateDate: 2024-05-02
 description: 'An AI writing assistant that can be used to create and improve your newsletter copy. It can also be used for other marketing content, including blog posts, social media content, and website copy.'
 link: "https://www.jasper.ai"
 features: "https://www.jasper.ai/products/campaigns"
-image:
-    url: 'https://i.postimg.cc/YSGGNHSw/jasper-thumb.png'
-    alt: 'Screenshot of the Jasper website'
+thumbnailImage: './images/jasper-thumb.png'
+thumbnailAlt: 'Screenshot of the Jasper website'
 categories: ["copywriting", "ai"]
 topics: ["launch", "grow"]
-icon: 'jasper'
+icon: './favicons/jasper.png'
 ---
 
 Jasper is an artificial intelligence tool that helps create various types of content quickly. It uses advanced language models to generate human-like text based on your inputs and prompts.

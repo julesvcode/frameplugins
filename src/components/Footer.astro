@@ -1,6 +1,7 @@
 ---
-
-import { Icon } from 'astro-icon/components'
+import { Image } from "astro:assets";
+import xIcon from '../icons/x.svg';
+import beehiivIcon from '../icons/beehiiv.svg';
 
 ---
 
@@ -22,7 +23,7 @@ import { Icon } from 'astro-icon/components'
                 title="Follow us on X for daily updates"
                 target="_blank"
             >
-                <Icon name="x" />
+                 <Image src={xIcon} alt="X icon" height={14}>
             </a>
             <a
                 href="https://newslettersupply.beehiiv.com/"
@@ -30,7 +31,7 @@ import { Icon } from 'astro-icon/components'
                 title="Sign up for weekly updates"
                 target="_blank"
             >
-                <Icon name="beehiiv" />
+                <Image src={beehiivIcon} alt="Beehiiv icon" height={14}>
             </a>
         </div>
     </div>

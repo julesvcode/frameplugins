@@ -1,7 +1,11 @@
 ---
 
-import ButtonPrimary from "./ButtonPrimary.astro";
+import ButtonSecondary from "./ButtonSecondary.astro";
 
+const navLinks = [
+    {label: "Tools", href: "/browse"},
+    {label: "Categories", href: "/categories"},
+]
 
 ---
 
@@ -16,15 +20,23 @@ import ButtonPrimary from "./ButtonPrimary.astro";
         </a>
     </div>
 
-    <a 
-        href="/browse"
-        class="hover:underline"
-    >
-        Browse tools
-    </a>
-    <!-- <ButtonPrimary
-        title="Submit"
-        link="https://google.com"
-        target="_blank"
-    /> -->
+    <nav class="flex gap-8 items-center">
+        <ul class="flex gap-8 items-center">
+            {navLinks.map(link => (
+                <li class="list-none m-0">
+                    <a 
+                        href={link.href}
+                        class="hover:underline text-zinc-950"
+                    >
+                        {link.label}
+                    </a>
+                </li>
+            ))}
+        </ul>
+        <!-- <ButtonSecondary 
+            title="Submit"
+            link="/"
+            target="_self"
+        /> -->
+    </nav>
 </header>
