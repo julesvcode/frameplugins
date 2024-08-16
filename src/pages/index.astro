@@ -26,6 +26,46 @@ const processedTopics = mainTopics.reduce((acc, topic) => {
 let categoryDisplay
 let topicDisplay
 
+const errors = { email: ""}
+
+if (Astro.request.method === "POST") {
+	try {
+		const data = await Astro.request.formData()
+		const email = data.get("email")
+		if (typeof email !== "string") {
+			errors.email += "Email is not valid."
+		}
+
+		const makeWebhook = import.meta.env.MAKE_WEBHOOK;
+		// Send data to the Make webhook
+		const response = await fetch(makeWebhook, {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({ email }), // Sending the email as JSON
+		});
+
+		if (!response.ok) {
+			throw new Error("Failed to send data to the webhook");
+		}
+
+		// After successful form submission, redirect to another page or the same page
+		return new Response(null, {
+			status: 302,
+			headers: {
+				Location: "/",
+			},
+		});
+
+	} catch (error) {
+		if (error instanceof Error) {
+			console.log(error.message)
+		}
+	}
+}
+
+
 ---
 
 <BaseLayout
@@ -48,11 +88,21 @@ let topicDisplay
 					</span>your newsletter.
 				</h1>
 				<p class="max-w-md text-lg">Discover a curated list of tools, apps and software to help you run your newsletter like a pro.</p>
-				<ButtonPrimary 
-					title="Browse all categories"
-					link="/#categories"
-					target="_self"
-				>
+				<form method="POST">
+					<input 
+						type="email" 
+						name="email" 
+						placeholder="Get our monthly newsletter"
+						required
+						class="text-zinc-950 font-regular text-sm leading-0 rounded-md w-60 py-2 px-4" 
+					/>
+					{errors.email && <p>{errors.email}</p>}
+					<button
+						class="bg-zinc-800 text-zinc-100 font-medium text-sm leading-0 rounded-md w-fit py-2 px-4 cursor-pointer hover:opacity-80"
+					>
+						Subscribe
+					</button>
+				</form>
 			</div>
 		</section>
 		<section>

@@ -8,6 +8,8 @@ import { Image } from 'astro:assets';
 import CategoryTag from '../../components/CategoryTag.astro';
 import TopicTag from '../../components/TopicTag.astro';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const tools = await getCollection("tools");
   return tools.map(entry => ({
