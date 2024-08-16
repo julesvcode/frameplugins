@@ -11,4 +11,4 @@ It's calculated by dividing the number of subscribers who opened an email by the
 
 This metric helps newsletter creators gauge the effectiveness of their subject lines and overall content appeal. A high open rate suggests that subscribers find your newsletter valuable and are eager to read it. 
 
-It's worth noting that open rates can vary widely depending on factors like industry, audience, and email frequency. Monitoring your open rate over time can provide insights into what resonates with your readers and help you improve your newsletter strategy.
+It's worth noting that open rates can vary widely depending on factors like industry, audience, and email frequency. Monitoring your open rate, as well as your [click through rate](/terms/click-through-rate), over time can provide insights into what resonates with your readers and help you improve your newsletter strategy.
