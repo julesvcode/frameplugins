@@ -1,67 +1,29 @@
 ---
 
 export interface Props {
-  action?: string;
+  action?: string,
+  buttonWidth: "fill" | "fit",
 }
 
-const { action = "/" } = Astro.props;
+const { action = "/", buttonWidth = 'fit' } = Astro.props;
 const makeWebhook = import.meta.env.MAKE_WEBHOOK;
 
-// const errors = { email: ""}
-// let success = false
-
-// if (Astro.request.method === "POST") {
-// 	try {
-// 		const data = await Astro.request.formData()
-// 		const email = data.get("email")
-// 		if (typeof email !== "string") {
-// 			errors.email += "Email is not valid."
-// 		}
-
-// 		const makeWebhook = import.meta.env.MAKE_WEBHOOK;
-// 		// Send data to the Make webhook
-// 		const response = await fetch(makeWebhook, {
-// 			method: "POST",
-// 			headers: {
-// 				"Content-Type": "application/json",
-// 			},
-// 			body: JSON.stringify({ email }), // Sending the email as JSON
-// 		});
-
-// 		if (!response.ok) {
-// 			throw new Error("Failed to send data to the webhook");
-// 		}
-
-// 		// After successful form submission, redirect to another page or the same page
-// 		// return new Response(null, {
-// 		// 	status: 302,
-// 		// 	headers: {
-// 		// 		Location: "/",
-// 		// 	},
-// 		// });
-//         return Astro.redirect(action, 302);
-
-//         success = true;
-
-// 	} catch (error) {
-// 		if (error instanceof Error) {
-// 			console.log(error.message)
-// 		}
-// 	}
-// }
+const buttonClass = buttonWidth === "fill"
+    ? "w-full"
+    : "w-fit"
 
 ---
 
-<form id="signup-form">
+<form id="signup-form" class="flex gap-2 flex-wrap">
     <input 
         type="email" 
         name="email" 
         placeholder="Enter your email address"
         required
-        class="text-zinc-950 font-regular text-sm leading-0 rounded-md w-60 py-2 px-4" 
+        class="max-w-80 text-zinc-950 font-regular border border-zinc-200 text-sm leading-0 rounded-md w-60 py-2 px-4" 
     />
     <button
-        class="bg-zinc-800 text-zinc-100 font-medium text-sm leading-0 rounded-md w-fit py-2 px-4 cursor-pointer hover:opacity-80"
+        class={`bg-zinc-800 text-zinc-100 font-medium text-sm leading-0 rounded-md py-2 px-4 cursor-pointer hover:opacity-80 ${buttonClass}`}
     >
         Subscribe
     </button>

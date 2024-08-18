@@ -7,8 +7,10 @@ import PromoCard from '../../components/PromoCard.astro';
 import TopicTag from '../../components/TopicTag.astro';
 import TwoColumnsLayout from '../../layouts/TwoColumnsLayout.astro';
 
+export const prerender = true
 
 export async function getStaticPaths() {
+  
   const terms = await getCollection("terms");
   return terms.map(entry => ({
     params: { slug: entry.slug }, 
