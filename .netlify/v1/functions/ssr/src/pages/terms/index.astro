@@ -1,0 +1,28 @@
+---
+import { getCollection } from "astro:content"
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import TermCard from "../../components/TermCard.astro"
+
+
+const allTerms = await getCollection("terms")
+
+---
+
+<BaseLayout
+    title="Terms"
+    description="Step into the world of newsletter with our glossary."
+>
+    <section class="w-full flex gap-4 py-8">
+        <div class="flex flex-col md:basis-2/3 gap-4">
+            <h1>Newsletter terms</h1>
+            <p class="text-lg">Step into the world of newsletter with our glossary - a comprehensive guide to understand newsletters' terminology and tools.</p>
+        </div>
+    </section>
+    <section class="w-full flex gap-4 pt- 4 pb-8">
+        <div class="flex flex-col md:basis-2/3 gap-12 pt-4">
+            {allTerms.map(term => (
+                <TermCard terms={term} />
+            ))}
+        </div>
+    </section> 
+</BaseLayout>
