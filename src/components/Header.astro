@@ -4,13 +4,13 @@ import ButtonSecondary from "./ButtonSecondary.astro";
 
 const navLinks = [
     {label: "Tools", href: "/browse"},
-    {label: "Categories", href: "/categories"},
+    // {label: "Categories", href: "/categories"},
     {label: "Terms", href: "/terms"},
 ]
 
 ---
 
-<header class="w-full pb-4 flex justify-between items-center">
+<header class="w-full pb-4 flex justify-between items-baseline">
     <div>
         <a 
             href="/"
@@ -29,7 +29,7 @@ const navLinks = [
                         href={link.href}
                         class="text-zinc-600 hover:text-zinc-950"
                     >
-                        {link.label}
+                        <span class="hidden md:inline">Browse </span>{link.label}
                     </a>
                 </li>
             ))}
