@@ -25,8 +25,18 @@ const terms = defineCollection({
   }),
 });
 
+const blogCollection = defineCollection({
+  type: 'content',
+  schema: () => z.object({
+    title: z.string(),
+    description: z.string(),
+    // date: z.date().optional()
+  }),
+});
+
 
 export const collections = {
   'tools': toolCollection,
   'terms': terms,
+  'posts': blogCollection,
 };
