@@ -15,6 +15,7 @@
       @apply text-2xl;
       @apply text-zinc-950;
       @apply font-bold;
+      @apply pt-6;
     }
 
     h3 {
@@ -33,6 +34,7 @@
       @apply text-base;
       @apply text-zinc-600;
       @apply leading-relaxed;
+      @apply py-2
     }
 
     li {

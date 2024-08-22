@@ -22,19 +22,24 @@ type Props = {
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 
+var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
+
+const publishedDate = `${month[entry.data.pubDate.getMonth()]} ${entry.data.pubDate.getDate()}, ${entry.data.pubDate.getFullYear()}`
+
 ---
 
 <TwoColumnsLayout title={entry.data.title}>
     <section class="flex flex-col gap-4">
-        <div class="flex items-center justify-between">
-          <h1 class="text-zinc-950 text-3xl font-bold">{entry.data.title}</h1>		
+        <div class="flex flex-col items-start gap-2 justify-between pb-4">
+          <h1 class="text-zinc-950 text-3xl font-bold">{entry.data.title}</h1>
+          <small>{publishedDate} - {entry.data.readingSpeed}</small>
         </div>
-        <div class="flex flex-col gap-4 leading-7">
+        <div class="flex flex-col gap-1 leading-7">
           <Content />
         </div>
         <div class="py-4 group">
           <span class="text-sm text-zinc-700 group-hover:text-zinc-950 transition-colors">← </span>
-          <a class="text-sm text-zinc-700 hover:text-zinc-950 group-hover:underline transition-colors" href="/terms">Back to all terms</a>
+          <a class="text-sm text-zinc-700 hover:text-zinc-950 group-hover:underline transition-colors" href="/blog">Back to all posts</a>
         </div>
       </section>
 </TwoColumnsLayout>
