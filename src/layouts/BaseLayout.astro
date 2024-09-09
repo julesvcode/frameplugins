@@ -14,6 +14,9 @@ interface Props {
 
 const { title, description } = Astro.props as Props;
 
+const { url } = Astro.request;
+const canonicalUrl = new URL(url, Astro.site);
+
 const makeTitle = title
   ? title + " | " + "Newslettr Supply"
   : "Newslettr Supply - All the tools you need to launch, grow and monetize your newsletter.";
@@ -31,6 +34,7 @@ const makeTitle = title
 		<meta name="description" content={description}>
 
 		<link rel="sitemap" href="/sitemap-index.xml" />
+		<link rel="canonical" href={canonicalUrl.href} />
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website">

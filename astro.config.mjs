@@ -9,5 +9,8 @@ export default defineConfig({
   site: 'https://newsletter.supply',
   integrations: [tailwind(), sitemap()],
   output: "server",
-  adapter: netlify()
+  adapter: netlify(),
+  build: {
+    format: 'file'
+  },
 });
