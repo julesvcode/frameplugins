@@ -1,0 +1,45 @@
+---
+
+import { Image } from "astro:assets";
+import xIcon from '../assets/icons/x.svg';
+import fbIcon from '../assets/icons/facebook.svg';
+import liIcon from '../assets/icons/linkedin.svg';
+import emailIcon from '../assets/icons/envelope.svg';
+
+const { title, url } = Astro.props;
+
+const encodedUrl = encodeURIComponent(url);
+const encodedTitle = encodeURIComponent(title);
+
+const xUrl = `https://x.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`;
+const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
+const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
+const emailUrl = `mailto:?subject=${encodedTitle}&body=${encodedUrl}`;
+
+
+---
+<div class="flex gap-2 my-4 items-center">
+    Share on:
+    <ul class="flex gap-2 items-center text-zinc-950">
+        <li class="list-none m-0 border border-zinc-200 rounded-3xl p-2 hover:bg-zinc-100">
+            <a href={xUrl} target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+                <Image src={xIcon} alt="X share icon" height={12}>
+            </a>
+        </li>
+        <li class="list-none m-0 text-zinc-950 border border-zinc-200 rounded-3xl p-2 hover:bg-zinc-100">
+            <a href={facebookUrl} target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+                <Image src={fbIcon} alt="Facebook share icon" height={14}>
+            </a>
+        </li>
+        <li class="list-none m-0 border border-zinc-200 rounded-3xl p-2 hover:bg-zinc-100">
+            <a href={linkedInUrl} target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+                <Image src={liIcon} alt="LinkedIn share icon" height={14}>
+            </a>
+        </li>
+        <li class="list-none m-0 border border-zinc-200 rounded-3xl p-2 hover:bg-zinc-100">
+            <a href={emailUrl} target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+                <Image src={emailIcon} alt="Email share icon" height={14}>
+            </a>
+        </li>
+    </ul>
+</div>

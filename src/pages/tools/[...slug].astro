@@ -7,6 +7,7 @@ import TwoColumnsLayout from '../../layouts/TwoColumnsLayout.astro';
 import { Image } from 'astro:assets';
 import CategoryTag from '../../components/CategoryTag.astro';
 import TopicTag from '../../components/TopicTag.astro';
+import SocialShare from '../../components/SocialShare.astro';
 
 export const prerender = true;
 
@@ -75,6 +76,10 @@ const topics = entry.data.topics
         <TopicTag link={topic} />
       ))}
     </div>
+    <SocialShare 
+      title={`${entry.data.title} - ${entry.data.description}`}
+      url={`newsletter.supply/tools/${entry.slug}`}
+    />
   </section>
   <section class="py-4 group">
     <span class="text-sm text-zinc-700 group-hover:text-zinc-950 transition-colors">← </span>

@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import TwoColumnsLayout from '../../layouts/TwoColumnsLayout.astro';
+import SocialShare from '../../components/SocialShare.astro';
 
 
 export const prerender = true
@@ -34,8 +35,14 @@ const publishedDate = `${month[entry.data.pubDate.getMonth()]} ${entry.data.pubD
           <h1 class="text-zinc-950 text-3xl font-bold">{entry.data.title}</h1>
           <small>{publishedDate} - {entry.data.readingSpeed}</small>
         </div>
-        <div class="flex flex-col gap-1 leading-7">
+        <div class="flex flex-col gap-4 leading-7">
           <Content />
+        </div>
+        <div class="py-4 group">
+        <SocialShare 
+          title={`${entry.data.title} - ${entry.data.description}`}
+          url={`newsletter.supply/blog/${entry.slug}`}
+        />
         </div>
         <div class="py-4 group">
           <span class="text-sm text-zinc-700 group-hover:text-zinc-950 transition-colors">← </span>
