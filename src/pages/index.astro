@@ -1,7 +1,7 @@
 ---
 
 import ButtonPrimary from '../components/ButtonPrimary.astro';
-import GoalCard from '../components/GoalCard.astro';
+import TopicCard from '../components/TopicCard.astro';
 import CategoryCard from '../components/CategoryCard.astro';
 import ToolCard from '../components/ToolCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -96,14 +96,13 @@ let topicDisplay
 			<h2 class="">
 				<span class="relative">
 					<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-2 -rotate-1 opacity-50 -z-10"></span>
-					Top
+					Topics
 				</span>
-				Categories
 			</h2>
 			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
 				{allTopics.map((topic) =>
 					(topicDisplay = (topic.charAt(0).toUpperCase() + topic.slice(1)).replace(/-/g, ' ')) &&
-					<GoalCard 
+					<TopicCard 
 						icon={topic}
 						link={`/${topic}`}
 						title={topicDisplay}
