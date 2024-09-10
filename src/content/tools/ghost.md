@@ -1,6 +1,6 @@
 ---
 title: 'Ghost'
-feat: 'false'
+feat: false
 updateDate: 2024-04-02
 description: 'A platform for writers & bloggers wanting to run a blog or newsletter and monetize it with memberships.'
 link: "https://ghost.org"

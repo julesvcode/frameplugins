@@ -1,6 +1,6 @@
 ---
 title: 'Beehiiv'
-feat: 'true'
+feat: true
 updateDate: 2024-04-02
 description: 'Beehiiv is a modern newsletter platform well know for help businesses and content creators grow their audience.
 Its ease to use and impressive list of features makes it one of the most popular plarforms for creators.'

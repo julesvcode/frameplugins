@@ -1,6 +1,6 @@
 ---
 title: 'Loops'
-feat: 'false'
+feat: false
 updateDate: 2024-04-02
 description: 'A modern email marketing tool with a focus on SaaS businesses. Loops is the perfect platform to send marketing and transactional emails.'
 link: "https://loops.so/"

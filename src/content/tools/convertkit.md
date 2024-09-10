@@ -1,6 +1,6 @@
 ---
 title: 'ConvertKit'
-feat: 'false'
+feat: false
 updateDate: 2024-04-02
 description: 'An email platform built for creators to grow and connect with their audience, as well as run their whole email marketing strategy and earn money from digital products.'
 link: "https://convertkit.com/"

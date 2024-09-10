@@ -1,6 +1,6 @@
 ---
 title: 'MailerLite'
-feat: 'true'
+feat: true
 updateDate: 2024-04-02
 description: 'The all in one solution to grow and monetise your audience with email marketing. Collect email addresses from customers and strengthen your relationships with them via a wide range of features.'
 link: "https://mailerlite.com"

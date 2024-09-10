@@ -1,6 +1,6 @@
 ---
 title: 'Framer'
-feat: 'true'
+feat: true
 updateDate: 2024-05-02
 description: 'A website builder that empowers users to design and publish stunning websites without the need to code.'
 link: "https://framer.com?via=julesvcode"

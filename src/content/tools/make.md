@@ -1,6 +1,6 @@
 ---
 title: 'Make'
-feat: 'false'
+feat: false
 updateDate: 2024-07-22
 description: 'Build and automate anything, from tasks and workflows to apps and systems.'
 link: "https://make.com/"

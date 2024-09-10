@@ -1,4 +1,5 @@
 ---
+
 import ButtonPrimary from '../components/ButtonPrimary.astro';
 import GoalCard from '../components/GoalCard.astro';
 import CategoryCard from '../components/CategoryCard.astro';
@@ -10,8 +11,14 @@ import SignupForm from '../components/SignupForm.astro';
 
 const allTools = await getCollection("tools");
 
+
 const allCategories = [...new Set(allTools.map((tool) => tool.data.categories).flat())];
 const allTopics = [...new Set(allTools.map((tool) => tool.data.topics).flat())];
+
+const featuredTools = allTools.filter((tool) => tool.data.feat === true);
+
+const latestTools = allTools.sort((a, b) => new Date(b.data.updateDate).getTime() - new Date(a.data.updateDate).getTime());
+const latestThreeTools = latestTools.slice(0, 3);
 
 
 const mainTopics = allTools.map((tool) => tool.data.topics).flat()
@@ -56,6 +63,30 @@ let topicDisplay
 			</div>
 		</section>
 		<section class="py-4">
+			<div class="group flex items-end justify-between">
+				<h2 class="">
+					<span class="relative">
+						<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-2 -rotate-1 opacity-50 -z-10"></span>
+						Latest
+					</span>
+					Tools
+				</h2>
+				<a href="/browse"
+					class="text-sm hover:underline"
+				>
+					View all →
+				</a>
+			</div>
+			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+				{featuredTools.map((tool) => 
+					<ToolCard tools={tool} />
+				)}
+				{latestThreeTools.map((tool) => 
+					<ToolCard tools={tool} />
+				)}
+			</div>
+		</section>
+		<section class="py-4">
 			<h2 class="">
 				<span class="relative">
 					<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-2 -rotate-1 opacity-50 -z-10"></span>
@@ -72,28 +103,6 @@ let topicDisplay
 						title={topicDisplay}
 						quantity={processedTopics[topic]}
 					/>
-				)}
-			</div>
-		</section>
-		<section class="py-4">
-			<div class="group flex items-end justify-between">
-				<h2 class="">
-					<span class="relative">
-						<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-2 -rotate-1 opacity-50 -z-10"></span>
-						Featured
-					</span>
-					Tools
-				</h2>
-				<a href="/browse"
-					class="text-sm hover:underline"
-				>
-					View all →
-				</a>
-			</div>
-			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
-				{allTools.map((tool) => 
-					(tool.data.feat === "true") && 
-						<ToolCard tools={tool} />
 				)}
 			</div>
 		</section>

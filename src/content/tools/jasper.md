@@ -1,6 +1,6 @@
 ---
 title: 'Jasper'
-feat: 'false'
+feat: false
 updateDate: 2024-05-02
 description: 'An AI writing assistant that can be used to create and improve your newsletter copy. It can also be used for other marketing content, including blog posts, social media content, and website copy.'
 link: "https://www.jasper.ai"

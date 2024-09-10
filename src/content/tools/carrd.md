@@ -1,6 +1,6 @@
 ---
 title: 'Carrd'
-feat: 'false'
+feat: false
 updateDate: 2024-08-17
 description: 'A simple, one-page website builder for your online presence.'
 link: "https://carrd.co/"

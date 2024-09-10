@@ -4,7 +4,7 @@ const toolCollection = defineCollection({
   type: 'content',
   schema: ({ image }) => z.object({
     title: z.string(),
-    feat: z.string(),
+    feat: z.boolean().default(false),
     updateDate: z.date(),
     description: z.string(),
     link: z.string().url(),

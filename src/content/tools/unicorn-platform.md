@@ -1,6 +1,6 @@
 ---
 title: 'Unicorn Platform'
-feat: 'false'
+feat: false
 updateDate: 2024-07-23
 description: 'Create websites with this AI website builder, without design or development skills.'
 link: "https://unicornplatform.com/"

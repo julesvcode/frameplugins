@@ -1,6 +1,6 @@
 ---
 title: 'Zapier'
-feat: 'false'
+feat: false
 updateDate: 2024-08-27
 description: 'A web-based tool that connects different apps and automates workflows.'
 link: "https://zapier.com/"

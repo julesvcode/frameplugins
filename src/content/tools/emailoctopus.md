@@ -1,6 +1,6 @@
 ---
 title: 'EmailOctopus'
-feat: 'false'
+feat: false
 updateDate: 2024-04-02
 description: 'A simple and affordable email marketing tool to grow your business. It includes all the features you need to grow your audience, engage with your subscribers and get results.'
 link: "https://emailoctopus.com"
