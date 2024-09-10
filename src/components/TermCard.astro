@@ -12,14 +12,14 @@ const { title, description } = terms.data
 
 ---
 
-<div class='flex flex-col gap-2'>
+<a href={`/terms/${terms.slug}`} class='group flex flex-col gap-2 rounded-lg p-6 border border-zinc-100 hover:bg-zinc-100'>
     <div class='flex flex-col gap-1'>   
-        <a href={`/terms/${terms.slug}`} class="hover:underline">
+        <div>
             <h2>{title}</h2>
-        </a>
+        </div>
         <p>{description}</p>
     </div>
-    <a href={`/terms/${terms.slug}`} class="underline">
+    <p class="group-hover:underline group-hover:text-zinc-950">
         Read more
-    </a>
-</div>
+    </p>
+</a>

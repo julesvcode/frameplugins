@@ -15,7 +15,6 @@
       @apply text-2xl;
       @apply text-zinc-950;
       @apply font-bold;
-      @apply pt-6;
     }
 
     h3 {
