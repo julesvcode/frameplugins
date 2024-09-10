@@ -11,12 +11,18 @@ import SignupForm from '../components/SignupForm.astro';
 
 const allTools = await getCollection("tools");
 
-
+// Categories
 const allCategories = [...new Set(allTools.map((tool) => tool.data.categories).flat())];
+const alphabeticalCategories = allCategories.sort((a, b) => {
+  return a.localeCompare(b);
+});
+const featuredCatgories = alphabeticalCategories.slice(0, 6);
+
 const allTopics = [...new Set(allTools.map((tool) => tool.data.topics).flat())];
 
-const featuredTools = allTools.filter((tool) => tool.data.feat === true);
 
+// Tools
+const featuredTools = allTools.filter((tool) => tool.data.feat === true);
 const latestTools = allTools.sort((a, b) => new Date(b.data.updateDate).getTime() - new Date(a.data.updateDate).getTime());
 const latestThreeTools = latestTools.slice(0, 3);
 
@@ -111,7 +117,7 @@ let topicDisplay
 				<h2>
 					<span class="relative">
 						<span class="absolute w-full bg-blue-500 right-0 bottom-1 h-2 -rotate-1 opacity-50 -z-10"></span>
-						All
+						Top
 					</span>
 					Categories
 				</h2>
@@ -122,7 +128,7 @@ let topicDisplay
 				</a>
 			</div>
 			<div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
-				{allCategories.map((category) =>
+				{featuredCatgories.map((category) =>
 					(categoryDisplay = (category.charAt(0).toUpperCase() + category.slice(1)).replace(/-/g, ' ')) &&
 					<CategoryCard 
 						link={category}

@@ -24,7 +24,7 @@
     }
 
     h4 {
-      @apply text-lg;
+      @apply text-base;
       @apply text-zinc-950;
       @apply font-semibold;
     }
