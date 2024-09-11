@@ -1,0 +1,23 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+
+type Props = {
+    posts: CollectionEntry<"posts">
+}
+
+const { posts } = Astro.props;
+const { title, pubDate } = posts.data
+
+var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
+const publishedDate = `${month[pubDate.getMonth()]} ${pubDate.getDate()}, ${pubDate.getFullYear()}`
+
+
+---
+
+<a 
+    href={`/blog/${posts.slug}`} 
+    class="group flex gap-6 items-baseline border-y border-zinc-100 py-2 mt-4 hover">
+    <p class="text-zinc-400">{publishedDate}</p>
+    <p class="text-zinc-950 group-hover:underline">{title}</p>
+</a>

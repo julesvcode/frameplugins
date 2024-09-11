@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import TwoColumnsLayout from '../../layouts/TwoColumnsLayout.astro';
 import SocialShare from '../../components/SocialShare.astro';
+import LatestPosts from '../../components/LatestPosts.astro';
 
 
 export const prerender = true
@@ -20,12 +21,19 @@ type Props = {
     entry: CollectionEntry<"posts">
 }
 
+const allPosts = await getCollection("posts");
+
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 
 var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
 
 const publishedDate = `${month[entry.data.pubDate.getMonth()]} ${entry.data.pubDate.getDate()}, ${entry.data.pubDate.getFullYear()}`
+
+
+
+const sortedPosts = allPosts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
+const latestPosts = sortedPosts.slice(0, 5);
 
 ---
 
@@ -47,6 +55,12 @@ const publishedDate = `${month[entry.data.pubDate.getMonth()]} ${entry.data.pubD
         <div class="py-4 group">
           <span class="text-sm text-zinc-700 group-hover:text-zinc-950 transition-colors">← </span>
           <a class="text-sm text-zinc-700 hover:text-zinc-950 group-hover:underline transition-colors" href="/blog">Back to all posts</a>
+        </div>
+        <div class="py-4">
+          <h2>Latest posts</h2>
+          {latestPosts.map(post => (
+            <LatestPosts posts={post} />
+          ))}
         </div>
       </section>
 </TwoColumnsLayout>

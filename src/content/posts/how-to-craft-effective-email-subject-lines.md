@@ -1,7 +1,7 @@
 ---
 
 title: "How To Craft Effective Email Subject Lines"
-description: "Email subject lines are crucial for the success of your newsletter. They're often the deciding factor in whether your subscribers open your email or not. Let's explore.."
+description: "Email subject lines are crucial for the success of your newsletter. They're often the deciding factor in whether your.."
 pubDate: 2024-08-22
 readingSpeed: 3
 
