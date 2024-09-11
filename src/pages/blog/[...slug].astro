@@ -33,7 +33,7 @@ const publishedDate = `${month[entry.data.pubDate.getMonth()]} ${entry.data.pubD
     <section class="flex flex-col gap-4">
         <div class="flex flex-col items-start gap-2 justify-between pb-4">
           <h1 class="text-zinc-950 text-3xl font-bold">{entry.data.title}</h1>
-          <small>{publishedDate} - {entry.data.readingSpeed}</small>
+          <p class="text-sm text-zinc-500">{publishedDate} - {entry.data.readingSpeed} min read</p>
         </div>
         <div class="flex flex-col gap-4 leading-7">
           <Content />
