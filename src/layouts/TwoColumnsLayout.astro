@@ -5,6 +5,7 @@ import SignupWidget from "../components/SignupWidget.astro";
 import "../styles/global.css";
 import BaseLayout from "./BaseLayout.astro";
 import ToolCard from "../components/ToolCard.astro";
+import LatestPosts from "../components/LatestPosts.astro";
 
 const { title } = Astro.props;
 
@@ -12,6 +13,7 @@ const makeTitle = `${title} | Newsletter Supply`;
 const description =
   "Newslettr Supply - All the tools you need to launch, grow and monetize your newsletter.";
 
+// Latest Tools section
 const allTools = await getCollection("tools");
 const latestTools = allTools.sort(
   (a, b) =>
@@ -19,6 +21,28 @@ const latestTools = allTools.sort(
     new Date(a.data.updateDate).getTime()
 );
 const latestThreeTools = latestTools.slice(0, 3);
+
+// Latest Posts section
+const allPosts = await getCollection("posts");
+var month = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+const sortedPosts = allPosts.sort(
+  (a, b) =>
+    new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+);
+const latestPosts = sortedPosts.slice(0, 5);
 ---
 
 <BaseLayout title={title} description={description}>
@@ -41,5 +65,12 @@ const latestThreeTools = latestTools.slice(0, 3);
     <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
       {latestThreeTools.map((tool) => <ToolCard tools={tool} />)}
     </div>
+  </div>
+  <div class="py-4">
+    <div class="group flex items-end justify-between">
+      <h2>Latest posts</h2>
+      <a href="/blog" class="text-sm hover:underline"> View all → </a>
+    </div>
+    {latestPosts.map((post) => <LatestPosts posts={post} />)}
   </div>
 </BaseLayout>
