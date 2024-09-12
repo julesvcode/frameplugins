@@ -1,24 +1,30 @@
 ---
+import { getCollection } from "astro:content";
+import PromoCard from "../components/PromoCard.astro";
+import SignupWidget from "../components/SignupWidget.astro";
+import "../styles/global.css";
+import BaseLayout from "./BaseLayout.astro";
+import ToolCard from "../components/ToolCard.astro";
 
-import PromoCard from '../components/PromoCard.astro';
-import SignupWidget from '../components/SignupWidget.astro';
-import '../styles/global.css';
-import BaseLayout from './BaseLayout.astro';
+const { title } = Astro.props;
 
-const { title } = Astro.props
+const makeTitle = `${title} | Newsletter Supply`;
+const description =
+  "Newslettr Supply - All the tools you need to launch, grow and monetize your newsletter.";
 
-
-const makeTitle = `${title} | Newsletter Supply`
-const description = "Newslettr Supply - All the tools you need to launch, grow and monetize your newsletter."
-
+const allTools = await getCollection("tools");
+const latestTools = allTools.sort(
+  (a, b) =>
+    new Date(b.data.updateDate).getTime() -
+    new Date(a.data.updateDate).getTime()
+);
+const latestThreeTools = latestTools.slice(0, 3);
 ---
 
-<BaseLayout
-  title={title}
-  description={description}>
+<BaseLayout title={title} description={description}>
   <div class="w-full flex flex-col gap-6 md:flex-row">
     <div class="w-full flex flex-col md:basis-2/3 gap-12">
-	    <slot />
+      <slot />
     </div>
     <div class="w-full flex flex-col md:basis-1/3 gap-4">
       <div class="sticky top-4 flex flex-col gap-4">
@@ -27,5 +33,13 @@ const description = "Newslettr Supply - All the tools you need to launch, grow a
       </div>
     </div>
   </div>
+  <div class="w-full py-4">
+    <div class="group flex items-end justify-between">
+      <h2>Latest tools</h2>
+      <a href="/browse" class="text-sm hover:underline"> View all → </a>
+    </div>
+    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+      {latestThreeTools.map((tool) => <ToolCard tools={tool} />)}
+    </div>
+  </div>
 </BaseLayout>
-
