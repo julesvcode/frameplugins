@@ -4,10 +4,12 @@ import sitemap from "@astrojs/sitemap";
 
 import netlify from "@astrojs/netlify";
 
+import icon from "astro-icon";
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://newsletter.supply',
-  integrations: [tailwind(), sitemap()],
+  integrations: [tailwind(), sitemap(), icon()],
   output: "server",
   adapter: netlify(),
   build: {

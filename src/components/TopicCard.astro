@@ -1,31 +1,30 @@
 ---
 import { Image } from "astro:assets";
-import launchIcon from '../assets/icons/launch.svg';
-import growIcon from '../assets/icons/grow.svg';
-import monetiseIcon from '../assets/icons/monetise.svg';
+import launchIcon from "../assets/icons/launch.svg";
+import growIcon from "../assets/icons/grow.svg";
+import monetiseIcon from "../assets/icons/monetise.svg";
+import { Icon } from "astro-icon/components";
 
-const { link, title, quantity } = Astro.props
-let icon
-
-if (title === "Launch") {
-    icon = launchIcon
-} else if (title === "Grow") {
-    icon = growIcon
-} else {
-    icon = monetiseIcon
-}
+const { link, title, quantity } = Astro.props;
 ---
 
-<a 
-    href={link}
-    class="relative flex flex-col gap-6 group overflow-hidden p-8 rounded-lg bg-zinc-200 border border-zinc-200 w-full cursor-pointer hover:border-zinc-300 hover:bg-zinc-200/90">
-     <Image src={icon} alt={`${title} icon`} class="h-8 w-8" />
-    <div class="flex flex-col w-full">
-        <h3 class="text-zinc-950 text-xl font-bold leading-8 capitalize">
-            {title}
-        </h3>
-        <p class="text-zinc-600 text-sm leading-6 line-clamp-2">
-            Discover {quantity} tools to {title.toLowerCase()} your newsletter.
-        </p>
-    </div>
+<a
+  href={link}
+  class="relative flex flex-col gap-6 group overflow-hidden p-8 rounded-lg bg-zinc-200 border border-zinc-200 w-full cursor-pointer hover:border-zinc-300 hover:bg-zinc-200/90"
+>
+  {title === "Launch" && <Icon name="lucide:rocket" class="h-8 w-8" />}
+  {
+    title === "Grow" && (
+      <Icon name="lucide:chart-no-axes-combined" class="h-8 w-8" />
+    )
+  }
+  {title === "Monetise" && <Icon name="lucide:piggy-bank" class="h-8 w-8" />}
+  <div class="flex flex-col w-full">
+    <h3 class="text-zinc-950 text-xl font-bold leading-8 capitalize">
+      {title}
+    </h3>
+    <p class="text-zinc-600 text-sm leading-6 line-clamp-2">
+      Discover {quantity} tools to {title.toLowerCase()} your newsletter.
+    </p>
+  </div>
 </a>

@@ -1,24 +1,25 @@
 ---
-
-import { Image } from "astro:assets";
-import chevronIcon from '../assets/icons/chevron.svg';
+// import { Image } from "astro:assets";
+// import chevronIcon from "../assets/icons/chevron.svg";
+import { Icon } from "astro-icon/components";
 
 type Props = {
-    category: string,
-    link: string
-}
+  category: string;
+  link: string;
+};
 
-const { category, link } = Astro.props
-
+const { category, link } = Astro.props;
 ---
 
-<a 
-    href={`categories/${link}`}
-    class="relative flex flex-col justify-end gap-6 group overflow-hidden px-4 py-3 rounded-lg bg-zinc-100 border border-zinc-200 w-full cursor-pointer hover:border-zinc-300 hover:bg-zinc-200">
-    <div class="flex w-full items-center justify-between">
-        <h3 class="leading-8 capitalize hover:text-zinc-950">
-            {category}
-        </h3>
-        <Image src={chevronIcon} alt={`${category} icon`} class="h-4 w-4" />
-    </div>
+<a
+  href={`categories/${link}`}
+  class="relative flex flex-col justify-end gap-6 group overflow-hidden px-4 py-3 rounded-lg bg-zinc-100 border border-zinc-200 w-full cursor-pointer hover:border-zinc-300 hover:bg-zinc-200"
+>
+  <div class="flex w-full items-center justify-between">
+    <h3 class="leading-8 capitalize hover:text-zinc-950">
+      {category}
+    </h3>
+    <!-- <Image src={chevronIcon} alt={`${category} icon`} class="h-4 w-4" /> -->
+    <Icon name="lucide:chevron-right" />
+  </div>
 </a>
