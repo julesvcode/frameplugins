@@ -1,41 +1,70 @@
 ---
 import { Image } from "astro:assets";
-import xIcon from '../assets/icons/x.svg';
-import beehiivIcon from '../assets/icons/beehiiv.svg';
+import xIcon from "../assets/icons/x.svg";
+import beehiivIcon from "../assets/icons/beehiiv.svg";
 import PromoBanner from "./PromoBanner.astro";
 
+const navLinks = [
+  { label: "Tools", href: "/browse" },
+  { label: "Categories", href: "/categories" },
+  { label: "Blog", href: "/blog" },
+  { label: "Terms", href: "/terms" },
+  { label: "Contact", href: "mailto:newslettersupply@gmail.com" },
+];
 ---
 
 <footer class="mt-8 py-4 flex flex-col gap-12 items-start justify-between">
-    <PromoBanner />
-    <!-- Copyright -->
-    <div class="w-full flex flex-col md:flex-row pt-4 justify-between items-start gap-4 md:gap-2 text-sm border-t border-zinc-300">
-        <div class="flex flex-col gap-2 md:basis-1/2">
-            <span class="text-2xl text-zinc-950 font-thin">
-                <span class="font-bold">newsletter</span>supply
-            </span>
-            <span>© {new Date().getFullYear()} - All rights reserved.</span>
-        </div>
-        <!-- Social icons -->
-        <div class="flex gap-4 items-center">
-            <a class="text-secondary hover:opacity-75 underline" href="mailto:newslettersupply@gmail.com">Contact</a>
-            <a 
-                href="https://x.com/nwslttrsupply"
-                class="hover:opacity-80"
-                title="Follow us on X for daily updates"
-                target="_blank"
-            >
-                 <Image src={xIcon} alt="X icon" height={14}>
-            </a>
-            <a
-                href="https://newslettersupply.beehiiv.com/"
-                class="hover:opacity-80"
-                title="Sign up for weekly updates"
-                target="_blank"
-            >
-                <Image src={beehiivIcon} alt="Beehiiv icon" height={14}>
-            </a>
-        </div>
+  <PromoBanner />
+  <!-- Copyright -->
+  <div
+    class="w-full flex flex-col md:flex-row pt-4 justify-between items-start gap-4 md:gap-2 text-sm border-t border-zinc-300"
+  >
+    <div class="flex flex-col gap-2 md:basis-1/2">
+      <span class="text-2xl text-zinc-950 font-thin">
+        <span class="font-bold">newsletter</span>supply
+      </span>
+      <span
+        >© {new Date().getFullYear()} Newsletter Supply - All rights reserved.</span
+      >
+      <div class="flex gap-4 pt-6">
+        <a
+          href="https://x.com/nwslttrsupply"
+          class="hover:opacity-80"
+          title="Follow us on X for daily updates"
+          target="_blank"
+        >
+          <Image src={xIcon} alt="X icon" height={14} />
+        </a>
+        <a
+          href="https://newslettersupply.beehiiv.com/"
+          class="hover:opacity-80"
+          title="Sign up for weekly updates"
+          target="_blank"
+        >
+          <Image src={beehiivIcon} alt="Beehiiv icon" height={14} />
+        </a>
+      </div>
     </div>
-    <span class="pt-2 w-full md:w-1/2 text-xs italic text-zinc-600">Disclaimer: this website includes affiliate links. The commission we make comes at no extra cost to you and helps to cover running costs.</span>
+    <div class="flex gap-4 items-center">
+      <ul
+        class="flex flex-col md:flex-row md:items-center gap-4 md:gap-10 pt-2"
+      >
+        {
+          navLinks.map((link) => (
+            <li class="list-none m-0">
+              <a href={link.href} class="text-zinc-600 hover:text-zinc-950">
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+  <div class="flex gap-4 items-center">
+    <span class="w-full md:w-1/2 text-xs italic text-zinc-600"
+      >Disclaimer: this website includes affiliate links. The commission we make
+      comes at no extra cost to you and helps to cover running costs.</span
+    >
+  </div>
 </footer>

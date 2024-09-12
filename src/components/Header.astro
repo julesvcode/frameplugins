@@ -1,68 +1,83 @@
 ---
-
 import ButtonSecondary from "./ButtonSecondary.astro";
 
 const navLinks = [
-    {label: "Tools", href: "/browse"},
-    {label: "Categories", href: "/categories"},
-    {label: "Blog", href: "/blog"},
-    {label: "Terms", href: "/terms"},
-]
-
+  { label: "Tools", href: "/browse" },
+  { label: "Categories", href: "/categories" },
+  { label: "Blog", href: "/blog" },
+];
 ---
 
-<header class="w-full pb-4 flex justify-between items-baseline animate-slidedown">
-    <div class="w-full py-4 md:flex md:items-center md:justify-between">
-        <div class="w-full flex justify-between items-center">
-            <a 
-                href="/"
-                title="Return to home page"
-                class="text-2xl text-zinc-950 font-thin pb-1"
-            >
-                <span class="font-bold">newsletter</span>supply
-            </a>
-            <button class="text-zinc-950 text-3xl cursor-pointer mx-2 block md:hidden" id="menu" aria-label="Toggle Menu">
-                <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path class="navmenu-toggle" fill-rule="evenodd"
-                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
-                    </path>
+<header
+  class="w-full pb-4 flex justify-between items-baseline animate-slidedown"
+>
+  <div class="w-full py-4 md:flex md:items-center md:justify-between">
+    <div class="w-full flex justify-between items-center">
+      <a
+        href="/"
+        title="Return to home page"
+        class="text-2xl text-zinc-950 font-thin pb-1"
+      >
+        <span class="font-bold">newsletter</span>supply
+      </a>
+      <button
+        class="text-zinc-950 text-3xl cursor-pointer mx-2 block md:hidden"
+        id="menu"
+        aria-label="Toggle Menu"
+      >
+        <svg
+          class="w-8 h-8"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            class="navmenu-toggle"
+            fill-rule="evenodd"
+            d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+          >
+          </path>
 
-                    <path class="navmenu-toggle hidden" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z">
-                    </path>
-                </svg>
-            </button>
-        </div>
+          <path
+            class="navmenu-toggle hidden"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+          >
+          </path>
+        </svg>
+      </button>
+    </div>
 
-        <nav class="navmenu-toggle hidden md:flex">
-            <ul class="flex flex-col md:flex-row md:items-center gap-4 md:gap-10 pt-2">
-                {navLinks.map(link => (
-                    <li class="list-none m-0">
-                        <a 
-                            href={link.href}
-                            class="text-zinc-600 hover:text-zinc-950"
-                        >
-                            {link.label}
-                        </a>
-                    </li>
-                ))}
-            </ul>
-            <!-- <ButtonSecondary 
+    <nav class="navmenu-toggle hidden md:flex">
+      <ul
+        class="flex flex-col md:flex-row md:items-center gap-4 md:gap-10 pt-2"
+      >
+        {
+          navLinks.map((link) => (
+            <li class="list-none m-0">
+              <a href={link.href} class="text-zinc-600 hover:text-zinc-950">
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <!-- <ButtonSecondary 
                 title="Submit"
                 link="/"
                 target="_self"
             /> -->
-        </nav>
-    </div>
+    </nav>
+  </div>
 </header>
 
-
 <script>
-    const menuButton = document.getElementById("menu");
+  const menuButton = document.getElementById("menu");
 
-    menuButton!.addEventListener("click", () => {
-      [...document.querySelectorAll(".navmenu-toggle")].forEach((Element) => {
-        Element.classList.toggle("hidden");
-      });
+  menuButton!.addEventListener("click", () => {
+    [...document.querySelectorAll(".navmenu-toggle")].forEach((Element) => {
+      Element.classList.toggle("hidden");
     });
+  });
 </script>
