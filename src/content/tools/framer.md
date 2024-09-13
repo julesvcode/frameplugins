@@ -1,15 +1,15 @@
 ---
-title: 'Framer'
+title: "Framer"
 feat: true
 updateDate: 2024-05-02
-description: 'A website builder that empowers users to design and publish stunning websites without the need to code.'
-link: "https://framer.com?via=julesvcode"
+description: "A website builder that empowers users to design and publish stunning websites without the need to code."
+link: "/framer"
 features: "https://www.framer.com/features/design-layout?via=julesvcode"
-thumbnailImage: './images/framer-thumb.png'
-thumbnailAlt: 'Screenshot of the Framer website'
+thumbnailImage: "./images/framer-thumb.png"
+thumbnailAlt: "Screenshot of the Framer website"
 categories: ["website-builder"]
 topics: ["launch", "grow"]
-icon: './favicons/framer.png'
+icon: "./favicons/framer.png"
 ---
 
 Framer is a user-friendly tool for designers to design and publish websites without coding. It offers a drag-and-drop interface along with advanced features for creating responsive and interactive web designs.
@@ -24,4 +24,3 @@ Framer is a user-friendly tool for designers to design and publish websites with
 - Hosting included: Publish your website directly from Framer with reliable hosting.
 
 Framer enables newsletter creators to build professional-looking landing pages and websites to showcase their content. It's particularly useful for those who want to create a strong online presence without needing extensive web development skills.
-

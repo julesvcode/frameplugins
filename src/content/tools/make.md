@@ -1,15 +1,15 @@
 ---
-title: 'Make'
+title: "Make"
 feat: false
 updateDate: 2024-07-22
-description: 'Build and automate anything, from tasks and workflows to apps and systems.'
-link: "https://make.com/"
+description: "Build and automate anything, from tasks and workflows to apps and systems."
+link: "/make.com"
 features: "https://www.make.com/en/product"
-thumbnailImage: './images/make-thumb.png'
-thumbnailAlt: 'Screenshot of the Make website'
+thumbnailImage: "./images/make-thumb.png"
+thumbnailAlt: "Screenshot of the Make website"
 categories: ["automation"]
 topics: ["grow", "monetise"]
-icon: './favicons/make.png'
+icon: "./favicons/make.png"
 ---
 
 Make (formerly Integromat) is a powerful platform that connects apps and automates workflows without needing to code. It allows you to create complex automation scenarios by linking various online services and tools.
