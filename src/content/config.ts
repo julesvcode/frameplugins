@@ -7,7 +7,7 @@ const toolCollection = defineCollection({
     feat: z.boolean().default(false),
     updateDate: z.date(),
     description: z.string(),
-    link: z.string().url(),
+    link: z.string(),
     features: z.string().url(),
     thumbnailImage: image(),
     thumbnailAlt: z.string(),
