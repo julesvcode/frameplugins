@@ -22,7 +22,9 @@ type Props = {
 const allPosts = await getCollection("posts");
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content, headings } = await entry.render();
+
+const subheadings = headings.filter((heading) => heading.depth === 2);
 
 var month = [
   "Jan",
@@ -40,12 +42,6 @@ var month = [
 ];
 
 const publishedDate = `${month[entry.data.pubDate.getMonth()]} ${entry.data.pubDate.getDate()}, ${entry.data.pubDate.getFullYear()}`;
-
-const sortedPosts = allPosts.sort(
-  (a, b) =>
-    new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
-);
-const latestPosts = sortedPosts.slice(0, 5);
 ---
 
 <TwoColumnsLayout title={entry.data.title}>
@@ -56,6 +52,25 @@ const latestPosts = sortedPosts.slice(0, 5);
         {publishedDate} - {entry.data.readingSpeed} min read
       </p>
     </div>
+    {
+      subheadings.length > 2 && (
+        <div class="flex flex-col gap-2 leading-7 p-8 rounded-lg bg-zinc-100 mb-8">
+          <span class="uppercase font-medium text-xs">In this article:</span>
+          <ul>
+            {subheadings.map((subheading) => (
+              <li>
+                <a
+                  href={`#${subheading.slug}`}
+                  class="text-blue-500 text-sm underline hover:no-underline"
+                >
+                  {subheading.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )
+    }
     <div class="flex flex-col gap-4 leading-7">
       <Content />
     </div>
