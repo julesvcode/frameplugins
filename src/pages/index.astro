@@ -8,27 +8,29 @@ import { getCollection } from "astro:content";
 import SignupForm from "../components/SignupForm.astro";
 import LatestPosts from "../components/LatestPosts.astro";
 
-const allTools = await getCollection("tools");
+const allPlugins = await getCollection("plugins");
 
 // Categories
 const allCategories = [
-  ...new Set(allTools.map((tool) => tool.data.categories).flat()),
+  ...new Set(allPlugins.map((tool) => tool.data.categories).flat()),
 ];
 // const alphabeticalCategories = allCategories.sort((a, b) => {
 //   return a.localeCompare(b);
 // });
 // const featuredCatgories = alphabeticalCategories.slice(0, 6);
 
-const allTopics = [...new Set(allTools.map((tool) => tool.data.topics).flat())];
+const allTopics = [
+  ...new Set(allPlugins.map((tool) => tool.data.topics).flat()),
+];
 
 // Tools
-const featuredTools = allTools.filter((tool) => tool.data.feat === true);
-const latestTools = allTools.sort(
+const featuredPlugins = allPlugins.filter((tool) => tool.data.feat === true);
+const latestPlugins = allPlugins.sort(
   (a, b) =>
     new Date(b.data.updateDate).getTime() -
     new Date(a.data.updateDate).getTime()
 );
-const latestThreeTools = latestTools.slice(0, 3);
+const latestThreePlugins = latestPlugins.slice(0, 3);
 
 // Posts
 const allPosts = await getCollection("posts");
@@ -38,7 +40,7 @@ const sortedPosts = allPosts.sort(
 );
 const latestPosts = sortedPosts.slice(0, 5);
 
-const mainTopics = allTools.map((tool) => tool.data.topics).flat();
+const mainTopics = allPlugins.map((tool) => tool.data.topics).flat();
 const processedTopics = mainTopics.reduce((acc, topic) => {
   const value = acc[topic] || 0;
 
@@ -78,13 +80,13 @@ let topicDisplay;
           ></span>
           Latest
         </span>
-        Tools
+        Plugins
       </h2>
       <a href="/browse" class="text-sm hover:underline"> View all → </a>
     </div>
     <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
-      {featuredTools.map((tool) => <ToolCard tools={tool} />)}
-      {latestThreeTools.map((tool) => <ToolCard tools={tool} />)}
+      {featuredPlugins.map((plugin) => <ToolCard plugins={plugin} />)}
+      {latestThreePlugins.map((plugin) => <ToolCard plugins={plugin} />)}
     </div>
   </section>-->
 

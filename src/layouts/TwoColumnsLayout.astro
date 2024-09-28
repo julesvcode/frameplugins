@@ -9,18 +9,18 @@ import LatestPosts from "../components/LatestPosts.astro";
 
 const { title } = Astro.props;
 
-const makeTitle = `${title} | Newsletter Supply`;
+const makeTitle = `${title} | Frameplugins`;
 const description =
-  "Newslettr Supply - All the tools you need to launch, grow and monetize your newsletter.";
+  "Frameplugins - All the best Framer plugins you need to supercharge your website.";
 
-// Latest Tools section
-const allTools = await getCollection("tools");
-const latestTools = allTools.sort(
+// Latest plugins section
+const allPlugins = await getCollection("plugins");
+const latestPlugins = allPlugins.sort(
   (a, b) =>
     new Date(b.data.updateDate).getTime() -
     new Date(a.data.updateDate).getTime()
 );
-const latestThreeTools = latestTools.slice(0, 3);
+const latestThreePlugins = latestPlugins.slice(0, 3);
 
 // Latest Posts section
 const allPosts = await getCollection("posts");
@@ -59,11 +59,11 @@ const latestPosts = sortedPosts.slice(0, 5);
   </div>
   <div class="w-full py-4">
     <div class="group flex items-end justify-between">
-      <h2>Latest tools</h2>
+      <h2>Latest plugins</h2>
       <a href="/browse" class="text-sm hover:underline"> View all → </a>
     </div>
     <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
-      {latestThreeTools.map((tool) => <ToolCard tools={tool} />)}
+      {latestThreePlugins.map((plugin) => <ToolCard plugins={plugin} />)}
     </div>
   </div>
   <div class="py-4">
