@@ -1,0 +1,110 @@
+---
+import ButtonPrimary from "../components/ButtonPrimary.astro";
+import TopicCard from "../components/TopicCard.astro";
+import CategoryCard from "../components/CategoryCard.astro";
+import ToolCard from "../components/ToolCard.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import SignupForm from "../components/SignupForm.astro";
+import LatestPosts from "../components/LatestPosts.astro";
+
+const allPlugins = await getCollection("plugins");
+
+// Categories
+const allCategories = [
+  ...new Set(allPlugins.map((tool) => tool.data.categories).flat()),
+];
+// const alphabeticalCategories = allCategories.sort((a, b) => {
+//   return a.localeCompare(b);
+// });
+// const featuredCatgories = alphabeticalCategories.slice(0, 6);
+
+const allTopics = [
+  ...new Set(allPlugins.map((tool) => tool.data.topics).flat()),
+];
+
+// Tools
+const featuredPlugins = allPlugins.filter((tool) => tool.data.feat === true);
+const latestPlugins = allPlugins.sort(
+  (a, b) =>
+    new Date(b.data.updateDate).getTime() -
+    new Date(a.data.updateDate).getTime()
+);
+const latestThreePlugins = latestPlugins.slice(0, 3);
+
+// Posts
+const allPosts = await getCollection("posts");
+const sortedPosts = allPosts.sort(
+  (a, b) =>
+    new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+);
+const latestPosts = sortedPosts.slice(0, 5);
+
+const mainTopics = allPlugins.map((tool) => tool.data.topics).flat();
+const processedTopics = mainTopics.reduce((acc, topic) => {
+  const value = acc[topic] || 0;
+
+  return {
+    ...acc,
+    [topic]: value + 1,
+  };
+}, {});
+
+let categoryDisplay;
+let topicDisplay;
+---
+
+<BaseLayout title="" description="All the best Framer plugins in one place">
+  <section class="w-full flex gap-4 pt-16 pb-16">
+    <div class="flex flex-col md:basis-2/3 gap-4">
+      <h1>
+        All the best Framer plugins <br /><span class="text-zinc-600"
+          >— in one place.</span
+        >
+      </h1>
+      <p class="max-w-xl text-lg">
+        Discover a curated list of Framer plugins to help you supercharge your
+        website. From typography to forms, you'll find the perfect plugins here
+        with a few clicks.
+      </p>
+      <p class="max-w-xl text-base italic text-zinc-400">Coming soon..</p>
+      <div class="min-h-12"></div>
+    </div>
+  </section>
+  <!--<section class="py-4">
+    <div class="group flex items-end justify-between">
+      <h2 class="">
+        <span class="relative">
+          <span
+            class="absolute w-full bg-blue-500 right-0 bottom-1 h-2 -rotate-1 opacity-50 -z-10"
+          ></span>
+          Latest
+        </span>
+        Plugins
+      </h2>
+      <a href="/browse" class="text-sm hover:underline"> View all → </a>
+    </div>
+    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+      {featuredPlugins.map((plugin) => <ToolCard plugins={plugin} />)}
+      {latestThreePlugins.map((plugin) => <ToolCard plugins={plugin} />)}
+    </div>
+  </section>-->
+
+  <!-- <section class="py-4">
+    <div class="group flex items-end justify-between">
+      <h2>
+        <span class="relative">
+          <span
+            class="absolute w-full bg-blue-500 right-0 bottom-1 h-2 -rotate-1 opacity-50 -z-10"
+          ></span>
+          Latest
+        </span>
+        articles
+      </h2>
+      <a href="/blog" class="text-sm hover:underline"> View all → </a>
+    </div>
+    <div class="flex flex-col gap-0">
+      {latestPosts.map((post) => <LatestPosts posts={post} />)}
+    </div>
+  </section> -->
+</BaseLayout>
