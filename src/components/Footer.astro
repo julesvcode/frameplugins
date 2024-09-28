@@ -1,57 +1,24 @@
 ---
-import beehiivIcon from "../assets/icons/beehiiv.svg";
-import PromoBanner from "./PromoBanner.astro";
-
 const navLinks = [
-  { label: "Tools", href: "/browse" },
+  { label: "Plugins", href: "/plugins" },
   { label: "Categories", href: "/categories" },
   { label: "Blog", href: "/blog" },
-  { label: "Terms", href: "/terms" },
-  { label: "Contact", href: "mailto:newslettersupply@gmail.com" },
+  { label: "Contact", href: "mailto:julien@88pixels.co" },
 ];
 ---
 
 <footer class="mt-8 py-4 flex flex-col gap-12 items-start justify-between">
-  <PromoBanner />
   <!-- Copyright -->
   <div
     class="w-full flex flex-col md:flex-row pt-4 justify-between items-start gap-4 md:gap-2 text-sm border-t border-zinc-300"
   >
     <div class="flex flex-col gap-2 md:basis-1/2">
       <span class="text-2xl text-zinc-950 font-thin">
-        <span class="font-bold">newsletter</span>supply
+        <span class="font-bold">frame</span>plugins
       </span>
       <span
-        >© {new Date().getFullYear()} Newsletter Supply - All rights reserved.</span
+        >© {new Date().getFullYear()} Frameplugins - All rights reserved.</span
       >
-      <div class="flex gap-4 pt-6">
-        <a
-          href="https://x.com/nwslttrsupply"
-          class="hover:opacity-80"
-          title="Follow us on X for daily updates"
-          target="_blank"
-        >
-          <svg
-            role="img"
-            viewBox="0 0 24 24"
-            width="16"
-            height="16"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-            ><title>X</title><path
-              d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
-              fill="currentColor"></path></svg
-          >
-        </a>
-        <!-- <a
-          href="https://newslettersupply.beehiiv.com/"
-          class="hover:opacity-80"
-          title="Sign up for weekly updates"
-          target="_blank"
-        >
-          <Image src={beehiivIcon} alt="Beehiiv icon" height={14} />
-        </a> -->
-      </div>
     </div>
     <div class="flex gap-4 items-center">
       <ul
@@ -68,11 +35,5 @@ const navLinks = [
         }
       </ul>
     </div>
-  </div>
-  <div class="flex gap-4 items-center">
-    <span class="w-full md:w-1/2 text-xs italic text-zinc-600"
-      >Disclaimer: this website includes affiliate links. The commission we make
-      comes at no extra cost to you and helps to cover running costs.</span
-    >
   </div>
 </footer>

@@ -1,0 +1,28 @@
+---
+import { getCollection } from "astro:content";
+import ToolCard from "../../components/ToolCard.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const allTools = await getCollection("tools");
+---
+
+<BaseLayout
+  title="All Plugins"
+  description="All the best Framer plugins you need to supercharge your website."
+>
+  <section class="w-full flex gap-4">
+    <div class="flex flex-col md:basis-2/3 gap-4">
+      <h1>All Framer plugins</h1>
+      <p class="text-lg">
+        All the best Framer plugins you need to supercharge your website.
+      </p>
+    </div>
+  </section>
+  <section>
+    <p class="text-base italic text-zinc-500">Coming soon..</p>
+    <div class="min-h-48"></div>
+    <!-- <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+      {allTools.map((tool) => <ToolCard tools={tool} />)}
+    </div> -->
+  </section>
+</BaseLayout>

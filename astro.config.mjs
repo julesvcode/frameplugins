@@ -8,7 +8,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://newsletter.supply',
+  site: 'https://frameplugins.com',
   integrations: [tailwind(), sitemap(), icon()],
   trailingSlash: 'never',
   output: "server",
