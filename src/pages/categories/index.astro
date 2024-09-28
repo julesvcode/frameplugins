@@ -3,9 +3,9 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CategoryCard from "../../components/CategoryCard.astro";
 
-const allTools = await getCollection("tools");
+const allPlugins = await getCollection("plugins");
 const allCategories = [
-  ...new Set(allTools.map((tool) => tool.data.categories).flat()),
+  ...new Set(allPlugins.map((plugin) => plugin.data.categories).flat()),
 ];
 // const alphabeticalCategories = allCategories.sort((a, b) => {
 //   return a.localeCompare(b);

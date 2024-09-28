@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import ToolCard from "../../components/ToolCard.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
-const allTools = await getCollection("tools");
+const allTools = await getCollection("plugins");
 ---
 
 <BaseLayout

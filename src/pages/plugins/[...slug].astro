@@ -1,53 +1,47 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import { getCollection } from 'astro:content';
-import ButtonPrimary from '../../components/ButtonPrimary.astro';
-import PromoCard from '../../components/PromoCard.astro';
-import TwoColumnsLayout from '../../layouts/TwoColumnsLayout.astro';
-import { Image } from 'astro:assets';
-import CategoryTag from '../../components/CategoryTag.astro';
-import TopicTag from '../../components/TopicTag.astro';
-import SocialShare from '../../components/SocialShare.astro';
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import ButtonPrimary from "../../components/ButtonPrimary.astro";
+import PromoCard from "../../components/PromoCard.astro";
+import TwoColumnsLayout from "../../layouts/TwoColumnsLayout.astro";
+import { Image } from "astro:assets";
+import CategoryTag from "../../components/CategoryTag.astro";
+import TopicTag from "../../components/TopicTag.astro";
+import SocialShare from "../../components/SocialShare.astro";
 
 export const prerender = true;
 
 export async function getStaticPaths() {
-  const tools = await getCollection("tools");
-  return tools.map(entry => ({
-    params: { slug: entry.slug }, 
+  const plugins = await getCollection("plugins");
+  return plugins.map((entry) => ({
+    params: { slug: entry.slug },
     props: { entry },
   }));
 }
 
 type Props = {
-  entry: CollectionEntry<"tools">
-}
+  entry: CollectionEntry<"plugins">;
+};
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 
-const categories = entry.data.categories
-const topics = entry.data.topics
-
+const categories = entry.data.categories;
+const topics = entry.data.topics;
 ---
+
 <TwoColumnsLayout title={entry.data.title}>
   <section class="flex flex-col gap-4">
     <div class="flex items-center justify-between">
       <h1 class="text-zinc-950 text-4xl font-bold">{entry.data.title}</h1>
-      <ButtonPrimary
-        link={entry.data.link}
-        title="Website"
-        target="_blank"
-      />			
+      <ButtonPrimary link={entry.data.link} title="Website" target="_blank" />
     </div>
-    <p class="text-zinc-700 text-lg leading-relaxed">{entry.data.description}</p>
+    <p class="text-zinc-700 text-lg leading-relaxed">
+      {entry.data.description}
+    </p>
   </section>
-  <a 
-    href={entry.data.link}
-    target="_blank"
-    class="hover:opacity-80"
-  >
-    <Image 
+  <a href={entry.data.link} target="_blank" class="hover:opacity-80">
+    <Image
       src={entry.data.thumbnailImage}
       alt={entry.data.thumbnailAlt}
       class="border rounded-md"
@@ -66,24 +60,25 @@ const topics = entry.data.topics
   <section class="flex flex-col gap-4 leading-7">
     <h4>Categories:</h4>
     <div class="flex gap-1 leading-7 pb-4">
-      {categories.map(category => (
-        <CategoryTag link={category} />
-      ))}
+      {categories.map((category) => <CategoryTag link={category} />)}
     </div>
     <h4>Topics:</h4>
     <div class="flex gap-1 leading-7 pb-4">
-      {topics.map(topic => (
-        <TopicTag link={topic} />
-      ))}
+      {topics.map((topic) => <TopicTag link={topic} />)}
     </div>
-    <SocialShare 
+    <SocialShare
       title={`${entry.data.title} - ${entry.data.description}`}
-      url={`newsletter.supply/tools/${entry.slug}`}
+      url={`newsletter.supply/plugins/${entry.slug}`}
     />
   </section>
   <section class="py-4 group">
-    <span class="text-sm text-zinc-700 group-hover:text-zinc-950 transition-colors">← </span>
-    <a class="text-sm text-zinc-700 hover:text-zinc-950 group-hover:underline transition-colors" href="/browse">Back to all tools</a>
+    <span
+      class="text-sm text-zinc-700 group-hover:text-zinc-950 transition-colors"
+      >←
+    </span>
+    <a
+      class="text-sm text-zinc-700 hover:text-zinc-950 group-hover:underline transition-colors"
+      href="/browse">Back to all plugins</a
+    >
   </section>
 </TwoColumnsLayout>
-
