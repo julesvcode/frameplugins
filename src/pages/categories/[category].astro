@@ -1,44 +1,54 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import ToolCard from '../../components/ToolCard.astro';
-import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ToolCard from "../../components/ToolCard.astro";
+import { getCollection } from "astro:content";
 
-export const prerender = true
+export const prerender = true;
 
 export async function getStaticPaths() {
-  const allTools = await getCollection("tools");
+  const allPlugins = await getCollection("plugins");
 
-  const uniqueCategory = [...new Set(allTools.map((category) => category.data.categories).flat())];
+  const uniqueCategory = [
+    ...new Set(allPlugins.map((category) => category.data.categories).flat()),
+  ];
 
   return uniqueCategory.map((category) => {
-    const filteredTools = allTools.filter((tool) => tool.data.categories.includes(category));
-        return {
-          params: { category },
-          props: { tools: filteredTools },
-        };
+    const filteredPlugins = allPlugins.filter((plugin) =>
+      plugin.data.categories.includes(category)
+    );
+    return {
+      params: { category },
+      props: { plugins: filteredPlugins },
+    };
   });
 }
 
 const { category } = Astro.params;
-const { tools } = Astro.props;
+const { plugins } = Astro.props;
 
-const categoryCapitalize = category.charAt(0).toUpperCase() + category.slice(1)
-const categoryDisplay = category.replace(/-/g, ' ')
-const categoryCapitalizeDisplay = categoryCapitalize.replace(/-/g, ' ')
+const categoryCapitalize = category.charAt(0).toUpperCase() + category.slice(1);
+const categoryDisplay = category.replace(/-/g, " ");
+const categoryCapitalizeDisplay = categoryCapitalize.replace(/-/g, " ");
 ---
 
-<BaseLayout 
+<BaseLayout
   title={categoryCapitalizeDisplay}
-  description={`A collection of the best ${category} tools.`}
+  description={`A collection of the best ${category} plugins.`}
 >
-  <section id="tools">
+  <section id="plugins">
     <div class="flex flex-col md:basis-2/3 gap-4">
-      <h1 class="mt-4">Best <span class="capitalize">{categoryDisplay}</span> Tools for Newsletters</h1>
-      <p class="max-w-2xl text-lg">A collection of the best {categoryDisplay} tools. Find the best {categoryDisplay} tools to run your newsletter.</p>
+      <h1 class="mt-4">
+        Best <span class="capitalize">{categoryDisplay}</span> plugins for Framer
+        designers
+      </h1>
+      <p class="max-w-2xl text-lg">
+        A collection of the best {categoryDisplay} plugins. Find the best {
+          categoryDisplay
+        } plugins to enhance your Framer site.
+      </p>
     </div>
     <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
-      {tools.map((tool) => 
-        <ToolCard tools={tool} />
-      )}
-  </section>
-</BaseLayout>
+      {plugins.map((plugin) => <ToolCard plugins={plugin} />)}
+    </div>
+  </section></BaseLayout
+>

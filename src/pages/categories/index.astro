@@ -7,9 +7,9 @@ const allPlugins = await getCollection("plugins");
 const allCategories = [
   ...new Set(allPlugins.map((plugin) => plugin.data.categories).flat()),
 ];
-// const alphabeticalCategories = allCategories.sort((a, b) => {
-//   return a.localeCompare(b);
-// });
+const alphabeticalCategories = allCategories.sort((a, b) => {
+  return a.localeCompare(b);
+});
 
 let categoryDisplay;
 ---
@@ -25,15 +25,22 @@ let categoryDisplay;
     </div>
   </section>
   <section>
-    <p class="text-base italic text-zinc-500">Coming soon..</p>
-    <div class="min-h-48"></div>
-    <!-- <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
-            {alphabeticalCategories.map((category) =>
-                (categoryDisplay = (category.charAt(0).toUpperCase() + category.slice(1)).replace(/-/g, ' ')) &&
-                <CategoryCard 
-                    link={category}
-                    category={categoryDisplay}/>
-            )}
-        </div> -->
+    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+      <!-- {
+        alphabeticalCategories.map(
+          (category) =>
+            (categoryDisplay = (
+              category.charAt(0).toUpperCase() + category.slice(1)
+            ).replace(/-/g, " ")) && (
+              <CategoryCard link={category} category={categoryDisplay} />
+            )
+        )
+      } -->
+      {
+        alphabeticalCategories.map((category) => (
+          <CategoryCard link={category} category={category} />
+        ))
+      }
+    </div>
   </section>
 </BaseLayout>
