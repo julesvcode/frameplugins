@@ -27,18 +27,27 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 
 const categories = entry.data.categories;
-const topics = entry.data.topics;
 ---
 
 <TwoColumnsLayout title={entry.data.title}>
   <section class="flex flex-col gap-4">
-    <div class="flex items-center justify-between">
+    <div class="flex items-center">
       <h1 class="text-zinc-950 text-4xl font-bold">{entry.data.title}</h1>
-      <ButtonPrimary link={entry.data.link} title="Website" target="_blank" />
     </div>
-    <p class="text-zinc-700 text-lg leading-relaxed">
-      {entry.data.description}
-    </p>
+    <div class="flex flex-col gap-0">
+      <p class="text-zinc-700 text-lg leading-relaxed">
+        {entry.data.description}
+      </p>
+      <p class="text-zinc-700 text-lg leading-relaxed">
+        <b>Price:</b>
+        {entry.data.price}
+      </p>
+    </div>
+    <ButtonPrimary
+      link={entry.data.link}
+      title="Get the plugin"
+      target="_blank"
+    />
   </section>
   <a href={entry.data.link} target="_blank" class="hover:opacity-80">
     <Image
@@ -52,8 +61,8 @@ const topics = entry.data.topics;
   <section class="flex flex-col gap-4 leading-7">
     <Content />
     <ButtonPrimary
-      link={entry.data.features}
-      title="View all features"
+      link={entry.data.link}
+      title="Get the plugin"
       target="_blank"
     />
   </section>
@@ -61,10 +70,6 @@ const topics = entry.data.topics;
     <h4>Categories:</h4>
     <div class="flex gap-1 leading-7 pb-4">
       {categories.map((category) => <CategoryTag link={category} />)}
-    </div>
-    <h4>Topics:</h4>
-    <div class="flex gap-1 leading-7 pb-4">
-      {topics.map((topic) => <TopicTag link={topic} />)}
     </div>
     <SocialShare
       title={`${entry.data.title} - ${entry.data.description}`}

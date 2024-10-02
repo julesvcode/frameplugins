@@ -18,11 +18,6 @@ const allCategories = [
 //   return a.localeCompare(b);
 // });
 // const featuredCatgories = alphabeticalCategories.slice(0, 6);
-
-const allTopics = [
-  ...new Set(allPlugins.map((tool) => tool.data.topics).flat()),
-];
-
 // Tools
 const featuredPlugins = allPlugins.filter((tool) => tool.data.feat === true);
 const latestPlugins = allPlugins.sort(
@@ -39,16 +34,6 @@ const sortedPosts = allPosts.sort(
     new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
 );
 const latestPosts = sortedPosts.slice(0, 5);
-
-const mainTopics = allPlugins.map((tool) => tool.data.topics).flat();
-const processedTopics = mainTopics.reduce((acc, topic) => {
-  const value = acc[topic] || 0;
-
-  return {
-    ...acc,
-    [topic]: value + 1,
-  };
-}, {});
 
 let categoryDisplay;
 let topicDisplay;
@@ -71,7 +56,7 @@ let topicDisplay;
       <div class="min-h-12"></div>
     </div>
   </section>
-  <!--<section class="py-4">
+  <section class="py-4">
     <div class="group flex items-end justify-between">
       <h2 class="">
         <span class="relative">
@@ -86,9 +71,9 @@ let topicDisplay;
     </div>
     <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
       {featuredPlugins.map((plugin) => <ToolCard plugins={plugin} />)}
-      {latestThreePlugins.map((plugin) => <ToolCard plugins={plugin} />)}
+      <!-- {latestThreePlugins.map((plugin) => <ToolCard plugins={plugin} />)} -->
     </div>
-  </section>-->
+  </section>
 
   <!-- <section class="py-4">
     <div class="group flex items-end justify-between">
