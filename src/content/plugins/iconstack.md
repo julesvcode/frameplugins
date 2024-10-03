@@ -6,7 +6,7 @@ description: "The ultimate icon library plugin for Framer with over 40,000+ icon
 link: "https://www.framer.com/marketplace/plugins/iconstack--ejhq7iilptr63txplht0wv4lv/"
 thumbnailImage: "./images/iconstack-thumb.webp"
 thumbnailAlt: "Screenshot of the Iconstack plugins for Framer"
-categories: ["icons", "icon library", "free"]
+categories: ["icons", "free"]
 free: true
 price: "Free"
 icon: "./favicons/iconstack.png"

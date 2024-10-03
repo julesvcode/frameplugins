@@ -6,7 +6,7 @@ description: "The ultimate plugin to search, drag, and drop icons from the Phosp
 link: "https://www.framer.com/marketplace/plugins/phosphor--9emi5idtsiarc9bkykvbptlv3/"
 thumbnailImage: "./images/phosphor-thumb.webp"
 thumbnailAlt: "Screenshot of the Phosphor plugins for Framer"
-categories: ["icons", "icon library", "free"]
+categories: ["icons", "free"]
 free: true
 price: "Free"
 icon: "./favicons/phosphor.png"
