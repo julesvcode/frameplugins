@@ -6,7 +6,7 @@ description: "The ultimate design plugin for Framer with hundreds of prebuilt, r
 link: "https://www.framer.com/marketplace/plugins/blocs--d9oltpzx17jv41rd6166x4p5z/"
 thumbnailImage: "./images/blocs-thumb.webp"
 thumbnailAlt: "Screenshot of the Blocs plugins for Framer"
-categories: ["design", "ui", "components", "free"]
+categories: ["design", "ui", "components", "design system", "free"]
 free: true
 price: "Free & paid plans (from $19/month)"
 icon: "./favicons/blocs.png"
