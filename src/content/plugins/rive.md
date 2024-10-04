@@ -6,7 +6,7 @@ description: "A plugin that brings interactive graphics and animations to your d
 link: "https://www.framer.com/marketplace/plugins/rive--6839p2e822jesvfuae7qo5w21/"
 thumbnailImage: "./images/rive-thumb.webp"
 thumbnailAlt: "Screenshot of the Rive plugins for Framer"
-categories: ["animation", "free"]
+categories: ["animations", "animation", "free"]
 free: true
 price: "Free"
 icon: "./favicons/rive.png"
