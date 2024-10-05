@@ -4,7 +4,6 @@ import ButtonSecondary from "./ButtonSecondary.astro";
 const navLinks = [
   { label: "Plugins", href: "/plugins" },
   { label: "Categories", href: "/categories" },
-  { label: "Blog", href: "/blog" },
 ];
 ---
 
@@ -59,9 +58,9 @@ const navLinks = [
       </button>
     </div>
 
-    <nav class="navmenu-toggle hidden md:flex">
+    <nav class="navmenu-toggle hidden md:flex gap-4 items-center">
       <ul
-        class="flex flex-col md:flex-row md:items-center gap-4 md:gap-10 pt-2"
+        class="flex flex-col md:flex-row md:items-center gap-4 md:gap-10 pt-2 md:pt-0"
       >
         {
           navLinks.map((link) => (
@@ -73,21 +72,23 @@ const navLinks = [
           ))
         }
       </ul>
-      <!-- <ButtonSecondary 
-                title="Submit"
-                link="/"
-                target="_self"
-            /> -->
+      <div class="pt-4 md:pt-0 md:pl-4">
+        <ButtonSecondary
+          title="Submit"
+          link="https://tally.so/r/w4okxO"
+          target="_blank"
+        />
+      </div>
     </nav>
   </div>
-</header>
 
-<script>
-  const menuButton = document.getElementById("menu");
+  <script>
+    const menuButton = document.getElementById("menu");
 
-  menuButton!.addEventListener("click", () => {
-    [...document.querySelectorAll(".navmenu-toggle")].forEach((Element) => {
-      Element.classList.toggle("hidden");
+    menuButton!.addEventListener("click", () => {
+      [...document.querySelectorAll(".navmenu-toggle")].forEach((Element) => {
+        Element.classList.toggle("hidden");
+      });
     });
-  });
-</script>
+  </script>
+</header>
