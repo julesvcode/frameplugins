@@ -6,7 +6,7 @@ description: "Get access to 500,000+ free and premium customizable Lottie animat
 link: "https://www.framer.com/marketplace/plugins/lottiefiles--34tc2ja4nxe8bk8603k766y7q/"
 thumbnailImage: "./images/lottie-thumb.webp"
 thumbnailAlt: "Screenshot of the Lottie plugins for Framer"
-categories: ["animations", "animation", "lottie", "free"]
+categories: ["animations", "lottie", "free"]
 free: true
 price: "Free"
 icon: "./favicons/lottie.png"
