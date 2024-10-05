@@ -40,7 +40,7 @@
     li {
       @apply list-disc;
       @apply ml-4;
-      @apply text-zinc-700;
+      @apply text-zinc-600;
       @apply leading-relaxed;
     }
 
