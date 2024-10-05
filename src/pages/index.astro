@@ -6,6 +6,8 @@ import ToolCard from "../components/ToolCard.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import SignupForm from "../components/SignupForm.astro";
+import { Image } from "astro:assets";
+import puzzlePiece from "../assets/images/puzzle_piece.jpg";
 
 const allPlugins = await getCollection("plugins");
 
@@ -45,6 +47,9 @@ let topicDisplay;
         here with a few clicks.
       </p>
       <ButtonPrimary title="Browse plugins →" link="/pulgins" target="_self" />
+    </div>
+    <div class="hidden md:block max-w-72">
+      <Image src={puzzlePiece} alt="Framer Plugins" />
     </div>
   </section>
   <section class="py-4">
