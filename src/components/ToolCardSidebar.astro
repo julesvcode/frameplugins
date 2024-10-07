@@ -1,0 +1,34 @@
+---
+import { Image } from "astro:assets";
+import Tag from "./Tag.astro";
+import type { CollectionEntry } from "astro:content";
+
+type Props = {
+  plugins: CollectionEntry<"plugins">;
+};
+
+const { plugins } = Astro.props;
+const { icon, title, description, categories, feat } = plugins.data;
+
+const categoryDisplay = categories[0].replace(/-/g, " ");
+---
+
+<a
+  href={`/plugins/${plugins.slug}`}
+  class="relative flex gap-4 items-center w-full px-4 py-2 cursor-pointer rounded-md hover:bg-zinc-50 hover:bg-opacity-50"
+>
+  <div class="flex items-center justify-center w-16 h-16">
+    <Image src={icon} alt={`${title} icon`} class="rounded" />
+  </div>
+  <div class="flex flex-col justify-center gap-1 pt-1 w-full">
+    <div class="flex items-center">
+      <h3 class="text-zinc-950 font-bold leading-4">
+        {title}
+      </h3>
+    </div>
+    <p class="text-zinc-700 text-base p-0 capitalize">
+      {categories[0].length < 4 ? categories[0].toUpperCase() : categories[0]}
+      <span class="lowercase"> plugin</span>
+    </p>
+  </div>
+</a>
