@@ -6,7 +6,7 @@
     h1 {
       @apply text-4xl;
       @apply text-zinc-950;
-      @apply font-bold;
+      @apply font-semibold;
       @apply leading-tight;
       @apply tracking-tight;
     }
@@ -14,7 +14,7 @@
     h2 {
       @apply text-2xl;
       @apply text-zinc-950;
-      @apply font-bold;
+      @apply font-semibold;
       @apply mt-6;
     }
 

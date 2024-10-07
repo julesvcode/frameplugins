@@ -32,18 +32,23 @@ const categoryCapitalizeDisplay = categoryCapitalize.replace(/-/g, " ");
 ---
 
 <BaseLayout
-  title={categoryCapitalizeDisplay}
-  description={`A collection of the best ${category} plugins.`}
+  title={`${category.length < 4 ? category.toUpperCase() : categoryCapitalizeDisplay} Framer plugins`}
+  description={`A collection of the best ${category.length < 4 ? category.toUpperCase() : category} plugins.`}
 >
   <section id="plugins">
     <div class="flex flex-col md:basis-2/3 gap-4">
       <h1 class="mt-4">
-        Best <span class="capitalize">{categoryDisplay}</span> plugins for Framer
-        designers
+        Best <span class="capitalize"
+          >{
+            category.length < 4 ? category.toUpperCase() : categoryDisplay
+          }</span
+        > plugins for Framer designers
       </h1>
       <p class="max-w-2xl text-lg">
-        A collection of the best {categoryDisplay} plugins. Find the best {
-          categoryDisplay
+        A collection of the best {
+          category.length < 4 ? category.toUpperCase() : categoryDisplay
+        } plugins. Find the best {
+          category.length < 4 ? category.toUpperCase() : categoryDisplay
         } plugins to enhance your Framer site.
       </p>
     </div>
