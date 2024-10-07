@@ -10,8 +10,6 @@ const allCategories = [
 const alphabeticalCategories = allCategories.sort((a, b) => {
   return a.localeCompare(b);
 });
-
-let categoryDisplay;
 ---
 
 <BaseLayout
@@ -26,19 +24,12 @@ let categoryDisplay;
   </section>
   <section>
     <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
-      <!-- {
-        alphabeticalCategories.map(
-          (category) =>
-            (categoryDisplay = (
-              category.charAt(0).toUpperCase() + category.slice(1)
-            ).replace(/-/g, " ")) && (
-              <CategoryCard link={category} category={categoryDisplay} />
-            )
-        )
-      } -->
       {
         alphabeticalCategories.map((category) => (
-          <CategoryCard link={category} category={category} />
+          <CategoryCard
+            link={category}
+            category={category.length < 4 ? category.toUpperCase() : category}
+          />
         ))
       }
     </div>

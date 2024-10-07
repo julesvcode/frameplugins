@@ -97,14 +97,12 @@ let topicDisplay;
     </div>
     <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
       {
-        featuredCatgories.map(
-          (category) =>
-            (categoryDisplay = (
-              category.charAt(0).toUpperCase() + category.slice(1)
-            ).replace(/-/g, " ")) && (
-              <CategoryCard link={category} category={categoryDisplay} />
-            )
-        )
+        featuredCatgories.map((category) => (
+          <CategoryCard
+            link={category}
+            category={category.length < 4 ? category.toUpperCase() : category}
+          />
+        ))
       }
     </div>
   </section>
