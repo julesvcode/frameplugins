@@ -3,7 +3,7 @@ title: "CMS Export"
 feat: true
 updateDate: 2024-10-02
 description: "Manage your CMS by exporting any CMS collection as a CSV and reimport them into Framer CMS for seamless project transfers."
-link: "https://www.framer.com/marketplace/plugins/cms-export--6fd8zduyk5je9zsw5morqqldd/"
+link: "https://www.framer.com/marketplace/plugins/cms-export--6fd8zduyk5je9zsw5morqqldd/?via=julesvcode"
 thumbnailImage: "./images/cms-export-thumb.webp"
 thumbnailAlt: "Screenshot of the CMS Export plugins for Framer"
 categories: ["cms", "free"]

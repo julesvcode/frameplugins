@@ -3,7 +3,7 @@ title: "Renamer"
 feat: true
 updateDate: 2024-10-05
 description: "Quickly rename layers to tidy up your Framer project and easily find any layers."
-link: "https://www.framer.com/marketplace/plugins/renamer--6ixseqccv3brndwg1sjoblxqu/"
+link: "https://www.framer.com/marketplace/plugins/renamer--6ixseqccv3brndwg1sjoblxqu/?via=julesvcode"
 thumbnailImage: "./images/renamer-thumb.webp"
 thumbnailAlt: "Screenshot of the Renamer plugins for Framer"
 categories: ["utilities", "productivity", "free"]

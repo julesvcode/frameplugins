@@ -3,7 +3,7 @@ title: "Migrate"
 feat: true
 updateDate: 2024-10-07
 description: "AI assistant to quickly customise a Framer template with your content"
-link: "https://www.framer.com/marketplace/plugins/migrate--atog5qz8imo0pji1b10z8alr7/"
+link: "https://www.framer.com/marketplace/plugins/migrate--atog5qz8imo0pji1b10z8alr7/?via=julesvcode"
 thumbnailImage: "./images/migrate-thumb.webp"
 thumbnailAlt: "Screenshot of the Migrate plugin for Framer"
 categories: ["ai", "migration", "content", "templates", "free"]

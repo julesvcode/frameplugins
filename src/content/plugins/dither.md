@@ -3,7 +3,7 @@ title: "Dither"
 feat: true
 updateDate: 2024-10-04
 description: "Manipulate images to add a retro dither effect tot them."
-link: "https://www.framer.com/marketplace/plugins/dither--qbtu7lnuxao7w5188cblpk32c/"
+link: "https://www.framer.com/marketplace/plugins/dither--qbtu7lnuxao7w5188cblpk32c/?via=julesvcode"
 thumbnailImage: "./images/dither-thumb.webp"
 thumbnailAlt: "Screenshot of the Dither plugins for Framer"
 categories: ["images", "visuals", "editing", "free"]

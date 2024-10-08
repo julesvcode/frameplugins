@@ -3,9 +3,9 @@ title: "Rive"
 feat: true
 updateDate: 2024-10-03
 description: "A plugin that brings interactive graphics and animations to your designs."
-link: "https://www.framer.com/marketplace/plugins/rive--6839p2e822jesvfuae7qo5w21/"
+link: "https://www.framer.com/marketplace/plugins/rive--6839p2e822jesvfuae7qo5w21/?via=julesvcode"
 thumbnailImage: "./images/rive-thumb.webp"
-thumbnailAlt: "Screenshot of the Rive plugins for Framer"
+thumbnailAlt: "Screenshot of the Rive plugin for Framer"
 categories: ["animations", "free"]
 free: true
 price: "Free"

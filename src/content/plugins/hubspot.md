@@ -3,7 +3,7 @@ title: "HubSpot"
 feat: true
 updateDate: 2024-10-04
 description: "Integrate HubSpot’s powerful tools seamlessly into your Framer projects."
-link: "https://www.framer.com/marketplace/plugins/hubspot--7ihrkelk9u6rtcrt0rbd0e78n/"
+link: "https://www.framer.com/marketplace/plugins/hubspot--7ihrkelk9u6rtcrt0rbd0e78n/?via=julesvcode"
 thumbnailImage: "./images/hubspot-thumb.webp"
 thumbnailAlt: "Screenshot of the HubSpot plugins for Framer"
 categories: ["forms", "calendar", "chat", "free"]

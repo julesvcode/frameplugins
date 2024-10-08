@@ -3,7 +3,7 @@ title: "Notion"
 feat: true
 updateDate: 2024-10-07
 description: "Sync your Notion databases to your Framer CMS in one click."
-link: "https://www.framer.com/marketplace/plugins/notion--4pc4dx6f1ivpte3hpofvbjbw7/"
+link: "https://www.framer.com/marketplace/plugins/notion--4pc4dx6f1ivpte3hpofvbjbw7/?via=julesvcode"
 thumbnailImage: "./images/notion-thumb.webp"
 thumbnailAlt: "Screenshot of the Notion plugin for Framer"
 categories:

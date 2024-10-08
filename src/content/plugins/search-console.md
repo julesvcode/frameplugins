@@ -3,7 +3,7 @@ title: "Search Console"
 feat: true
 updateDate: 2024-10-02
 description: "Track clicks, impressions and top search queries with real-time updates directly from Framer."
-link: "https://www.framer.com/marketplace/plugins/search-console--6qoo7rj8055tzpgjzda3pojoi"
+link: "https://www.framer.com/marketplace/plugins/search-console--6qoo7rj8055tzpgjzda3pojoi/?via=julesvcode"
 thumbnailImage: "./images/search-console-thumb.webp"
 thumbnailAlt: "Screenshot of the Search Console plugins for Framer"
 categories: ["seo", "free"]

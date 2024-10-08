@@ -3,10 +3,10 @@ title: "Blocs"
 feat: true
 updateDate: 2024-10-02
 description: "The ultimate design plugin for Framer with hundreds of prebuilt, responsive UI elements."
-link: "https://www.framer.com/marketplace/plugins/blocs--d9oltpzx17jv41rd6166x4p5z/"
+link: "https://www.framer.com/marketplace/plugins/blocs--d9oltpzx17jv41rd6166x4p5z/?via=julesvcode"
 thumbnailImage: "./images/blocs-thumb.webp"
-thumbnailAlt: "Screenshot of the Blocs plugins for Framer"
-categories: ["design", "ui", "components", "free"]
+thumbnailAlt: "Screenshot of the Blocs plugin for Framer"
+categories: ["design", "ui", "components", "freemium", "free"]
 free: true
 price: "Free & paid plans (from $19/month)"
 icon: "./favicons/blocs.png"
