@@ -8,6 +8,7 @@ import { getCollection } from "astro:content";
 import SignupForm from "../components/SignupForm.astro";
 import { Image } from "astro:assets";
 import puzzlePiece from "../assets/images/puzzle_piece.jpg";
+import SectionCard from "../components/SectionCard.astro";
 
 const allPlugins = await getCollection("plugins");
 
@@ -89,14 +90,14 @@ let topicDisplay;
   </section>
   <section id="topics" class="py-4">
     <div class="grid grid-col-1 sm:grid-cols-2 gap-6 pt-4">
-      <TopicCard 
-        icon="Launch"
+      <SectionCard 
+        number="1"
         link={`/categories/free`}
         title="Free"
         quantity={freePluginsNumber}
       />
-      <TopicCard 
-        icon="Launch"
+      <SectionCard 
+        number="2"
         link={`/categories/paid`}
         title="Paid"
         quantity={paidPluginsNumber}

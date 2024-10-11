@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets";
+import launchIcon from "../assets/icons/launch.svg";
+import growIcon from "../assets/icons/grow.svg";
+import monetiseIcon from "../assets/icons/monetise.svg";
+import { Icon } from "astro-icon/components";
+
+const { link, title, quantity, number } = Astro.props;
+
+
+---
+
+<a
+  href={link}
+  class="relative flex flex-col group overflow-hidden p-8 rounded-lg bg-gradient-to-b from-zinc-200 to-zinc-100 border border-zinc-200 w-full cursor-pointer hover:border-zinc-300 hover:bg-zinc-200/90"
+>
+  {number === "1" 
+    ? <Icon name="heroicons:puzzle-piece-solid" class="h-20 w-20 self-end" />
+    : <Icon name="heroicons:puzzle-piece" class="h-20 w-20 self-end" /> 
+  }
+  
+  <div class="flex flex-col w-full gap-0">
+    <h3 class="text-zinc-950 text-xl font-bold leading-8 capitalize">
+      {title} Framer <span class="lowercase">plugins</span>
+    </h3>
+    <p class="text-zinc-600 text-sm leading-6 p-0">
+      {quantity} Framer plugins.
+    </p>
+  </div>
+</a>
