@@ -11,7 +11,7 @@ const pluginCollection = defineCollection({
     thumbnailImage: image(),
     thumbnailAlt: z.string(),
     categories: z.array(z.string()),
-    free: z.boolean().default(false),
+    free: z.boolean().default(true),
     price: z.string(),
     icon: image(),
   }),

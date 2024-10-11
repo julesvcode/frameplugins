@@ -7,7 +7,7 @@ link: "https://www.framer.com/marketplace/plugins/framersync--cxmjflv066qj3p60ch
 thumbnailImage: "./images/framersync-thumb.webp"
 thumbnailAlt: "Screenshot of the FramerSync plugin for Framer"
 categories: ["cms", "database", "notion", "airtable", "automation", "paid"]
-free: true
+free: false
 price: "Paid"
 icon: "./favicons/framersync.png"
 ---

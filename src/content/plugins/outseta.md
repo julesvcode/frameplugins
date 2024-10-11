@@ -7,7 +7,7 @@ link: "https://www.framer.com/marketplace/plugins/outseta--1ch30ok1fl51lk7of2x58
 thumbnailImage: "./images/outseta-thumb.webp"
 thumbnailAlt: "Screenshot of the Outseta plugin for Framer"
 categories: ["membership", "stripe", "authentication", "monetisation", "saas", "crm", "paid"]
-free: true
+free: false
 price: "Paid"
 icon: "./favicons/outseta.png"
 ---

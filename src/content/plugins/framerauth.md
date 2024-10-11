@@ -7,7 +7,7 @@ link: "https://www.framer.com/marketplace/plugins/framerauth--c3z5rrywnrdorjuhsq
 thumbnailImage: "./images/framerauth-thumb.webp"
 thumbnailAlt: "Screenshot of the FramerAuth plugin for Framer"
 categories: ["membership", "lemonsqueezy", "monetisation", "authentication", "paid"]
-free: true
+free: false
 price: "Paid"
 icon: "./favicons/framerauth.png"
 ---

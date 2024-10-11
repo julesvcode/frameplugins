@@ -21,10 +21,10 @@ const { link, title, quantity } = Astro.props;
   {title === "Monetise" && <Icon name="lucide:piggy-bank" class="h-8 w-8" />}
   <div class="flex flex-col w-full">
     <h3 class="text-zinc-950 text-xl font-bold leading-8 capitalize">
-      {title}
+      {title} Framer <span class="lowercase">plugins</span>
     </h3>
-    <p class="text-zinc-600 text-sm leading-6 line-clamp-2">
-      Discover {quantity} tools to {title.toLowerCase()} your newsletter.
+    <p class="text-zinc-600 text-sm leading-6 line-clamp-3">
+      Discover <b>{quantity} {title.toLowerCase()} Framer plugins</b> to supercharge your websites.
     </p>
   </div>
 </a>

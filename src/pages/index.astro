@@ -11,6 +11,10 @@ import puzzlePiece from "../assets/images/puzzle_piece.jpg";
 
 const allPlugins = await getCollection("plugins");
 
+const allPluginsNumber = allPlugins.length
+const freePluginsNumber = allPlugins.filter(plugin => plugin.data.free === true ).length
+const paidPluginsNumber = allPlugins.filter(plugin => plugin.data.free === false ).length
+
 // Categories
 const allCategories = [
   ...new Set(allPlugins.map((plugin) => plugin.data.categories).flat()),
@@ -19,6 +23,7 @@ const alphabeticalCategories = allCategories.sort((a, b) => {
   return a.localeCompare(b);
 });
 const featuredCatgories = alphabeticalCategories.slice(0, 6);
+
 
 // Tools
 const featuredPlugins = allPlugins.filter((tool) => tool.data.feat === true);
@@ -82,17 +87,25 @@ let topicDisplay;
       <!-- {latestThreePlugins.map((plugin) => <ToolCard plugins={plugin} />)} -->
     </div>
   </section>
+  <section id="topics" class="py-4">
+    <div class="grid grid-col-1 sm:grid-cols-2 gap-6 pt-4">
+      <TopicCard 
+        icon="Launch"
+        link={`/categories/free`}
+        title="Free"
+        quantity={freePluginsNumber}
+      />
+      <TopicCard 
+        icon="Launch"
+        link={`/categories/paid`}
+        title="Paid"
+        quantity={paidPluginsNumber}
+      />
+    </div>
+  </section>
   <section id="categories" class="py-4">
     <div class="group flex items-end justify-between">
-      <h2>
-        <span class="relative">
-          <span
-            class="absolute w-full bg-blue-500 right-0 bottom-1 h-2 -rotate-1 opacity-50 -z-10"
-          ></span>
-          Top
-        </span>
-        Categories
-      </h2>
+      <h2>Top Categories</h2>
       <a href="/categories" class="text-sm hover:underline"> View all → </a>
     </div>
     <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">

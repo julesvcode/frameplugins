@@ -7,7 +7,7 @@ link: "https://www.framer.com/marketplace/plugins/hubspot--7ihrkelk9u6rtcrt0rbd0
 thumbnailImage: "./images/hubspot-thumb.webp"
 thumbnailAlt: "Screenshot of the HubSpot plugins for Framer"
 categories: ["forms", "calendar", "chat", "free"]
-free: true
+free: false
 price: "Free"
 icon: "./favicons/hubspot.png"
 ---

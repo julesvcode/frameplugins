@@ -7,7 +7,7 @@ link: "https://www.framer.com/marketplace/plugins/sol--4rzx5kzvv09drv2icaxp9d732
 thumbnailImage: "./images/sol-thumb.webp"
 thumbnailAlt: "Screenshot of the Sol plugin for Framer"
 categories: ["animations", "visuals", "gradients", "design", "interactions", "paid"]
-free: true
+free: false
 price: "Paid"
 icon: "./favicons/sol.png"
 ---

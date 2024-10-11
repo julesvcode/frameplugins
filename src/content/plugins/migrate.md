@@ -7,7 +7,7 @@ link: "https://www.framer.com/marketplace/plugins/migrate--atog5qz8imo0pji1b10z8
 thumbnailImage: "./images/migrate-thumb.webp"
 thumbnailAlt: "Screenshot of the Migrate plugin for Framer"
 categories: ["AI", "migration", "content", "templates", "paid"]
-free: true
+free: false
 price: "Paid"
 icon: "./favicons/migrate.png"
 ---

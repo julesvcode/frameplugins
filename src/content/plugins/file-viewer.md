@@ -7,7 +7,7 @@ link: "https://www.framer.com/marketplace/plugins/file-viewer--e2qyc57qwzq9271ov
 thumbnailImage: "./images/fileviewer-thumb.webp"
 thumbnailAlt: "Screenshot of the File Viewer plugin for Framer"
 categories: ["files", "thumbnails", "productivity", "utilities", "paid"]
-free: true
+free: false
 price: "Paid"
 icon: "./favicons/fileviewer.png"
 ---

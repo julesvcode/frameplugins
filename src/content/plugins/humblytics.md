@@ -7,7 +7,7 @@ link: "https://www.framer.com/marketplace/plugins/humblytics--8zic8o95wui58bvcj7
 thumbnailImage: "./images/humblytics-thumb.webp"
 thumbnailAlt: "Screenshot of the Humblytics plugin for Framer"
 categories: ["analytics", "data", "performance", "traffic", "tracking", "paid"]
-free: true
+free: false
 price: "Paid"
 icon: "./favicons/humblytics.png"
 ---
