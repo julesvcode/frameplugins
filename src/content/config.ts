@@ -7,7 +7,7 @@ const pluginCollection = defineCollection({
     feat: z.boolean().default(false),
     updateDate: z.date(),
     description: z.string(),
-    link: z.string().url(),
+    link: z.string(),
     thumbnailImage: image(),
     thumbnailAlt: z.string(),
     categories: z.array(z.string()),
