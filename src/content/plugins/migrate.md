@@ -6,7 +6,7 @@ description: "AI assistant to quickly customise a Framer template with your cont
 link: "https://www.framer.com/marketplace/plugins/migrate--atog5qz8imo0pji1b10z8alr7/?via=julesvcode"
 thumbnailImage: "./images/migrate-thumb.webp"
 thumbnailAlt: "Screenshot of the Migrate plugin for Framer"
-categories: ["AI", "migration", "content", "templates", "paid"]
+categories: ["ai", "migration", "content", "templates", "paid"]
 free: false
 price: "Paid"
 icon: "./favicons/migrate.png"

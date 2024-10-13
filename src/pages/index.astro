@@ -25,6 +25,15 @@ const alphabeticalCategories = allCategories.sort((a, b) => {
 });
 const featuredCatgories = alphabeticalCategories.slice(0, 6);
 
+const topCategories = [
+  { label: "AI", href: "/ai" },
+  { label: "Analytics", href: "/analytics" },
+  { label: "Animations", href: "/animations" },
+  { label: "CMS", href: "/cms" },
+  { label: "Membership", href: "/membership" },
+  { label: "Utilities", href: "/utilities" },
+]
+
 
 // Tools
 const featuredPlugins = allPlugins.filter((tool) => tool.data.feat === true);
@@ -111,10 +120,10 @@ let topicDisplay;
     </div>
     <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
       {
-        featuredCatgories.map((category) => (
+        topCategories.map((category) => (
           <CategoryCard
-            link={category}
-            category={category.length < 4 ? category.toUpperCase() : category}
+            link={category.href}
+            category={category.label}
           />
         ))
       }
