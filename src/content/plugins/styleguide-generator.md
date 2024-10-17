@@ -6,7 +6,7 @@ description: "Automatically create visual style guides for your Framer projects.
 link: "https://www.framer.com/marketplace/plugins/styleguide-generator--8hxaxh19f843ykpz4m0qx9igw/?via=julesvcode"
 thumbnailImage: "./images/styleguidegenerator-thumb.webp"
 thumbnailAlt: "Screenshot of the Styleguide Generator plugin for Framer"
-categories: ["styles", "design", "styleguide", "color", "text", "paid"]
+categories: ["styles", "design", "styleguide", "colors", "text", "paid"]
 free: true
 price: "Paid"
 icon: "./favicons/styleguidegenerator.png"

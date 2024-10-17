@@ -5,7 +5,7 @@ updateDate: 2024-10-03
 description: "The ultimate plugin to search, drag, and drop icons from the Phosphor icon kit into your Framer project."
 link: "https://www.framer.com/marketplace/plugins/phosphor--9emi5idtsiarc9bkykvbptlv3/?via=julesvcode"
 thumbnailImage: "./images/phosphor-thumb.webp"
-thumbnailAlt: "Screenshot of the Phosphor plugins for Framer"
+thumbnailAlt: "Screenshot of the Phosphor plugin for Framer"
 categories: ["icons", "free"]
 free: true
 price: "Free"
