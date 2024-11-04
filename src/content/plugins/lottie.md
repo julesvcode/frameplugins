@@ -1,11 +1,11 @@
 ---
-title: "Lottie"
+title: "LottieFiles"
 feat: true
 updateDate: 2024-10-04
 description: "Get access to 500,000+ free and premium customizable Lottie animations for your websites."
 link: "https://www.framer.com/marketplace/plugins/lottiefiles--34tc2ja4nxe8bk8603k766y7q/?via=julesvcode"
 thumbnailImage: "./images/lottie-thumb.webp"
-thumbnailAlt: "Screenshot of the Lottie plugins for Framer"
+thumbnailAlt: "Screenshot of the LottieFiles plugins for Framer"
 categories: ["animations", "lottie", "free"]
 free: true
 price: "Free"
@@ -24,4 +24,4 @@ It allows designers to easily incorporate engaging animations into their project
 - Easy customization: Personalize animations to match your brand colors with simple tools.
 - Framer compatibility: Works smoothly with Framer's existing interactivity features.
 
-For Framer designers, the Lottie plugin is a powerful tool for adding life and interactivity to web designs. It simplifies the process of incorporating high-quality animations, allowing you to create more engaging and dynamic websites without the need for complex coding or large file sizes.
+For Framer designers, the LottieFiles plugin is a powerful tool for adding life and interactivity to web designs. It simplifies the process of incorporating high-quality animations, allowing you to create more engaging and dynamic websites without the need for complex coding or large file sizes.
