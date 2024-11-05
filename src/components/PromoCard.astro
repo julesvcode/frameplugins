@@ -1,15 +1,38 @@
 ---
 import { Image } from "astro:assets";
 import framerAdBanner from "../assets/images/framer_ad_square.png";
+import beehiivAdBanner from "../assets/images/beehiiv_ad_square.png";
+import senjaAdBanner from "../assets/images/senja_ad_square.png";
+
+const ads = [
+  {
+    image: framerAdBanner,
+    link: "/framer",
+    alt: "The fastest site builder on the Internet. Try now!"
+  },
+  {
+    image: beehiivAdBanner,
+    link: "/beehiiv",
+    alt: "Launch, grow and monetise your newsletter with Beehiiv. Get started for free now!"
+  },
+  {
+    image: senjaAdBanner,
+    link: "/senja",
+    alt: "Collect, manage & share testimonials from your customers.Get started for free now!"
+  }
+];
+
+const selectedAd = ads[Math.floor(Math.random() * ads.length)];
+
 ---
 
 <a
-  href="/framer"
+  href={selectedAd.link}
   target="_blank"
   class="flex flex-col gap-4 group overflow-hidden rounded-lg w-full cursor-pointer hover:opacity-90"
 >
   <Image
-    src={framerAdBanner}
-    alt="Get 20% off your first 3 months with Beehiiv"
+    src={selectedAd.image}
+    alt={selectedAd.alt}
   />
 </a>
