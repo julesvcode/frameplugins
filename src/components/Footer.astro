@@ -1,4 +1,6 @@
 ---
+import SocialLinks from "./SocialLinks.astro";
+
 const navLinks = [
   { label: "Plugins", href: "/plugins" },
   { label: "Categories", href: "/categories" },
@@ -93,8 +95,9 @@ const moreLinks = [
       </ul>
     </div>
   </div>
-  <div class="w-full pt-6 border-t border-zinc-200 text-sm text-zinc-600">
+  <div class="w-full flex flex-col md:flex-row gap-4 md:justify-between pt-6 border-t border-zinc-200 text-sm text-zinc-600">
     <span>© {new Date().getFullYear()} Frameplugins. All rights reserved.</span
     >
+    <SocialLinks />
   </div>
 </footer>
