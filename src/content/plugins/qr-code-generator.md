@@ -1,6 +1,6 @@
 ---
 title: "QR Code Generator"
-feat: true
+feat: false
 updateDate: 2024-11-05
 description: "Turn your text and URLs into customisable QR codes within Framer."
 link: "https://www.framer.com/marketplace/plugins/qr-code-generator--8zzd03iwhwha9m8pncxpcarc7/?via=julesvcode"

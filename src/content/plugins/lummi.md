@@ -1,6 +1,6 @@
 ---
 title: "Lummi"
-feat: true
+feat: false
 updateDate: 2024-10-15
 description: "Access a vast library of gorgeous photos, illustrations and 3D renders in your Framer projects."
 link: "https://www.framer.com/marketplace/plugins/lummi--6p0ki7q9i3av4klw8fakjn7wj/?via=julesvcode"

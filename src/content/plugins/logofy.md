@@ -1,6 +1,6 @@
 ---
 title: "Logofy"
-feat: true
+feat: false
 updateDate: 2024-10-07
 description: "Access 3k+ SVG logos to drag & drop directly into your Framer canva."
 link: "https://www.framer.com/marketplace/plugins/logofy--a4tq4t3hh7wtzz2ciw283ho8p/?via=julesvcode"

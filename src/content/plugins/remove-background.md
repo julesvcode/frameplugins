@@ -1,6 +1,6 @@
 ---
 title: "Remove Background"
-feat: true
+feat: false
 updateDate: 2024-11-06
 description: "Remove backgrounds from your images right inside Framer."
 link: "https://www.framer.com/marketplace/plugins/remove-background--7myvaf3wpgyde91bvc0e51ki4/?via=julesvcode"

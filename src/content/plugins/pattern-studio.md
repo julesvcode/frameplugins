@@ -1,6 +1,6 @@
 ---
 title: "Pattern Studio"
-feat: true
+feat: false
 updateDate: 2024-11-07
 description: "Incorporate stunning SVG patterns into your Framer designs"
 link: "https://www.framer.com/marketplace/plugins/pattern-studio--bnihurxofcnd4q4bxk27vvnn8/?via=julesvcode"

@@ -1,6 +1,6 @@
 ---
 title: "Shades and Tints"
-feat: true
+feat: false
 updateDate: 2024-10-17
 description: "Generate color variations from any background fill straight into Framer."
 link: "https://www.framer.com/marketplace/plugins/shades-and-tints--7e1weo6dc4kbc7lm08jff718e/?via=julesvcode"

@@ -1,6 +1,6 @@
 ---
 title: "TypeSystem"
-feat: true
+feat: false
 updateDate: 2024-10-17
 description: "Generate responsive text styles for your Framer projects in one click."
 link: "https://www.framer.com/marketplace/plugins/typesystem--fg8kfqxy5jp1stoodoxrlqcy5/?via=julesvcode"

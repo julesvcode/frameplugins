@@ -1,6 +1,6 @@
 ---
 title: "Search Console"
-feat: true
+feat: false
 updateDate: 2024-10-02
 description: "Track clicks, impressions and top search queries with real-time updates directly from Framer."
 link: "https://www.framer.com/marketplace/plugins/search-console--6qoo7rj8055tzpgjzda3pojoi/?via=julesvcode"

@@ -1,6 +1,6 @@
 ---
 title: "Lorem Ipsum"
-feat: true
+feat: false
 updateDate: 2024-10-31
 description: "Adding Lorem Ipsum text to your designs has bever been easier."
 link: "https://www.framer.com/marketplace/plugins/lorem-ipsum--4od3tdg2pbkg8yjk1rdspv3dh/?via=julesvcode"

@@ -1,6 +1,6 @@
 ---
 title: "Spell Check"
-feat: true
+feat: false
 updateDate: 2024-10-08
 description: "Catch spelling and grammar errors in your design projects."
 link: "https://www.framer.com/marketplace/plugins/spell-checker--j8jzhu502kka9l3pa8712otjw/?via=julesvcode"

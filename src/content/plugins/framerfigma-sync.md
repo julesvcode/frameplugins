@@ -1,6 +1,6 @@
 ---
 title: "Framer/Figma Sync"
-feat: true
+feat: false
 updateDate: 2024-10-15
 description: "Import color and text styles from your Figma projects to Framer."
 link: "https://www.framer.com/marketplace/plugins/framerfigma-sync--dnfunk314n390xjlgfi020xhm/?via=julesvcode"

@@ -1,6 +1,6 @@
 ---
 title: "Populate"
-feat: true
+feat: false
 updateDate: 2024-11-08
 description: "Fill your Framer designs with realistic data."
 link: "https://www.framer.com/marketplace/plugins/populate--y2iw2wuu8lby8d6hjoc1rq4v2/?via=julesvcode"

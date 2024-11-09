@@ -1,6 +1,6 @@
 ---
 title: "Thenty"
-feat: true
+feat: false
 updateDate: 2024-10-12
 description: "Enable e-commerce and membership functionality for your Framer websites."
 link: "/thenty"

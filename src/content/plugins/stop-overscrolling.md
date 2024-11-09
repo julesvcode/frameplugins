@@ -1,6 +1,6 @@
 ---
 title: "Stop Overscrolling"
-feat: true
+feat: false
 updateDate: 2024-11-08
 description: "Eliminate unwanted page bouncing in your Framer websites."
 link: "https://www.framer.com/marketplace/plugins/stop-overscrolling--98threg2hh2k7qxd5t2w8k3tn/?via=julesvcode"

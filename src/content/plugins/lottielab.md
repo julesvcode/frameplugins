@@ -1,6 +1,6 @@
 ---
 title: "Lottielab"
-feat: true
+feat: false
 updateDate: 2024-11-04
 description: "Integrate Lottielab animations into your Framer projects"
 link: "https://www.framer.com/marketplace/plugins/lottielab--6nrbfdr9tq0buentww4xxsq6v/?via=julesvcode"

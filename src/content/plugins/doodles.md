@@ -1,6 +1,6 @@
 ---
 title: "Doodles"
-feat: true
+feat: false
 updateDate: 2024-10-14
 description: "Draw freehand illustrations directly within your Framer projects."
 link: "https://www.framer.com/marketplace/plugins/doodles--ahhhxqo51mvyuwejaexvg1td4/?via=julesvcode"

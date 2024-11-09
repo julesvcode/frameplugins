@@ -1,6 +1,6 @@
 ---
 title: "File Viewer"
-feat: true
+feat: false
 updateDate: 2024-10-10
 description: "Manage your files straight in Framer - upload files, auto generate thumbnails and let users easily download them."
 link: "https://www.framer.com/marketplace/plugins/file-viewer--e2qyc57qwzq9271ov0xyf7slj/?via=julesvcode"

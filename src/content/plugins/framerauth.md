@@ -1,6 +1,6 @@
 ---
 title: "FramerAuth"
-feat: true
+feat: false
 updateDate: 2024-10-11
 description: "Add membership functionalities to your Framer website without coding."
 link: "https://www.framer.com/marketplace/plugins/framerauth--c3z5rrywnrdorjuhsqmh6vas1/?via=julesvcode"

@@ -1,6 +1,6 @@
 ---
 title: "PhotoBase"
-feat: true
+feat: false
 updateDate: 2024-11-08
 description: "An extensive library of AI-generated stock photos."
 link: "https://www.framer.com/marketplace/plugins/photobase--9t035fnvgmh89q2jtluqyavqo/?via=julesvcode"

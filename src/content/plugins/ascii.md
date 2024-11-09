@@ -1,6 +1,6 @@
 ---
 title: "ASCII"
-feat: true
+feat: false
 updateDate: 2024-10-08
 description: "Transform images and text into ASCII art for your web designs."
 link: "https://www.framer.com/marketplace/plugins/ascii--81se5lrkenro2qofyi61hy5ug/?via=julesvcode"

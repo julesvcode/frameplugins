@@ -1,6 +1,6 @@
 ---
 title: "Unsplash"
-feat: true
+feat: false
 updateDate: 2024-10-05
 description: "Get access to the biggest collection of high-quality stock photos from Unsplash directly within Framer."
 link: "https://www.framer.com/marketplace/plugins/unsplash--cmqc8pkxvwstuzme9dilm4zm2/?via=julesvcode"

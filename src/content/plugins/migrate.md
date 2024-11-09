@@ -1,6 +1,6 @@
 ---
 title: "Migrate"
-feat: true
+feat: false
 updateDate: 2024-10-07
 description: "AI assistant to quickly customise a Framer template with your content"
 link: "https://unframer.co/pluginlink/migrate?aff=0BlLG"

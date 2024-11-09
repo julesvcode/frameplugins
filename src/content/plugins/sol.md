@@ -1,6 +1,6 @@
 ---
 title: "Sol"
-feat: true
+feat: false
 updateDate: 2024-10-10
 description: "Design animated gradients, interactive grids and procedural shapes, all straight in Framer."
 link: "https://www.framer.com/marketplace/plugins/sol--4rzx5kzvv09drv2icaxp9d732/?via=julesvcode"

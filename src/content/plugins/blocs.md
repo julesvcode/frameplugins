@@ -1,6 +1,6 @@
 ---
 title: "Blocs"
-feat: true
+feat: false
 updateDate: 2024-10-02
 description: "The ultimate design plugin for Framer with hundreds of prebuilt, responsive UI elements."
 link: "https://www.framer.com/marketplace/plugins/blocs--d9oltpzx17jv41rd6166x4p5z/?via=julesvcode"

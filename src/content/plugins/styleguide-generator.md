@@ -1,6 +1,6 @@
 ---
 title: "Styleguide Generator"
-feat: true
+feat: false
 updateDate: 2024-10-14
 description: "Automatically create visual style guides for your Framer projects."
 link: "https://www.framer.com/marketplace/plugins/styleguide-generator--8hxaxh19f843ykpz4m0qx9igw/?via=julesvcode"

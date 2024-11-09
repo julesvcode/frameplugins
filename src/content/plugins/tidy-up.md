@@ -1,6 +1,6 @@
 ---
 title: "Tidy Up"
-feat: true
+feat: false
 updateDate: 2024-10-08
 description: "Organizes and aligns your design elements and frames with a single click."
 link: "https://www.framer.com/marketplace/plugins/tidy-up--ayqc3f3hshzw5dzbb4ivs3bp9/?via=julesvcode"

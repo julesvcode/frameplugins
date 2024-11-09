@@ -1,6 +1,6 @@
 ---
 title: "Asset Manager"
-feat: true
+feat: false
 updateDate: 2024-11-06
 description: "Organise and control all your design assets from the Framer canva."
 link: "https://www.framer.com/marketplace/plugins/remove-background--7myvaf3wpgyde91bvc0e51ki4/?via=julesvcode"

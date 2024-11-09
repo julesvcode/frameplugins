@@ -1,6 +1,6 @@
 ---
 title: "Monkeyframes Pro"
-feat: true
+feat: false
 updateDate: 2024-11-08
 description: "Integrate high-quality static icons into your Framer projects."
 link: "https://www.framer.com/marketplace/plugins/monkeyframes-pro--ed1b0fquib8b719wv0h3exbqv/?via=julesvcode"

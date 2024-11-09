@@ -3,7 +3,7 @@ title: "Frameblox"
 feat: true
 updateDate: 2024-11-07
 description: "UI Kit to build and launch Framer websites faster than ever before."
-link: "https://www.framer.com/marketplace/plugins/frameblox--3h08h75bkjprpjixajvrpd6gz/?via=julesvcode"
+link: "https://www.frameblox.com/plugin?aff=0BlLG"
 thumbnailImage: "./images/frameblox-thumb.webp"
 thumbnailAlt: "Screenshot of the Frameblox plugin for Framer"
 categories: ["design", "ui", "library", "paid"]

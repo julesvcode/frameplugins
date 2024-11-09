@@ -1,6 +1,6 @@
 ---
 title: "Outseta"
-feat: true
+feat: false
 updateDate: 2024-10-11
 description: "Transform your Framer website into a membership site."
 link: "https://www.framer.com/marketplace/plugins/outseta--1ch30ok1fl51lk7of2x58csbp/?via=julesvcode"

@@ -1,6 +1,6 @@
 ---
 title: "Dither"
-feat: true
+feat: false
 updateDate: 2024-10-04
 description: "Manipulate images to add a retro dither effect tot them."
 link: "https://www.framer.com/marketplace/plugins/dither--qbtu7lnuxao7w5188cblpk32c/?via=julesvcode"

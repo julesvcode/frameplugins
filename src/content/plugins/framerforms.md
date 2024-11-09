@@ -1,6 +1,6 @@
 ---
 title: "FramerForms"
-feat: true
+feat: false
 updateDate: 2024-10-12
 description: "Create advanced, customizable forms directly in Framer."
 link: "/framerforms"

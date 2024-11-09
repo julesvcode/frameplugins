@@ -1,6 +1,6 @@
 ---
 title: "Rive"
-feat: true
+feat: false
 updateDate: 2024-10-03
 description: "A plugin that brings interactive graphics and animations to your designs."
 link: "https://www.framer.com/marketplace/plugins/rive--6839p2e822jesvfuae7qo5w21/?via=julesvcode"

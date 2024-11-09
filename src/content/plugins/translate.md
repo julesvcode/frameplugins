@@ -1,6 +1,6 @@
 ---
 title: "Translate"
-feat: true
+feat: false
 updateDate: 2024-11-08
 description: "Translate text layers into multiple languages directly in Framer."
 link: "https://www.framer.com/marketplace/plugins/translate--7x7usj6iwif9feeszbi8ljj9z/?via=julesvcode"

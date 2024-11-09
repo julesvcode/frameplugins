@@ -1,6 +1,6 @@
 ---
 title: "Semflow"
-feat: true
+feat: false
 updateDate: 2024-10-12
 description: "Optimise your Framer websites for search engines."
 link: "https://www.framer.com/marketplace/plugins/semflow--dklqqqe5eq48su2nyybdr5sup/?via=julesvcode"

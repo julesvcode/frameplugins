@@ -1,6 +1,6 @@
 ---
 title: "HubSpot"
-feat: true
+feat: false
 updateDate: 2024-10-04
 description: "Integrate HubSpot’s powerful tools seamlessly into your Framer projects."
 link: "https://www.framer.com/marketplace/plugins/hubspot--7ihrkelk9u6rtcrt0rbd0e78n/?via=julesvcode"

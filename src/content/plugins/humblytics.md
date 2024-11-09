@@ -1,6 +1,6 @@
 ---
 title: "Humblytics"
-feat: true
+feat: false
 updateDate: 2024-10-11
 description: "Simplify your website analytics without using any cookies."
 link: "https://www.framer.com/marketplace/plugins/humblytics--8zic8o95wui58bvcj7lepol1u/?via=julesvcode"

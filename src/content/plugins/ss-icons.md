@@ -1,6 +1,6 @@
 ---
 title: "SS Icons"
-feat: true
+feat: false
 updateDate: 2024-11-05
 description: "Add and manage icons in your Framer projects effortlessly."
 link: "https://www.framer.com/marketplace/plugins/ss-icons--8qgvim0w8mf05wdr4j2c8puut/?via=julesvcode"

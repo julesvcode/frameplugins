@@ -1,6 +1,6 @@
 ---
 title: "LottieFiles"
-feat: true
+feat: false
 updateDate: 2024-10-04
 description: "Get access to 500,000+ free and premium customizable Lottie animations for your websites."
 link: "https://www.framer.com/marketplace/plugins/lottiefiles--34tc2ja4nxe8bk8603k766y7q/?via=julesvcode"

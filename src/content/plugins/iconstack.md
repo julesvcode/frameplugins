@@ -1,6 +1,6 @@
 ---
 title: "Iconstack"
-feat: true
+feat: false
 updateDate: 2024-10-03
 description: "The ultimate icon library plugin for Framer with over 40,000+ icons from 20+ packs."
 link: "https://www.framer.com/marketplace/plugins/iconstack--ejhq7iilptr63txplht0wv4lv/?via=julesvcode"
