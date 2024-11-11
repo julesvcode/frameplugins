@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-import BaseLayout from "../../layouts/BaseLayout.astro";
 import PostCard from "../../components/PostCard.astro";
+import TwoColumnsLayout from "../../layouts/TwoColumnsLayout.astro";
 
 const allPosts = await getCollection("posts");
 const sortedPosts = allPosts.sort(
@@ -10,21 +10,18 @@ const sortedPosts = allPosts.sort(
 );
 ---
 
-<BaseLayout title="Blog" description="Discover all the latest Framer plugins.">
+<TwoColumnsLayout title="Blog" description="Learn about all the latest Framer plugins.">
   <section class="w-full flex gap-4">
     <div class="flex flex-col gap-4">
       <h1>Blog</h1>
       <p class="text-lg max-w-xl">
-        A collection of useful articles for Framer designers and developers.
-        Learn about the latest Framer plugins.
+        A collection of useful articles for Framer designers and developers to learn about the latest Framer plugins.
       </p>
     </div>
   </section>
-  <section class="w-full flex gap-4 pb-8">
-    <p class="text-base italic text-zinc-500">Coming soon..</p>
-    <div class="min-h-48"></div>
-    <!-- <div class="grid grid-col-1 md:grid-cols-2 gap-6 pt-4">
+  <section class="w-full flex flex-col gap-4 pb-8">
+    <div class="flex flex-col gap-6 pt-4">
       {sortedPosts.map((post) => <PostCard posts={post} />)}
-    </div> -->
+    </div>
   </section>
-</BaseLayout>
+</TwoColumnsLayout>

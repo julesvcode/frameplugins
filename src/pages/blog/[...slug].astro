@@ -26,35 +26,22 @@ const { Content, headings } = await entry.render();
 
 const subheadings = headings.filter((heading) => heading.depth === 2);
 
-var month = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
+var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 const publishedDate = `${month[entry.data.pubDate.getMonth()]} ${entry.data.pubDate.getDate()}, ${entry.data.pubDate.getFullYear()}`;
 ---
 
 <TwoColumnsLayout title={entry.data.title}>
-  <section class="flex flex-col gap-4">
-    <div class="flex flex-col items-start gap-2 justify-between pb-4">
+  <section class="blog-content flex flex-col gap-4">
+    <div class="relative flex flex-col items-start gap-2 justify-between pb-4">
+      <a href="/blog" class="hidden md:flex absolute top-[2px] -left-14 w-10 h-8 items-center justify-center !no-underline bg-zinc-200 border font-bold border-zinc-100 text-sm text-zinc-950 rounded-md hover:bg-opacity-80">←</a>
       <h1 class="text-zinc-950 text-3xl font-bold">{entry.data.title}</h1>
-      <p class="text-sm text-zinc-500">
+      <p class="text-sm text-zinc-600">
         {publishedDate} - {entry.data.readingSpeed} min read
       </p>
     </div>
-    {
-      subheadings.length > 2 && (
-        <div class="flex flex-col gap-2 leading-7 p-8 rounded-lg bg-zinc-100 mb-8">
+    {subheadings.length > 2 && (
+        <div class="flex flex-col gap-2 leading-7 p-6 rounded-lg bg-zinc-100 max-w-xs mb-8">
           <span class="uppercase font-medium text-xs">In this article:</span>
           <ul>
             {subheadings.map((subheading) => (

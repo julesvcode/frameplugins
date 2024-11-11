@@ -7,7 +7,7 @@
       @apply text-4xl;
       @apply text-zinc-950;
       @apply font-semibold;
-      @apply leading-tight;
+      @apply leading-snug;
       @apply tracking-tight;
     }
     
@@ -47,5 +47,17 @@
     p > a {
       @apply underline;
       @apply font-bold;
+    }
+
+    .blog-content img {
+      @apply border border-zinc-200 rounded-md
+    }
+
+    .blog-content a {
+      @apply underline text-zinc-900;
+    }
+
+    .blog-content a:hover {
+      @apply underline text-zinc-700;
     }
 }
