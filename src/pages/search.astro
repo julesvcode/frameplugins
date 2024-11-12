@@ -38,10 +38,8 @@ const allPlugins = await getCollection("plugins");
   </aside>
   <p id="searchReadout"></p>
   <section aria-label="Search results">
-    <span id="searchResults"></span>
-    <!-- <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
-      {allPlugins.map((plugin) => <ToolCard plugins={plugin} />)}
-    </div> -->
+    <div id="searchResults" class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+    </div>
   </section>
 </BaseLayout>
 
@@ -79,7 +77,7 @@ const allPlugins = await getCollection("plugins");
 
   const search = document.querySelector("#search") as HTMLInputElement
   const searchReadout = document.querySelector("#searchReadout") as HTMLInputElement
-  const searchResults = document.querySelector("#searchResults") as HTMLInputElement
+  const resultsList = document.querySelector("#searchResults") as HTMLInputElement
   
   function updateDocumentTitle(search) {
     document.title = search
@@ -93,9 +91,43 @@ const allPlugins = await getCollection("plugins");
       : ""  
   }
 
+  function updateSearchPageURL(search) {
+    const url = new URL(window.location.href)
+    url.searchParams.set("q", search)
+    window.history.replaceState(null, "", url)
+  }
+
+  function generateSearchList(results) {
+    return results.map((r) => {
+      const { title, description, categories, slug } = r.item
+      return `
+        <a
+          href="/plugins/${slug}"
+          class="relative flex flex-col gap-8 group overflow-hidden p-8 rounded-lg bg-zinc-100 border border-zinc-200 w-full cursor-pointer hover:border-zinc-300 hover:bg-opacity-80"
+        >
+          <div class="flex flex-col gap-0 w-full">
+            <div class="flex items-center gap-2">
+              <h3 class="text-zinc-950 font-bold leading-8">
+                ${title}
+              </h3>
+            </div>
+            <p class="text-zinc-700 text-base leading-7 line-clamp-2">
+              ${description}
+            </p>
+          </div>
+          <div class="flex gap-2 items-center justify-between">
+            <p class="flex gap-1 items-center text-zinc-700 text-xs leading-0 bg-zinc-100 border border-zinc-200 rounded w-fit py-1 px-2">
+              ${categories[0]} 
+            </p>
+          </div>
+        </a>
+      `
+    }).join("")
+  }
+
   async function fetchSearchResults(search) {
     if (search.length === 0) return
-    searchResults.innerHTML = SPINNER
+    resultsList.innerHTML = SPINNER
 
     if (!SEARCH_DATA) {
       try {
@@ -116,7 +148,9 @@ const allPlugins = await getCollection("plugins");
 
     if (!FUSE_INSTANCE) return
     const searchResult = FUSE_INSTANCE.search(search)
-    console.log(searchResult)
+    resultsList.innerHTML = searchResult.length > 0 
+      ? generateSearchList(searchResult)
+      : "No results found"
   }
   
 
@@ -137,6 +171,7 @@ const allPlugins = await getCollection("plugins");
       updateDocumentTitle(searchTerm)
       updateDocumentReadout(searchTerm)
       fetchSearchResults(searchTerm)
+      updateSearchPageURL(searchTerm)
     }
   })
 </script>
