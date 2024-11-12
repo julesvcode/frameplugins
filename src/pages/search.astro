@@ -9,22 +9,21 @@ const allPlugins = await getCollection("plugins");
 
 <BaseLayout
   title="Search plugins"
-  description="All the best Framer plugins you need to supercharge your website."
+  description="Browse all the best Framer plugins you need to supercharge your website."
 >
   <section class="w-full flex gap-4">
     <div class="flex flex-col md:basis-2/3 gap-4">
-      <h1>All Framer plugins</h1>
+      <h1>Search all Framer plugins</h1>
       <p class="text-lg">
-        All the best Framer plugins you need to enhanced your website - from SEO
-        to CMS management and design.
+        Search for a plugin name, a plugin category or even a just keyword to find a specific Framer plugin.
       </p>
     </div>
   </section>
   <!-- <SearchWidget /> -->
-  <aside class="form">
-    <div>
-      <div>
-          <label for="search">Search plugins</label>
+  <aside class="w-full sm:w-fit">
+    <div class="relative">
+      <div class="absolute top-3 left-2 text-zinc-700">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"></path></svg>
       </div>
       <input 
           type="search" 
@@ -33,10 +32,12 @@ const allPlugins = await getCollection("plugins");
           maxlength="24" 
           name="search" 
           id="search" 
-          placeholder="Search for plugins..">
+          placeholder="Search for plugins.."
+          class="w-full bg-zinc-200 border border-zinc-300 rounded-md py-2 pl-8 pr-3 text-sm text-zinc-900 placeholder-zinc-500"
+      />
     </div>
   </aside>
-  <p id="searchReadout"></p>
+  <span class="italic" id="searchReadout"></span class="italic">
   <section aria-label="Search results">
     <div id="searchResults" class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
     </div>
