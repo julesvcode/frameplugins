@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import ToolCard from "../../components/ToolCard.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import SearchWidget from "../../components/SearchWidget.astro";
 
 const allPlugins = await getCollection("plugins");
 ---
@@ -20,6 +21,9 @@ const allPlugins = await getCollection("plugins");
     </div>
   </section>
   <section>
+    <div class="w-full flex justify-end self-end">
+      <SearchWidget />
+    </div>
     <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
       {allPlugins.map((plugin) => <ToolCard plugins={plugin} />)}
     </div>
