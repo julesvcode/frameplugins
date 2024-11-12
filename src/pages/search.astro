@@ -1,0 +1,81 @@
+---
+import { getCollection } from "astro:content";
+import ToolCard from "../components/ToolCard.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SearchWidget from "../components/SearchWidget.astro";
+
+const allPlugins = await getCollection("plugins");
+---
+
+<BaseLayout
+  title="Search plugins"
+  description="All the best Framer plugins you need to supercharge your website."
+>
+  <section class="w-full flex gap-4">
+    <div class="flex flex-col md:basis-2/3 gap-4">
+      <h1>All Framer plugins</h1>
+      <p class="text-lg">
+        All the best Framer plugins you need to enhanced your website - from SEO
+        to CMS management and design.
+      </p>
+    </div>
+  </section>
+  <!-- <SearchWidget /> -->
+  <aside class="form">
+    <div>
+      <div>
+          <label for="search">Search plugins</label>
+      </div>
+      <input 
+          type="search" 
+          required 
+          minlength="2" 
+          maxlength="24" 
+          name="search" 
+          id="search" 
+          placeholder="Search for plugins..">
+    </div>
+  </aside>
+  <p id="searchReadout"></p>
+  <section aria-label="Search results">
+    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+      {allPlugins.map((plugin) => <ToolCard plugins={plugin} />)}
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const search = document.querySelector("#search") as HTMLInputElement
+  const searchReadout = document.querySelector("#searchReadout") as HTMLInputElement
+  
+  function updateDocumentTitle(search) {
+    document.title = search
+      ? `Search results for "${search}"`
+      : "Search pugins"  
+  }
+
+  function updateDocumentReadout(search) {
+    searchReadout.textContent = search
+      ? `Search results for "${search}"`
+      : ""  
+  }
+  
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const urlParams = new URLSearchParams(window.location.search).get("q")
+    if (urlParams) {
+      updateDocumentTitle(urlParams)
+      updateDocumentReadout(urlParams)
+      search.value = urlParams
+      search.focus()
+    }
+  })
+
+  search.addEventListener("input", () => {
+    const searchTerm = search.value
+    if (searchTerm) {
+      updateDocumentTitle(searchTerm)
+      updateDocumentReadout(searchTerm)
+    }
+  })
+</script>
