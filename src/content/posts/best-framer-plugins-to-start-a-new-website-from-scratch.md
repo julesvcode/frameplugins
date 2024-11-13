@@ -9,7 +9,7 @@ Starting a new Framer project can feel a bit overwhelming. With so many design�
 
 ## 1. [Color Palettes](/plugins/color-palettes)
 
-![image](/src/content/plugins/images/colorpalettes-thumb.webp)
+![image](../plugins/images/colorpalettes-thumb.webp)
 
 Choosing the right colour scheme can be tricky, but the [Color Palettes plugin](/plugins/color-palettes) makes it a breeze by bringing Tailwind's popular colour system directly into Framer. 
 
@@ -25,7 +25,7 @@ Plugin link: [Color Palettes](/plugins/color-palettes)
 
 ## 2. [TypeSystem](/plugins/typesystem)
 
-![image](/src/content/plugins/images/typesystem-thumb.webp)
+![image](../plugins/images/typesystem-thumb.webp)
 
 Typography can make or break a design, and [TypeSystem](/plugins/typesystem) helps you nail it from the start. This free plugin generates responsive text styles based on proven type scales, giving you a solid foundation for your project's typography. 
 
@@ -39,7 +39,7 @@ Plugin link: [TypeSystem](/plugins/typesystem)
 
 ## 3. [Clonify](/plugins/clonify)
 
-![image](/src/content/plugins/images/clonify-thumb.webp)
+![image](../plugins/images/clonify-thumb.webp)
 
 Think of [Clonify](/plugins/clonify) as your digital box of Lego blocks for web design. This premium plugin gives you access to over 1,000 pre-designed sections and templates that you can mix and match to create your website. 
 

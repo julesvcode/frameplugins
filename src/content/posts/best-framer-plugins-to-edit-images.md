@@ -9,7 +9,7 @@ Working with images in Framer doesn't have to be complicated. Thanks to some bri
 
 ## 1. [Remove Background](/plugins/remove-background)
 
-![image](/src/content/plugins/images/removebackground-thumb.webp)
+![image](../plugins/images/removebackground-thumb.webp)
 
 Ever needed to quickly remove the background from an image? The [Remove Background plugin](/plugins/remove-background) makes this tedious task incredibly simple. 
 
@@ -25,7 +25,7 @@ Plugin link: [Remove Background](/plugins/remove-background)
 
 ## 2. [Dither](/plugins/dither)
 
-![image](/src/content/plugins/images/dither-thumb.webp)
+![image](../plugins/images/dither-thumb.webp)
 
 Want to add some retro charm to your images? The [Dither plugin](/plugins/dither) lets you create that classic pixelated look that's become increasingly popular in modern design. 
 
@@ -41,7 +41,7 @@ Plugin link: [Dither](/plugins/dither)
 
 ## 3. [ASCII](/plugins/ascii)
 
-![image](/src/content/plugins/images/ascii-thumb.webp)
+![image](../plugins/images/ascii-thumb.webp)
 
 Speaking of retro effects, the [ASCII plugin](/plugins/ascii) takes things to another level by converting your images and text into ASCII art. If you've ever seen pictures made entirely of text characters, that's exactly what this plugin does - and it does it brilliantly.
 
