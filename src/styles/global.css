@@ -17,6 +17,12 @@
       @apply font-semibold;
       @apply mt-6;
     }
+    
+    @media (max-width: 640px) {
+      h2 {
+        @apply text-xl;
+      }
+    }
 
     h3 {
       @apply text-lg;
