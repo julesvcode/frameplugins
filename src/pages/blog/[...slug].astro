@@ -40,7 +40,7 @@ const publishedDate = `${month[entry.data.pubDate.getMonth()]} ${entry.data.pubD
         {publishedDate} - {entry.data.readingSpeed} min read
       </p>
     </div>
-    {subheadings.length > 2 && (
+    {subheadings.length > 1 && (
         <div class="flex flex-col gap-2 leading-7 p-6 rounded-lg bg-zinc-100 max-w-xs mb-8">
           <span class="uppercase font-medium text-xs">In this article:</span>
           <ul>
