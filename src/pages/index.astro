@@ -80,11 +80,12 @@ let topicDisplay;
   </section>
   <section class="py-4">
     <div class="group flex items-end justify-between">
-      <h2 class="">Featured Framer plugins</h2>
+      <h2 class="">Latest Framer plugins</h2>
       <a href="/plugins" class="text-sm hover:underline">All plugins → </a>
     </div>
     <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
       {featuredPlugins.map((plugin) => <ToolCard plugins={plugin} />)}
+      {latestSixPlugins.map((plugin) => <ToolCard plugins={plugin} />)}
     </div>
   </section>
   <section id="topics" class="py-4">
@@ -105,15 +106,6 @@ let topicDisplay;
         title="Paid"
         quantity={paidPluginsNumber}
       />
-    </div>
-  </section>
-  <section class="py-4">
-    <div class="group flex items-end justify-between">
-      <h2 class="">Latest Framer plugins</h2>
-      <a href="/plugins" class="text-sm hover:underline">All plugins → </a>
-    </div>
-    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
-      {latestSixPlugins.map((plugin) => <ToolCard plugins={plugin} />)}
     </div>
   </section>
   <section id="categories" class="py-4">
