@@ -2,6 +2,9 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CategoryCard from "../../components/CategoryCard.astro";
+import ToolCard from "../../components/ToolCard.astro";
+import ButtonSecondary from "../../components/ButtonSecondary.astro";
+
 
 const allPlugins = await getCollection("plugins");
 const allCategories = [
@@ -22,6 +25,9 @@ let groupedWords = alphabeticalCategories.reduce((acc, word) => {
 
 const categorizedWords = Object.entries(groupedWords).sort((a, b) => a[0].localeCompare(b[0]));
 
+const iconsPlugins = allPlugins.filter(plugin => plugin.data.categories.includes("icons")).slice(0, 3)
+
+
 ---
 
 <BaseLayout
@@ -34,6 +40,35 @@ const categorizedWords = Object.entries(groupedWords).sort((a, b) => a[0].locale
       <p class="text-lg">Browse all the categories of Framer plugins.</p>
     </div>
   </section>
+  <!-- <section>
+    <div class="flex flex-col sm:flex-row gap-6">
+      <div class="basis-1/3 flex flex-col justify-center items-start gap-4">
+        <div class="flex flex-col">
+          <h2>Icons plugins</h2>
+          <p class="text-zinc-600">Access thousands of icons straight from the Framer canva.</p>
+        </div>
+        <ButtonSecondary 
+          link="/categories/icons"
+          title="View all icons plugins"
+          target="_self"
+        />
+      </div>
+      <div class="relative basis-2/3 w-full">
+        <div class="w-full overflow-x-auto no-scrollbar">
+          <div class="min-w-[calc(100%*2/3)] flex gap-6 pt-4 px-8">
+            {iconsPlugins.map((plugin) => (
+              <div class="flex-shrink-0 w-[calc(50%-0.5rem)]">
+                <ToolCard plugins={plugin} />
+              </div>
+            ))}
+          </div>
+        </div>
+        <div class="absolute w-8 h-full left-0 top-0 z-10 bg-gradient-to-r from-zinc-50"></div>
+        <div class="absolute w-8 h-full right-0 top-0 z-10 bg-gradient-to-l from-zinc-50"></div>
+      </div>
+    </div>
+    
+  </section> -->
   <section>
     <!-- <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4"> -->
       <!-- {
