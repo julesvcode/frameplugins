@@ -134,7 +134,7 @@ const allPlugins = await getCollection("plugins");
       try {
       const res = await fetch("/search.json")
       if (!res.ok) {
-        throw new Error("Something went worng.. please try again")
+        throw new Error("Something went wrong.. please try again")
       }
       const data = await res.json()
       SEARCH_DATA = data
