@@ -6,7 +6,7 @@ description: "Move text and colour styles between different Framer projects with
 link: "https://www.framer.com/marketplace/plugins/styles-io--1c2t5w7cswyyzd46w1gir70l6/?via=julesvcode"
 thumbnailImage: "./images/stylesio-thumb.webp"
 thumbnailAlt: "Screenshot of the Styles IO plugin for Framer"
-categories: ["styles", "text", "colours", "design", "utilities", "free"]
+categories: ["styles", "text", "colors", "design", "utilities", "free"]
 free: true
 price: "Free"
 icon: "./favicons/stylesio.png"
