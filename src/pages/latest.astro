@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import ToolCard from "../components/ToolCard.astro";
-import BaseLayout from "../layouts/BaseLayout.astro";
+import TwoColumnsLayout from "../layouts/TwoColumnsLayout.astro";
 import SearchWidget from "../components/SearchWidget.astro";
 import LatestCard from "../components/LatestCard.astro";
 import { Image } from "astro:assets";
@@ -46,12 +46,12 @@ const groupedPlugins = plugins.reduce((acc, plugin) => {
 
 ---
 
-<BaseLayout
+<TwoColumnsLayout
   title="Latest plugins"
   description="Browse all the latest plugins added to the Framer marketplace (updated daily)."
 >
   <section class="w-full flex gap-4">
-    <div class="flex flex-col md:basis-2/3 gap-4">
+    <div class="flex flex-col w-full gap-4">
       <h1>Latest Framer plugins</h1>
       <p class="text-lg">
         Browse all the latest plugins added to the Framer marketplace. <br>Updated daily.
@@ -59,7 +59,7 @@ const groupedPlugins = plugins.reduce((acc, plugin) => {
     </div>
   </section>
   <section class="w-full flex gap-4">
-    <div class="flex flex-col w-full md:basis-1/2">
+    <div class="flex flex-col w-full md:basis-2/3">
       {Object.entries(groupedPlugins).map(([date, datePlugins]) => (
         <div class="flex flex-col">
           <div class="flex">
@@ -88,5 +88,5 @@ const groupedPlugins = plugins.reduce((acc, plugin) => {
   </section>
   
 
-</BaseLayout>
+</TwoColumnsLayout>
 
