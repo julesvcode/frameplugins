@@ -31,7 +31,7 @@ const allPlugins = await getCollection("plugins");
           minlength="2" 
           maxlength="24" 
           name="search" 
-          id="search" 
+          id="search-input" 
           placeholder="Search for plugins.."
           class="w-full bg-zinc-200 border border-zinc-300 rounded-md py-2 pl-8 pr-3 text-sm text-zinc-900 placeholder-zinc-500"
       />
@@ -76,7 +76,7 @@ const allPlugins = await getCollection("plugins");
       }}
       </style></svg>`
 
-  const search = document.querySelector("#search") as HTMLInputElement
+  const search = document.querySelector("#search-input") as HTMLInputElement
   const searchReadout = document.querySelector("#searchReadout") as HTMLInputElement
   const resultsList = document.querySelector("#searchResults") as HTMLInputElement
   
