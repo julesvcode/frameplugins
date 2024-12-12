@@ -7,19 +7,42 @@ import LatestCard from "../components/LatestCard.astro";
 import { Image } from "astro:assets";
 import beehiivIcon from "../assets/icons/beehiiv.svg";
 
+interface Plugin {
+  name: string;
+  date: string;
+  category: string;
+  link: string;
+}
 
 const allPlugins = await getCollection("plugins");
 
-
-// const plugins = [
-//   { date: "10/12/2024", name: "React Export", category: "Utilities", link: "https://www.framer.com/marketplace/plugins/react-export/" },
-//   { date: "10/12/2024", name: "Web2Chat", category: "Utilities", link: "https://www.framer.com/marketplace/plugins/web2chat/"},
-// ]
+let plugins: Plugin[] = [];
   
 const res = await fetch("https://script.googleusercontent.com/macros/echo?user_content_key=c54HmBFtgq_fuYKhsVcRiOMdN13lTC27vqZIget-oFPi63R64z-DNPzW9Cig1FrOmPTZr8m174GKV7i2HJ4KUJqeDwoOOVWnm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnLcL9aNfdZvyTlZhC7V0TGiHK87LX8_kHwrscC-P8qVLtO0PbrpzRTkvajSoSDYEJusks9KgfXXsX3f4_YkRUEDY1y0BFj_TU9z9Jw9Md8uu&lib=MgO2I5tYlFr1z4jCHqQctc2M2xad_l3SC")
   
-const { plugins } = await res.json()
+const data = await res.json()
+plugins = data.data || []
 
+// Add this helper function before groupedPlugins
+function formatDate(dateStr: string) {
+  const [day, month, year] = dateStr.split('/');
+  const date = new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
+  return date.toLocaleDateString('en-US', { 
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric'
+  }).toUpperCase();
+}
+
+// Modify the groupedPlugins code
+const groupedPlugins = plugins.reduce((acc, plugin) => {
+  const formattedDate = formatDate(plugin.date);
+  if (!acc[formattedDate]) {
+    acc[formattedDate] = [];
+  }
+  acc[formattedDate].push(plugin);
+  return acc;
+}, {} as Record<string, Plugin[]>);
 
 ---
 
@@ -36,14 +59,31 @@ const { plugins } = await res.json()
     </div>
   </section>
   <section class="w-full flex gap-4">
-    <div class="flex flex-col md:basis-2/3 gap-4">
-      <div class="flex gap-2">
-        <div class="relative">
-          <div class="border border-zinc-700 h-2 w-2 rounded"></div>
+    <div class="flex flex-col w-full md:basis-1/2">
+      {Object.entries(groupedPlugins).map(([date, datePlugins]) => (
+        <div class="flex flex-col">
+          <div class="flex">
+            <div class="relative w-4 border-l border-zinc-200">
+              <div class="absolute -left-[4.5px] top-1 border-2 border-zinc-700 h-2 w-2 rounded bg-zinc-50"></div>
+            </div>
+            <span class="relative font-semibold text-xs text-zinc-700">{date}</span>
+          </div>
+          <div class="flex">
+            <div class="w-4 border-l border-zinc-200">
+
+            </div>
+            <div class="flex-1 flex flex-col gap-4 pt-4 pb-12">
+              {datePlugins.map((p) => (
+                <LatestCard 
+                  name={p.name}
+                  category={p.category}
+                  link={p.link}
+                />
+              ))}
+            </div>
+          </div>
         </div>
-        <span class="relative font-semibold text-xs text-zinc-700">DECEMBER 10, 2024</span>
-      </div>
-      {plugins.map((p) => <p>{p.name}</p>)}
+      ))}
     </div>
   </section>
   
