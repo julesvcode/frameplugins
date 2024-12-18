@@ -3,8 +3,26 @@ import { getCollection } from "astro:content";
 import ToolCard from "../components/ToolCard.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import SearchWidget from "../components/SearchWidget.astro";
+import CategoryCard from "../components/CategoryCard.astro";
 
 const allPlugins = await getCollection("plugins");
+
+// Browse plugins section
+const pluginOne = Math.floor(Math.random() * allPlugins.length);
+const pluginTwo = Math.floor(Math.random() * allPlugins.length);
+const pluginThree = Math.floor(Math.random() * allPlugins.length);
+const browsePlugins = [allPlugins[pluginOne], allPlugins[pluginTwo], allPlugins[pluginThree]]
+
+// Browse Categories section
+const topCategories = [
+  { label: "AI", href: "/ai" },
+  { label: "Analytics", href: "/analytics" },
+  { label: "Animations", href: "/animations" },
+  { label: "CMS", href: "/cms" },
+  { label: "Membership", href: "/membership" },
+  { label: "Utilities", href: "/utilities" },
+]
+
 ---
 
 <BaseLayout
@@ -40,6 +58,33 @@ const allPlugins = await getCollection("plugins");
   <span class="italic" id="searchReadout"></span class="italic">
   <section aria-label="Search results">
     <div id="searchResults" class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+    </div>
+  </section>
+  <section class="py-4">
+    <div class="w-full py-4">
+      <div class="group flex items-end justify-between">
+        <h2>Browse more plugins</h2>
+        <a href="/plugins" class="text-sm hover:underline"> View all → </a>
+      </div>
+      <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+        {browsePlugins.map((plugin) => <ToolCard plugins={plugin} />)}
+      </div>
+    </div>
+  </section>
+  <section class="py-4">
+    <div class="group flex items-end justify-between">
+      <h2>Browse more categories</h2>
+      <a href="/categories" class="text-sm hover:underline"> View all → </a>
+    </div>
+    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+      {
+        topCategories.map((category) => (
+          <CategoryCard
+            link={category.href}
+            category={category.label}
+          />
+        ))
+      }
     </div>
   </section>
 </BaseLayout>
