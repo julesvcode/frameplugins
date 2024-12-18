@@ -1,7 +1,7 @@
 ---
 import ButtonPrimary from "./ButtonPrimary.astro";
 import ButtonSecondary from "./ButtonSecondary.astro";
-import SearchWidget from "./SearchWidget.astro";
+import SearchButton from "./SearchButton.astro";
 
 const navLinks = [
   { label: "Plugins", href: "/plugins" },
@@ -76,13 +76,13 @@ const navLinks = [
           ))
         }
       </ul>
-      <div class="pt-4 md:pt-0 md:pl-4 w-48">
+      <div class="pt-4 md:pt-0 md:pl-4">
         <!-- <ButtonSecondary
           title="Submit"
           link="https://tally.so/r/w4okxO"
           target="_blank"
         /> -->
-        <SearchWidget />
+        <SearchButton />
       </div>
     </nav>
   </div>
