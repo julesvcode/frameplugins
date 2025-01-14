@@ -2,7 +2,7 @@
 title: "Polar"
 updateDate: 2025-01-14
 feat: false
-description: "Selling digital products through your Framer site with ease."
+description: "Sell digital products through your Framer site with ease."
 link: "https://www.framer.com/marketplace/plugins/polar?via=julesvcode"
 thumbnailAlt: "Screenshot of the Polar plugin for Framer"
 thumbnailImage: "./images/polar-thumb.webp"
