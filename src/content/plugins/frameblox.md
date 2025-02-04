@@ -1,6 +1,6 @@
 ---
 title: "Frameblox"
-feat: true
+feat: false
 updateDate: 2024-11-07
 description: "UI Kit to build and launch Framer websites faster than ever before."
 link: "https://www.frameblox.com/plugin?aff=0BlLG"
