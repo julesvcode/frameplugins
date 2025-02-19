@@ -13,8 +13,8 @@ import SectionCard from "../components/SectionCard.astro";
 const allPlugins = await getCollection("plugins");
 
 const allPluginsNumber = allPlugins.length
-const freePluginsNumber = allPlugins.filter(plugin => plugin.data.free === true ).length
-const paidPluginsNumber = allPlugins.filter(plugin => plugin.data.free === false ).length
+const freePluginsNumber = allPlugins.filter(plugin => plugin.data.free === true).length
+const paidPluginsNumber = allPlugins.filter(plugin => plugin.data.free === false).length
 
 // Categories
 const allCategories = [
@@ -23,7 +23,7 @@ const allCategories = [
 const alphabeticalCategories = allCategories.sort((a, b) => {
   return a.localeCompare(b);
 });
-const featuredCatgories = alphabeticalCategories.slice(0, 6);
+const featuredCategories = alphabeticalCategories.slice(0, 6);
 
 const topCategories = [
   { label: "AI", href: "/ai" },
@@ -35,8 +35,29 @@ const topCategories = [
 ]
 
 
-// Tools
+// Free Plugins listing
+const homeFreePlugins = allPlugins
+  .filter(plugin => plugin.data.free)
+  .sort((a, b) => new Date(b.data.updateDate).getTime() - new Date(a.data.updateDate).getTime())
+  .slice(0, 3);
+
+const homeCmsPlugins = allPlugins
+  .filter(plugin => plugin.data.categories.includes("cms"))
+  .sort((a, b) => new Date(b.data.updateDate).getTime() - new Date(a.data.updateDate).getTime())
+  .slice(0, 3);
+
+const homeSeoPlugins = allPlugins
+  .filter(plugin => plugin.data.categories.includes("seo"))
+  .sort((a, b) => new Date(b.data.updateDate).getTime() - new Date(a.data.updateDate).getTime())
+  .slice(0, 3);
+
+const homeKitsPlugins = allPlugins
+  .filter(plugin => plugin.data.categories.includes("ui"))
+  .sort((a, b) => new Date(b.data.updateDate).getTime() - new Date(a.data.updateDate).getTime())
+  .slice(0, 3);
+
 const featuredPlugins = allPlugins.filter((tool) => tool.data.feat === true);
+
 const latestPlugins = allPlugins.sort(
   (a, b) =>
     new Date(b.data.updateDate).getTime() -
@@ -80,11 +101,55 @@ let topicDisplay;
   </section>
   <section class="py-4">
     <div class="group flex items-end justify-between">
+      <h2 class="">Featured Framer plugins</h2>
+      <a href="/plugins" class="text-sm hover:underline">All plugins →</a>
+    </div>
+    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+      {featuredPlugins.map((plugin) => <ToolCard plugins={plugin} />)}
+    </div>
+  </section>
+  <section class="py-4">
+    <div class="group flex items-end justify-between">
+      <h2 class="">Free Framer plugins</h2>
+      <a href="/categories/free" class="text-sm hover:underline">View all → </a>
+    </div>
+    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+      {homeFreePlugins.map((plugin) => <ToolCard plugins={plugin} />)}
+    </div>
+  </section>
+  <section class="py-4">
+    <div class="group flex items-end justify-between">
+      <h2 class="">CMS Framer plugins</h2>
+      <a href="/categories/cms" class="text-sm hover:underline">View all → </a>
+    </div>
+    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+      {homeCmsPlugins.map((plugin) => <ToolCard plugins={plugin} />)}
+    </div>
+  </section>
+  <section class="py-4">
+    <div class="group flex items-end justify-between">
+      <h2 class="">SEO Framer plugins</h2>
+      <a href="/categories/seo" class="text-sm hover:underline">View all → </a>
+    </div>
+    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+      {homeSeoPlugins.map((plugin) => <ToolCard plugins={plugin} />)}
+    </div>
+  </section>
+  <section class="py-4">
+    <div class="group flex items-end justify-between">
+      <h2 class="">UI Kits Framer plugins</h2>
+      <a href="/categories/ui" class="text-sm hover:underline">View all → </a>
+    </div>
+    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+      {homeKitsPlugins.map((plugin) => <ToolCard plugins={plugin} />)}
+    </div>
+  </section>
+  <section class="py-4">
+    <div class="group flex items-end justify-between">
       <h2 class="">Latest Framer plugins</h2>
       <a href="/plugins" class="text-sm hover:underline">All plugins → </a>
     </div>
     <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
-      {featuredPlugins.map((plugin) => <ToolCard plugins={plugin} />)}
       {latestSixPlugins.map((plugin) => <ToolCard plugins={plugin} />)}
     </div>
   </section>
