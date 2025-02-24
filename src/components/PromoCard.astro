@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import framerAdBanner from "../assets/images/framer_ad_square.png";
 import beehiivAdBanner from "../assets/images/beehiiv_ad_square_discount.png";
+import frameshareAdBanner from "../assets/images/fsplugin_ad_square.png";
 import screenstudioAdBanner from "../assets/images/screenstudio_ad_square.png";
 
 const ads = [
@@ -11,15 +12,15 @@ const ads = [
     alt: "The fastest site builder on the Internet. Try now!"
   },
   {
-    image: beehiivAdBanner,
-    link: "/beehiiv",
-    alt: "Launch, grow and monetise your newsletter with Beehiiv. Get started for free now!"
+    image: frameshareAdBanner,
+    link: "/frameshare",
+    alt: "Add social share buttons to your Framer website."
   },
-  {
-    image: screenstudioAdBanner,
-    link: "/screenstudio",
-    alt: "Create stunning screen recordings in no time!"
-  }
+  // {
+  //   image: screenstudioAdBanner,
+  //   link: "/screenstudio",
+  //   alt: "Create stunning screen recordings in no time!"
+  // }
 ];
 
 const selectedAd = ads[Math.floor(Math.random() * ads.length)];
