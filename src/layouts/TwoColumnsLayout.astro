@@ -8,6 +8,7 @@ import ToolCard from "../components/ToolCard.astro";
 import LatestPosts from "../components/LatestPosts.astro";
 import ToolCardSidebar from "../components/ToolCardSidebar.astro";
 import CategoryCard from "../components/CategoryCard.astro";
+import CardAd from "../components/CardAd.astro";
 
 const { title } = Astro.props;
 
@@ -85,7 +86,8 @@ const latestPosts = sortedPosts.slice(0, 5);
             ))
           }
         </div>
-        <PromoCard />
+        <!-- <PromoCard /> -->
+        <CardAd />
       </div>
     </div>
   </div>

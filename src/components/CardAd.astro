@@ -1,0 +1,40 @@
+---
+
+import { Image } from "astro:assets";
+import frameshareIcon from "../assets/icons/frameshare.png";
+
+
+---
+
+<a
+    href="/frameshare-ad"
+    title="Get FrameShare plugin"
+    target="_blank"
+    class="relative w-full flex flex-col gap-4 group overflow-hidden p-6 rounded-lg bg-zinc-900 border border-zinc-200 cursor-pointer hover:border-zinc-300 hover:bg-opacity-90"
+>
+    <div class="flex gap-2 items-center justify-start">
+        <div class="flex items-center justify-center border border-zinc-700 rounded-md w-10 h-10">
+            <Image src={frameshareIcon} alt="FrameShare icon" class="rounded" />
+        </div>
+        <h3 class="text-zinc-50 font-bold leading-8 truncate text-ellipsis">
+            FrameShare
+        </h3>
+    </div>
+    <div class="flex flex-col gap-0 w-full">
+        <p class="text-zinc-400 text-sm leading-6">
+            Get this Framer plugin to add social share buttons to your website and drive more traffic.
+          </p>
+    </div>
+    <div
+        class="bg-zinc-50 text-zinc-900 font-semibold text-sm leading-0 rounded-md w-full text-center py-2 px-4 cursor-pointer hover:opacity-90"
+        >
+        Get the plugin →
+    </div>
+    <div class="absolute top-1.5 right-1.5 flex transparent">
+        <div class="flex flex-col items-end">
+          <div class="bg-zinc-800 text-zinc-50 px-3 py-1 text-xs rounded-sm border border-zinc-700">
+            Ad
+          </div>
+        </div>
+    </div>
+</a>
