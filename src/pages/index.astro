@@ -56,6 +56,11 @@ const homeKitsPlugins = allPlugins
   .sort((a, b) => new Date(b.data.updateDate).getTime() - new Date(a.data.updateDate).getTime())
   .slice(0, 3);
 
+const homeAiPlugins = allPlugins
+  .filter(plugin => plugin.data.categories.includes("ai"))
+  .sort((a, b) => new Date(b.data.updateDate).getTime() - new Date(a.data.updateDate).getTime())
+  .slice(0, 3);
+
 const featuredPlugins = allPlugins.filter((tool) => tool.data.feat === true);
 
 const latestPlugins = allPlugins.sort(
@@ -142,6 +147,15 @@ let topicDisplay;
     </div>
     <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
       {homeKitsPlugins.map((plugin) => <ToolCard plugins={plugin} />)}
+    </div>
+  </section>
+  <section class="py-4">
+    <div class="group flex items-end justify-between">
+      <h2 class="">AI Framer plugins</h2>
+      <a href="/categories/ai" class="text-sm hover:underline">View all → </a>
+    </div>
+    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+      {homeAiPlugins.map((plugin) => <ToolCard plugins={plugin} />)}
     </div>
   </section>
   <section class="py-4">
