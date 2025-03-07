@@ -6,7 +6,7 @@ description: "UI Kit to build and launch Framer websites faster than ever before
 link: "https://www.frameblox.com/plugin?aff=0BlLG"
 thumbnailImage: "./images/frameblox-thumb.webp"
 thumbnailAlt: "Screenshot of the Frameblox plugin for Framer"
-categories: ["design", "ui", "library", "paid"]
+categories: ["design", "ui", "library", "components", "templates", "paid"]
 free: true
 price: "Paid"
 icon: "./favicons/frameblox.png"

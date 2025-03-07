@@ -6,7 +6,7 @@ description: "Add social sharing to your Framer websites."
 link: "https://www.framer.com/marketplace/plugins/frameshare?via=julesvcode"
 thumbnailAlt: "Screenshot of the FrameShare plugin for Framer"
 thumbnailImage: "./images/frameshare-thumb.jpg"
-categories: ["icons", "socials", "utilities", "paid"]
+categories: ["socials", "icons", "utilities", "paid"]
 free: false
 price: "Paid"
 icon: "./favicons/frameshare.png"

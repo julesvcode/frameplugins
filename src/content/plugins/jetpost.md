@@ -6,7 +6,7 @@ description: "AI text editor to write content 10x faster within Framer."
 link: "https://www.framer.com/marketplace/plugins/jetpost--6itu6zncpiphdylikp4fslsb3/?via=julesvcode"
 thumbnailImage: "./images/jetpost-thumb.webp"
 thumbnailAlt: "Screenshot of the Jetpost plugin for Framer"
-categories: ["ai", "text", "content", "authentication", "free"]
+categories: ["ai", "text", "content", "free"]
 free: true
 price: "Free"
 icon: "./favicons/jetpost.png"
