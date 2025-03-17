@@ -1,11 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-import ToolCard from "../components/ToolCard.astro";
 import TwoColumnsLayout from "../layouts/TwoColumnsLayout.astro";
-import SearchWidget from "../components/SearchWidget.astro";
 import LatestCard from "../components/LatestCard.astro";
-import { Image } from "astro:assets";
-import beehiivIcon from "../assets/icons/beehiiv.svg";
 
 interface Plugin {
   name: string;
@@ -19,7 +15,7 @@ const allPlugins = await getCollection("plugins");
 
 let plugins: Plugin[] = [];
   
-const res = await fetch("https://script.googleusercontent.com/macros/echo?user_content_key=IRtrLKaxNf4tgY0JsqvZxCLIcRZMr5HRM8myDiGpZJ3eeu6LDRbqQsTVQsLePek2Y2OCGDb_rtKaadg0hsfUm3NVOv5wQAX0m5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnP_x0h1W99smx3kiv9LO115F88ce99ErR1UbfU8IOAxaif7GRnfTCaxfoBj-42olxaNkMyh85_EITOQTJiEzglUaP9SkkbcGUQ&lib=MgO2I5tYlFr1z4jCHqQctc2M2xad_l3SC")
+const res = await fetch("https://script.googleusercontent.com/macros/echo?user_content_key=AehSKLgk5YZwobz8-PSYv_Ey8AJTIyCQoNcNsulfB0zsVOeCfRbSHoBwETmHnsTin24Oym3tIibXcI2OPYUF8kzInaLdpueLnI0uRcHfHS0oubdyJA_UkX4geUBoJ3nYDXUvrsvk5G3DDNFsZkCXZF1_hksU_mQPcsJ72hfl8O1mBrEB9rk-decH_XBNMDI8Y4rT7A7OIvV1WOOVx7SGk2MBN7T2xAOvpVMQYcSPu3BvuBSLyG5ssZX-ixabHuC_o3ihzjnwSlNvQSjlUdTAG2jEvGrh_ZneOcY3dR8pLvDA&lib=MgO2I5tYlFr1z4jCHqQctc2M2xad_l3SC")
   
 const data = await res.json()
 plugins = data.data || []
@@ -57,7 +53,7 @@ const groupedPlugins = plugins
     <div class="flex flex-col w-full gap-4">
       <h1>Latest Framer plugins</h1>
       <p class="text-lg">
-        Browse all the latest plugins added to the Framer marketplace. <br>Updated daily.
+        Browse all the latest plugins added to the Framer marketplace. <br>Updated weekly.
       </p>
     </div>
   </section>
