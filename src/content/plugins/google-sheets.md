@@ -3,7 +3,7 @@ title: "Google Sheets"
 feat: false
 updateDate: 2024-11-08
 description: "Sync your Google Sheet content directly with the Framer CMS."
-link: "https://www.framer.com/marketplace/plugins/google-sheets--5i8ra6xs08ydg7wbx4nhndbn1/?via=julesvcode"
+link: "https://framer.link/pV3Goag"
 thumbnailImage: "./images/sheets-thumb.webp"
 thumbnailAlt: "Screenshot of the Google Sheets plugin for Framer"
 categories: ["cms", "database", "sheets", "free"]

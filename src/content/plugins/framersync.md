@@ -3,7 +3,7 @@ title: "FramerSync"
 feat: false
 updateDate: 2024-10-10
 description: "Connect your Notion, Airtable, or Google Sheets directly with the Framer CMS."
-link: "https://www.framer.com/marketplace/plugins/framersync--cxmjflv066qj3p60chx5t4ufs/?via=julesvcode"
+link: "https://framer.link/X2TyugR"
 thumbnailImage: "./images/framersync-thumb.webp"
 thumbnailAlt: "Screenshot of the FramerSync plugin for Framer"
 categories: ["cms", "database", "notion", "airtable", "automation", "paid"]

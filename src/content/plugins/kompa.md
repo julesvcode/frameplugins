@@ -3,7 +3,7 @@ title: "Kompa"
 feat: false
 updateDate: 2024-11-16
 description: "The ultimate design plugin for Framer with hundreds of prebuilt, responsive UI elements."
-link: "https://www.framer.com/marketplace/plugins/blocs--d9oltpzx17jv41rd6166x4p5z/?via=julesvcode"
+link: "https://framer.link/BgD8rMV"
 thumbnailImage: "./images/kompa-thumb.webp"
 thumbnailAlt: "Screenshot of the Kompa plugin for Framer"
 categories: ["design", "ui", "components", "freemium", "free"]

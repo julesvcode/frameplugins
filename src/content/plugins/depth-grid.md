@@ -3,7 +3,7 @@ title: "Depth Grid"
 updateDate: 2024-12-05
 feat: false
 description: "Add stunning perspective grids and tunnels to your Framer designs."
-link: "https://www.framer.com/marketplace/plugins/depth-grid?via=julesvcode"
+link: "https://framer.link/67xTG3D"
 thumbnailAlt: "Screenshot of the Depth Grid plugin for Framer"
 thumbnailImage: "./images/depthgrid-thumb.webp"
 categories: ["visuals", "effects", "free"]

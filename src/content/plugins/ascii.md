@@ -3,7 +3,7 @@ title: "ASCII"
 feat: true
 updateDate: 2024-10-08
 description: "Transform images and text into ASCII art for your web designs."
-link: "https://www.framer.com/marketplace/plugins/ascii--81se5lrkenro2qofyi61hy5ug/?via=julesvcode"
+link: "https://framer.link/1Asr1gG"
 thumbnailImage: "./images/ascii-thumb.webp"
 thumbnailAlt: "Screenshot of the ASCII plugin for Framer"
 categories: ["images", "ASCII", "typography", "text", "effects", "art", "free"]

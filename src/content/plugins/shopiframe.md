@@ -3,7 +3,7 @@ title: "Shopiframe"
 updateDate: 2024-11-27
 feat: false
 description: "Integrate your Shopify store with your Framer website for a smooth e-commerce experience."
-link: "https://www.framer.com/marketplace/plugins/shopiframe--1g6n4250l72pzzox3dys4qo11/?via=julesvcode"
+link: "https://framer.link/6erCaku"
 thumbnailAlt: "Screenshot of the Shopiframe plugin for Framer"
 thumbnailImage: "./images/shopiframe-thumb.webp"
 categories: ["ecommerce", "shopify", "shop", "paid"]

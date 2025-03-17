@@ -3,7 +3,7 @@ title: "Color Palettes"
 feat: true
 updateDate: 2024-11-08
 description: "Integrate Tailwind's color palettes directly into your Framer projects."
-link: "https://www.framer.com/marketplace/plugins/color-palettes--6i8458rxddyvf76sotzh67zt6/?via=julesvcode"
+link: "https://framer.link/tmBKggc"
 thumbnailImage: "./images/colorpalettes-thumb.webp"
 thumbnailAlt: "Screenshot of the Color Palettes plugin for Framer"
 categories: ["colors", "styles", "design", "tailwind", "utilities", "free"]

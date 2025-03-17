@@ -3,7 +3,7 @@ title: "Smart Quotes"
 updateDate: 2024-11-27
 feat: false
 description: "Transform straight quotes into elegant smart quotes on selected text layers with a single click."
-link: "https://www.framer.com/marketplace/plugins/smart-quotes--6xj7u892z09rn296bjgpjknfz/?via=julesvcode"
+link: "https://framer.link/w3AK86D"
 thumbnailAlt: "Screenshot of the Smart Quotes plugin for Framer"
 thumbnailImage: "./images/smartquotes-thumb.webp"
 categories: ["text", "quotes", "utilities", "free"]

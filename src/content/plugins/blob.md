@@ -3,7 +3,7 @@ title: "Blob"
 feat: false
 updateDate: 2024-11-15
 description: "Bring captivating 3D blobs to your Framer designs."
-link: "https://www.framer.com/marketplace/plugins/blob--6b9s3lhs1kk0hubh0jbm6dtem/?via=julesvcode"
+link: "https://framer.link/mk263ld"
 thumbnailImage: "./images/blob-thumb.webp"
 thumbnailAlt: "Screenshot of the Blob plugin for Framer"
 categories: ["blob", "animations", "visuals", "paid"]
