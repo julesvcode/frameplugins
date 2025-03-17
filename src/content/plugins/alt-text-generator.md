@@ -6,7 +6,7 @@ description: "Automate the process of adding alt text to images on your Framer w
 link: "https://www.framer.com/marketplace/plugins/alt-text-generator--1o6ogd0o00nc85u3uoviuxejy/?via=julesvcode"
 thumbnailAlt: "Screenshot of the Alt Text Generator plugin for Framer"
 thumbnailImage: "./images/alttextgenerator-thumb.webp"
-categories: ["utilites", "images", "seo", "accessibility", "paid"]
+categories: ["utilities", "images", "seo", "accessibility", "paid"]
 free: false
 price: "Paid"
 icon: "./favicons/alttextgenerator.png"

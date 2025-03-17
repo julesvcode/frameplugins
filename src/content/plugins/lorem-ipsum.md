@@ -6,7 +6,7 @@ description: "Adding Lorem Ipsum text to your designs has bever been easier."
 link: "https://www.framer.com/marketplace/plugins/lorem-ipsum--4od3tdg2pbkg8yjk1rdspv3dh/?via=julesvcode"
 thumbnailImage: "./images/loremipsum-thumb.webp"
 thumbnailAlt: "Screenshot of the Lorem Ipsum plugin for Framer"
-categories: ["text", "design", "utilites", "free"]
+categories: ["text", "design", "utilities", "free"]
 free: true
 price: "Free"
 icon: "./favicons/loremipsum.png"
