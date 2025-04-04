@@ -9,7 +9,8 @@ import LatestPosts from "../components/LatestPosts.astro";
 import ToolCardSidebar from "../components/ToolCardSidebar.astro";
 import CategoryCard from "../components/CategoryCard.astro";
 import CardAd from "../components/CardAd.astro";
-
+import BannerFrameplate from "../components/BannerFrameplate.astro";
+import BannerFrameshare from "../components/BannerFrameshare.astro";
 const { title } = Astro.props;
 
 const makeTitle = `${title} | Frameplugins`;
@@ -102,6 +103,7 @@ const latestPosts = sortedPosts.slice(0, 5);
       </div>
     </div>
   </section>
+  <BannerFrameshare />
   <section class="py-4">
     <div class="group flex items-end justify-between">
       <h2>Browse more categories</h2>
@@ -118,4 +120,5 @@ const latestPosts = sortedPosts.slice(0, 5);
       }
     </div>
   </section>
+  <BannerFrameplate />
 </BaseLayout>
