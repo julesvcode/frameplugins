@@ -14,6 +14,7 @@ const pluginCollection = defineCollection({
     free: z.boolean().default(true),
     price: z.string(),
     discount: z.string().optional(),
+    code: z.string().optional(),
     icon: image(),
   }),
 });

@@ -9,7 +9,8 @@ thumbnailAlt: "Screenshot of the Clonify plugin for Framer"
 categories: ["design", "ui", "components", "templates", "freemium", "paid"]
 free: false
 price: "Paid"
-discount: "20% OFF with code CLP20"
+discount: "20% OFF"
+code: "CLP20"
 icon: "./favicons/clonify.png"
 ---
 

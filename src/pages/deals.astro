@@ -1,0 +1,28 @@
+---
+import { getCollection } from "astro:content";
+import ToolCardDeal from "../components/ToolCardDeal.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const allPlugins = await getCollection("plugins");
+const discountedPlugins = allPlugins.filter(plugin => plugin.data.discount !== undefined);
+
+---
+
+<BaseLayout
+  title="Browse Deals for Framer Plugins"
+  description="All the best deals for Framer plugins you need to supercharge your website."
+>
+  <section class="w-full flex gap-4">
+    <div class="flex flex-col md:basis-2/3 gap-4">
+      <h1>Browse Deals for Framer plugins</h1>
+      <p class="text-lg">
+        Find all the best deals and discounts available for Framer plugins – in one place.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+      {discountedPlugins.map((plugin) => <ToolCardDeal plugins={plugin} />)}
+    </div>
+  </section>
+</BaseLayout>

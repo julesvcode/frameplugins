@@ -9,7 +9,8 @@ thumbnailAlt: "Screenshot of the Frameship plugin for Framer"
 categories: ["ecommerce", "shop", "shopify", "paid"]
 free: false
 price: "Paid"
-discount: "10% OFF witch code FMPT10"
+discount: "10% OFF"
+code: "FMPT10"
 icon: "./favicons/frameship.png"
 ---
 
