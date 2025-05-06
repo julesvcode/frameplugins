@@ -21,7 +21,7 @@ let groupedWords = alphabeticalCategories.reduce((acc, word) => {
   }
   acc[firstLetter].push(word);
   return acc;
-}, {});
+}, {} as Record<string, string[]>);
 
 const categorizedWords = Object.entries(groupedWords).sort((a, b) => a[0].localeCompare(b[0]));
 
