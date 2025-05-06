@@ -49,8 +49,10 @@ One of Frameship's biggest selling points is its lightning-fast setup - we're ta
 
 What sets Frameship apart is its one-time payment model. Unlike some other solutions that charge recurring fees, you pay once and can build as many stores as you like. Plus, it's built with SEO in mind, helping your shop get noticed in search results.
 
+[Get 10% OFF with the code FMPT10](https://frameship.io)
+
 Price: **Paid** <br>
-Plugin link: [Shopiframe](/plugins/frameship)
+Plugin link: [Frameship](/plugins/frameship)
 
 
 ## Which One Should You Choose?

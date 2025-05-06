@@ -47,6 +47,8 @@ Instead of starting from scratch, you can drag and drop professionally designed 
 
 Whether you prefer working with wireframes to plan your layout or want to dive straight into fully designed sections, the choice is yours. The Pro version even includes complete source files and a design system, which is brilliant if you're working on client projects or need to maintain consistency across multiple pages.
 
+[Get 20% OFF with the code CLP20](/clonify).
+
 Price: **Paid** <br>
 Plugin link: [Clonify](/plugins/clonify)
 
