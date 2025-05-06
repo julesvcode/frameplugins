@@ -44,6 +44,12 @@ const categories = entry.data.categories;
         <b>Price:</b>
         {entry.data.price}
       </p>
+      {entry.data.discount && (
+        <p class="text-zinc-700 text-lg leading-relaxed font-normal">
+          <b>Discount:</b>
+          {entry.data.discount}
+        </p>
+      )}
     </div>
     <ButtonPrimary
       link={entry.data.link}

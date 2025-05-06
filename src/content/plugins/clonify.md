@@ -1,14 +1,15 @@
 ---
 title: "Clonify"
-feat: false
-updateDate: 2024-10-15
+feat: true
+updateDate: 2025-05-06
 description: "A library of pre-designed sections, wireframes, and templates for your Framer projects."
-link: "https://www.framer.com/marketplace/plugins/clonify--abey3sww00ypadodw6q0ukok4/?via=julesvcode"
+link: "/clonify"
 thumbnailImage: "./images/clonify-thumb.webp"
 thumbnailAlt: "Screenshot of the Clonify plugin for Framer"
 categories: ["design", "ui", "components", "templates", "freemium", "paid"]
 free: false
 price: "Paid"
+discount: "20% OFF with code CLP20"
 icon: "./favicons/clonify.png"
 ---
 
@@ -23,6 +24,8 @@ Clonify is a Framer plugin offering a vast library of pre-designed sections, wir
 - Regular Updates: stay current with the latest design trends through frequent library updates.
 - Responsive Design: create websites that look great on all devices without extra effort.
 - Time-Saving: build complete, functional websites faster than ever before.
+
+[Get 20% OFF with the code CLP20](/clonify).
 
 Clonify transforms the Framer design process by providing a wealth of high-quality, ready-to-use assets. By streamlining website creation and offering professional-grade templates and sections, Clonify helps designers focus on creativity while significantly reducing development time.
 

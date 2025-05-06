@@ -1,6 +1,6 @@
 ---
 title: "Color Palettes"
-feat: true
+feat: false
 updateDate: 2024-11-08
 description: "Integrate Tailwind's color palettes directly into your Framer projects."
 link: "https://framer.link/tmBKggc"

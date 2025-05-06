@@ -1,6 +1,6 @@
 ---
 title: "Frameship"
-feat: false
+feat: true
 updateDate: 2024-11-22
 description: "Turn your Framer website into a Shopify store."
 link: "https://www.framer.com/marketplace/plugins/frameship--5sty6o8n22smpbcb4oypsggk6/?via=julesvcode"
@@ -9,6 +9,7 @@ thumbnailAlt: "Screenshot of the Frameship plugin for Framer"
 categories: ["ecommerce", "shop", "shopify", "paid"]
 free: false
 price: "Paid"
+discount: "10% OFF witch code FMPT10"
 icon: "./favicons/frameship.png"
 ---
 
@@ -22,5 +23,7 @@ Frameship is a powerful plugin that lets you build complete Shopify stores using
 - SEO Optimisation: built with search engines in mind, helping your store get noticed online.
 - Code-Free Experience: design and build your entire store without writing any code, perfect for designers who want to focus on creativity.
 - One-Time Payment: no recurring fees or hidden costs - just pay once and build as many stores as you like.
+
+[Get 10% OFF with the code FMPT10](https://frameship.io)
 
 Frameship is a proper game-changer for designers who want to create professional Shopify stores without getting bogged down in technical details. It's like having a development team in your pocket, letting you focus on what you do best - designing brilliant shopping experiences.
