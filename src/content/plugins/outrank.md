@@ -3,7 +3,7 @@ title: "Outrank"
 updateDate: 2025-06-03
 feat: false
 description: "Automatically generate SEO content for your Framer site."
-link: "https://www.framer.com/marketplace/plugins/outrank-framer/?via=julesvcode"
+link: "/outrank"
 thumbnailAlt: "Screenshot of the Outrank plugin for Framer"
 thumbnailImage: "./images/outrank-thumb.webp"
 categories: ["seo", "blog", "content", "ai", "free"]
