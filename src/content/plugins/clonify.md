@@ -1,6 +1,6 @@
 ---
 title: "Clonify"
-feat: true
+feat: false
 updateDate: 2025-05-06
 description: "A library of pre-designed sections, wireframes, and templates for your Framer projects."
 link: "/clonify"

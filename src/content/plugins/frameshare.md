@@ -1,7 +1,7 @@
 ---
 title: "FrameShare"
 updateDate: 2025-02-04
-feat: true
+feat: false
 description: "Add social sharing to your Framer websites."
 link: "https://www.framer.com/marketplace/plugins/frameshare?via=julesvcode"
 thumbnailAlt: "Screenshot of the FrameShare plugin for Framer"

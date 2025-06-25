@@ -1,12 +1,12 @@
 ---
 title: "Outrank"
 updateDate: 2025-06-03
-feat: false
+feat: true
 description: "Automatically generate SEO content for your Framer site."
 link: "/outrank"
 thumbnailAlt: "Screenshot of the Outrank plugin for Framer"
 thumbnailImage: "./images/outrank-thumb.webp"
-categories: ["seo", "blog", "content", "ai", "free"]
+categories: ["seo", "blog", "content", "ai", "paid"]
 free: false
 price: "Paid"
 icon: "./favicons/outrank.png"
