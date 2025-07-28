@@ -9,6 +9,8 @@ thumbnailImage: "./images/outrank-thumb.webp"
 categories: ["seo", "blog", "content", "ai", "paid"]
 free: false
 price: "Paid"
+discount: "10% OFF"
+code: "A6NP3EF3"
 icon: "./favicons/outrank.png"
 ---
 
