@@ -9,6 +9,8 @@ thumbnailImage: "./images/superfields-thumb.webp"
 categories: ["CMS", "design", "paid"]
 free: false
 price: "Paid"
+discount: "10% OFF"
+code: "FMPT10"
 icon: "./favicons/superfields.png"
 ---
 

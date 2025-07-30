@@ -6,7 +6,7 @@ description: "Preview and analyse your website's SEO metadata directly within th
 link: "https://www.framer.com/marketplace/plugins/metaviewer/?via=julesvcode"
 thumbnailAlt: "Screenshot of the MetaViewer plugin for Framer"
 thumbnailImage: "./images/metaviewer-thumb.webp"
-categories: ["seo", "metadata", "paid"]
+categories: ["seo", "metadata", "accessibility", "paid"]
 free: false
 price: "Paid"
 discount: "30% OFF"
