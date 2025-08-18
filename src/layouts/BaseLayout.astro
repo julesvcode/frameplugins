@@ -4,6 +4,7 @@ import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import AdBanner from "../components/AdBanner.astro";
+import framerBanner from "../assets/images/framer_ad.png";
 
 interface Props {
   title: string;
@@ -71,7 +72,7 @@ const makeTitle = title
     <AdBanner
       description="Publish your website in minutes with Framer."
       link="https://framer.link/SPOI3NZ"
-      imageUrl="/images/framer_ad.png"
+      imageUrl={framerBanner}
     />
   </body>
 </html>
