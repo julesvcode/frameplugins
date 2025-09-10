@@ -6,7 +6,7 @@ description: "A design-first e-commerce plugin that transforms your Framer desig
 link: "https://www.framer.com/marketplace/plugins/framershop/?via=julesvcode"
 thumbnailAlt: "Screenshot of the FramerShop plugin for Framer"
 thumbnailImage: "./images/framershop-thumb.webp"
-categories: ["", "free"]
+categories: ["ecommerce", "shop", "stripe", "free"]
 free: true
 price: "Free"
 icon: "./favicons/framershop.png"
