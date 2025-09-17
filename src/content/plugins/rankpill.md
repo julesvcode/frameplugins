@@ -1,9 +1,9 @@
 ---
 title: "Rankpill"
 updateDate: 2025-06-25
-feat: false
+feat: true
 description: "An AI-powered content generator for Framer."
-link: "https://www.framer.com/marketplace/plugins/rankpill/?via=julesvcode"
+link: "/rankpill"
 thumbnailAlt: "Screenshot of the Rankpill plugin for Framer"
 thumbnailImage: "./images/rankpill-thumb.webp"
 categories: ["seo", "blog", "content", "ai", "paid"]
