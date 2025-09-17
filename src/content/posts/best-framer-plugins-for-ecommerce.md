@@ -68,5 +68,8 @@ Whether you're just testing the waters with a free plugin like Frameshop, or rea
 
 Want to explore more ways to enhance your Framer-powered online store? Check out our complete collection of [e-commerce plugins](/categories/ecommerce) – we're always updating our list with the latest tools to help you create the perfect online shopping experience.
 
-[Browse More Framer Plugins →](/plugins)
+You may also want to read about:
+- [Best Framer plugins to improve your productivity as a designer](/blog/best-framer-plugins-to-improve-your-productivity-as-a-designer)
+- [Best Framer Plugins to Start a Blog](/blog/best-framer-plugins-start-blog)
+- [Best Framer Plugins for Search Engine Optimisation](/blog/best-framer-plugins-for-search-engine-optimisation)
 
