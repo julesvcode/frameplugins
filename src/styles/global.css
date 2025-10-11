@@ -66,6 +66,28 @@
     .blog-content a:hover {
       @apply underline text-zinc-700;
     }
+
+    .blog-content code {
+      @apply bg-zinc-100 text-zinc-900 rounded-md p-1 w-fit;
+      @apply font-mono font-medium text-sm;
+      @apply border border-zinc-200;
+    }
+
+    .blog-content li {
+      @apply leading-loose;
+    }
+
+    .blog-content pre {
+      @apply bg-zinc-100 text-zinc-900 rounded-md p-3 w-full;
+      @apply font-mono font-medium text-sm;
+      @apply border border-zinc-200;
+    }
+
+    .blog-content pre code {
+      @apply bg-zinc-100 text-zinc-900 rounded-md p-0 w-full;
+      @apply font-mono font-medium text-sm;
+      @apply border-none;
+    }
 }
 
 @layer utilities {
