@@ -5,33 +5,36 @@ pubDate: 2025-10-12
 readingSpeed: 11
 ---
 
-Over the past year I’ve released a couple of **Framer plugins** on the official marketplace - [Color Palettes](https://framer.link/iki4qCX) (free), [FrameShare](https://framer.link/iki4qCX) (premium) and more recently [MetaViewer](https://framer.link/V0urDh8) (freemium). I built all of them using **Cursor**, an AI-powered code editor that helps you write and edit code through conversation.
+Over the past year I’ve released a couple of Framer plugins on the official marketplace - [Color Palettes](https://framer.link/iki4qCX) (free), [FrameShare](https://framer.link/iki4qCX) (premium) and more recently [MetaViewer](https://framer.link/V0urDh8) (freemium). I built all of them using Cursor, an AI-powered code editor that helps you write and edit code through conversation.
 
 Recently, I started getting messages from people on [X](https://x.com/julesvcode) asking how I actually built them. I realised that a lot of Framer users aren’t developers or React experts, so the idea of building a plugin can sound intimidating at first.
 
-That’s why I decided to write this post: I want to walk you through the **process** for building Framer plugins with the help of AI in Cursor.
+That’s why I decided to write this post: I want to walk you through the process for building Framer plugins with the help of AI in Cursor.
 
-I won’t be teaching you how to code but I’ll show you how to get started and build your own plugins using Cursor. I’ve even made a **Framer Plugin Starter Kit** to make it super easy to set everything up.
+I won’t be teaching you how to code but I’ll show you how to get started and build your own plugins using Cursor. I’ve even made a Framer Plugin Starter Kit to make it super easy to set everything up.
 
-## What You’ll Need Before Starting
+![image](../posts/images/framer-plugin-cursor.png)
+
+## 1. What You’ll Need Before Starting
 
 Before we dive in, here’s what you’ll need to get started:
 
-- [Framer account](https://framer.link/julesvcode) – You’ll need this to upload, test, and preview your plugin inside Framer.
-- [Cursor](https://cursor.com/) – Download and install Cursor on your machine. It’s the AI-powered code editor we’ll be using to write and edit the plugin.
-- [GitHub account](https://github.com/) – You’ll need this to **clone the Starter Pack repository** and push your own plugin code. If you don’t have one yet, it only takes a minute to [create an account](https://github.com/join).
-- **Node.js + npm + Git** – those are tools that are needed to run and manage the code for your plugin. I’ll tell you how to check if you have those installed in the next step.
+- [Framer account](https://framer.link/julesvcode): you’ll need this preview and test your plugin inside a project in Framer.
+- [Cursor](https://cursor.com/): download and install Cursor on your machine. It’s the code editor we’ll be using to build the plugin.
+- [GitHub account](https://github.com/): you’ll need this to clone the Starter Pack repository and save your code for the plugin. If you don’t have one yet, it only takes a minute to [create an account](https://github.com/join).
+- [The Framer Plugin Starter Kit](https://github.com/julesvcode/framer-plugin-starter-kit): this is the boilerplate we'll use to speed up the setup.
+- Node.js + npm + Git – those are tools that are needed to run and manage the code for your plugin. I’ll tell you how to check if you have those installed in the next step.
 - An idea for the plugin you want to build.
 
-## Prerequisites
+## 2. Prerequisites
 
 First, we need to make sure you have Git, Node.js and npm installed on your machine before we can start the setup.
 
-**Check if Node, npm and Git are installed**
+**Check if Node, npm and Git are installed:**
 
 **On macOS:**
 
-1. Open **Terminal** (press `Command + Space`, type “Terminal”, hit Enter).
+1. Open the **Terminal** (press `Command + Space`, type “Terminal”, hit Enter).
 2. Type `node -v` and press Enter.
 3. Then type `npm -v` and press Enter.
 4. Then `git --version` and press Enter.
@@ -48,17 +51,16 @@ If all return a version number, you’re all set.
 
 If you see version numbers, you’re good to go.
     
-
 If `node -v` doesn’t return a version number, download and install [Node.js](https://nodejs.org/en) — it includes npm automatically. Once it’s installed, repeat the steps above to confirm everything works.
 
-If `git --version` returns something like `command not found: git`. In that case, you need to install it:
+If `git --version` returns something like `command not found: git`. In that case, you'll need to install it:
 
-- **macOS:** install [Homebrew](https://brew.sh/) and run `brew install git`, or download Git directly from [git-scm.com](https://git-scm.com/).
+- **macOS:** install [Homebrew](https://brew.sh/) and run `brew install git` in the terminal, or download Git directly from [git-scm.com](https://git-scm.com/).
 - **Windows:** download and install Git from [git-scm.com](https://git-scm.com/). The installer automatically sets up everything you need.
 
-## Setting Up Your Project in Cursor
+## 3. Setting Up Your Project in Cursor
 
-To make things easier for you, I’ve put together a **Framer Plugin Starter Kit** available on GitHub as a public repository. It’s basically the project files provided by Framer, with **Tailwind CSS** added on top (to make it easier for Cursor to style the UI). 
+To make things easier for you, I’ve put together a [Framer Plugin Starter Kit](https://github.com/julesvcode/framer-plugin-starter-kit) available on GitHub as a public repository. It’s basically the project files provided by Framer, with **Tailwind CSS** added on top (to make it easier for Cursor to style the UI). 
 
 The Starter Kit also includes **Cursor rules** that guide the AI on how to build a Framer plugin correctly — including how to use **Framer’s own CSS variables** for colours, as well as documentations for Lemon Squeezy, Polar and Stripe in case you want to add a paywall or integrate payments in your plugin.
 
@@ -69,7 +71,7 @@ Now let’s set everything up in Cursor.
 1. Open your Terminal 
     - On macOS: press `Command + Space`, type “Terminal”, and hit Enter.
     - On Windows: press the Windows key, type “cmd”, and hit Enter.
-2. Type the command below and hit Enter to navigate to your Documents folder
+2. Type the command below and hit Enter to navigate to your "Documents" folder
 
 ```bash
 cd Documents
@@ -93,10 +95,6 @@ cd framer-plugin-starter-kit
 cursor .
 ```
 
-If you’ve followed all the steps, your Terminal should look something like that:
-
-[Screenshot of all the command]
-
 ### Step 2 – Install the Dependencies
 
 Once Cursor is open:
@@ -110,7 +108,7 @@ npm install
 
 3. That’s it! You’re all set to make a start on your Framer plugin
 
-## What You Need to Know
+## 4. What You Need to Know
 
 Now that you’ve got the project open in Cursor, let’s go through the essentials so you know what’s what before you start building.
 
@@ -118,10 +116,10 @@ Now that you’ve got the project open in Cursor, let’s go through the essenti
 
 On the left-hand side, you’ll see a few key files and folders:
 
-- `package.json` – This file contains your plugin’s basic info (name, version, dependencies).
-- `framer.json` – Tells Framer how to display your plugin name and icon. You’ll come back here if you ever want to rename your plugin.
-- `src/` – This is where your actual plugin lives. Inside, you’ll find:
-    - `App.tsx` – The main file where your plugin’s code and UI go.
+- `package.json`: this file contains your plugin’s basic info (name, version, dependencies).
+- `framer.json`: this file tells Framer how to display your plugin name and icon. You’ll come back here if you ever want to rename your plugin.
+- `src/`: this is where your actual plugin lives. Inside, you’ll find:
+    - `App.tsx`: the main file where your plugin’s code and UI go.
 
 If you ask Cursor something like *“Explain what each file in this project does”*, it’ll walk you through them in plain English, which is a great way to explore.
 
@@ -138,9 +136,9 @@ npm run dev
 This starts a local development server.
     
 2. Open **Framer**
-3. Click on the **Plugins** button
-4. Click **Browse All…**
-5. And select **Open Development Plugin..**. 
+3. Click on the **Plugins** button (as if you were searching for an existing plugin)
+4. Click **Browse All..**
+5. And select **Open Development Plugin..**
 
 On macOS you can use the following shortcut: `cmd + option + L`
 
@@ -187,7 +185,7 @@ npm run dev
 
 That’s all you need to know for now - you’ve got the setup, structure, and preview ready. Next, we’ll actually make the plugin do something with Cursor.
 
-## Building Your Plugin with Cursor
+## 5. Building Your Plugin with Cursor
 
 Now that everything’s set up, you can start building. 
 
@@ -202,21 +200,21 @@ Before typing any feature prompt, start by asking Cursor to **index the project*
 
 Then, explain what you want to build — even in plain language. For example:
 
-> “I want to build a plugin that helps users [do X]. What’s the best way to structure this in Framer, and can you create a to-do list of tasks for it?”
+> “I want to build a plugin that helps users [do X]. I want to include the following features: [feature 1], [feature 2], etc.. What’s the best way to structure this, and can you create a to-do list of tasks for it?”
 > 
 
 Cursor will suggest a plan and break it down into steps. You can then work on one small task at a time. This makes it easier to follow along and keeps Cursor focused.
 
 ### Build in small chunks
 
-Instead of asking Cursor to “build everything,” tackle one feature at a time.
+Instead of asking Cursor to “build the Framer plugin,” tackle one feature at a time.
 
 For example:
 
-> “Let’s start with adding a button component.”
+> “Let’s start with adding [feature 1].”
 > 
 > 
-> “Now let’s make it change colour when clicked.”
+> “Now let’s move to [feature 2].”
 > 
 
 Breaking the work into small tasks gives you more control and helps you understand what’s happening as Cursor updates your code.
@@ -246,7 +244,7 @@ This keeps your plugin looking consistent with Framer’s UI.
 
 ### Paid vs free plugins
 
-If you want to make your plugin paid or freemium, you can use payment platforms like **Lemon Squeezy** or **Polar**, both of which have great APIs for this. The Starter Kit includes rules to help you set this up - simply explain to Cursor how and when you want users to pay to use the plugin.
+If you want to make your plugin paid or freemium, you can use payment platforms like **Lemon Squeezy**, **Polar** or **Stripe**, which have great APIs for this. The Starter Kit includes rules to help you set this up - simply explain to Cursor how and when you want users to pay to use the plugin.
 
 ### Test your plugin like a user
 
@@ -254,15 +252,15 @@ Testing depends on what your plugin does, but a good rule is: **use it like your
 
 Try it inside the Framer app and also test it when using Framer in the browser (Safari, Chrome, Firefox). Make sure everything feels smooth, that it saves state properly, and that it looks right in both light and dark themes.
 
-## Publishing Your Plugin
+## 6. Publishing Your Plugin
 
-Once your plugin is working and tested, it’s time to publish it on Framer.
+Once your plugin is working and you've tested it, it’s time to publish it on Framer.
 
 ### Package your plugin
 
 Before publishing, make sure everything is tidy:
 
-- Remove any unused files or test code.
+- Remove any unused files or test code (you can ask Cursor to do this for you).
 - Double-check your `framer.json` file to make sure the name is correct.
 - Then, run the following command in the in-built terminal:
     
@@ -280,7 +278,7 @@ You’ll need a few things before submitting:
 - **Tagline, summary** **& description** – explain the purpose of your plugin and what makes it useful. This is what users will see on your plugin’s page on the Framer marketplace.
 - **Review instructions** – include anything you want the reviewer to be aware of when reviewing your plugin (e.g. if your plugin is a paid one, make sure to include a license key the reviewer can use to access the plugin).
 
-If you need help, simply look at other plugins on the Framer Plugin marketplace to get some inspiration.
+If you need help, simply look at other plugins on the [Framer Plugin marketplace](https://framer.link/FqqP7D7) to get some inspiration.
 
 ### Submit to the official marketplace
 
@@ -305,6 +303,4 @@ The goal is to **start small**, experiment, and learn as you go. You might even 
 
 If you end up building your first plugin using this guide, I’d love to see it. Tag me on [X](https://x.com/julesvcode) so I can check it out.
 
-If you spot anything that could be improved or think something’s missing, feel free to reach out — I’m always open to feedback to make this guide better.
-
-And if you found the Starter Kit useful, share it with someone who’s been thinking about building a plugin but doesn’t know where to start.
+If you spot anything that could be improved or think something’s missing, [feel free to reach out](https://x.com/julesvcode). I’m always open to feedback to make this guide better.
