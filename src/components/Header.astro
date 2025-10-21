@@ -1,4 +1,5 @@
 ---
+import AdBannerNav from "./AdBannerNav.astro";
 import ButtonPrimary from "./ButtonPrimary.astro";
 import ButtonSecondary from "./ButtonSecondary.astro";
 import SearchButton from "./SearchButton.astro";
@@ -11,89 +12,92 @@ const navLinks = [
 ];
 ---
 
-<header
-  class="w-full pb-4 flex justify-between items-baseline animate-slidedown"
->
-  <div class="w-full py-4 md:flex md:items-center md:justify-between">
-    <div class="w-full flex justify-between items-center">
-      <a
-        href="/"
-        title="Return to home page"
-        class="text-2xl text-zinc-950 font-thin pb-1 flex gap-1 items-center"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="currentColor"
-          viewBox="0 0 256 256"
-          ><path
-            d="M165.78,224H208a16,16,0,0,0,16-16V170.35A8,8,0,0,0,212.94,163a23.37,23.37,0,0,1-8.94,1.77c-13.23,0-24-11.1-24-24.73s10.77-24.73,24-24.73a23.37,23.37,0,0,1,8.94,1.77A8,8,0,0,0,224,109.65V72a16,16,0,0,0-16-16H171.78a35.36,35.36,0,0,0,.22-4,36,36,0,0,0-72,0,35.36,35.36,0,0,0,.22,4H64A16,16,0,0,0,48,72v32.22a35.36,35.36,0,0,0-4-.22,36,36,0,0,0,0,72,35.36,35.36,0,0,0,4-.22V208a16,16,0,0,0,16,16h42.22"
-          ></path></svg
+<header class="w-full flex flex-col">
+  <div
+    class="w-full flex justify-between items-baseline animate-slidedown"
+  >
+    <div class="w-full py-4 md:flex md:items-center md:justify-between">
+      <div class="w-full flex justify-between items-center">
+        <a
+          href="/"
+          title="Return to home page"
+          class="text-2xl text-zinc-950 font-thin pb-1 flex gap-1 items-center"
         >
-        <span><span class="font-bold">frame</span>plugins</span>
-      </a>
-      <button
-        class="text-zinc-950 text-3xl cursor-pointer mx-2 block md:hidden"
-        id="menu"
-        aria-label="Toggle Menu"
-      >
-        <svg
-          class="w-8 h-8"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-        >
-          <path
-            class="navmenu-toggle"
-            fill-rule="evenodd"
-            d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 256 256"
+            ><path
+              d="M165.78,224H208a16,16,0,0,0,16-16V170.35A8,8,0,0,0,212.94,163a23.37,23.37,0,0,1-8.94,1.77c-13.23,0-24-11.1-24-24.73s10.77-24.73,24-24.73a23.37,23.37,0,0,1,8.94,1.77A8,8,0,0,0,224,109.65V72a16,16,0,0,0-16-16H171.78a35.36,35.36,0,0,0,.22-4,36,36,0,0,0-72,0,35.36,35.36,0,0,0,.22,4H64A16,16,0,0,0,48,72v32.22a35.36,35.36,0,0,0-4-.22,36,36,0,0,0,0,72,35.36,35.36,0,0,0,4-.22V208a16,16,0,0,0,16,16h42.22"
+            ></path></svg
           >
-          </path>
+          <span><span class="font-bold">frame</span>plugins</span>
+        </a>
+        <button
+          class="text-zinc-950 text-3xl cursor-pointer mx-2 block md:hidden"
+          id="menu"
+          aria-label="Toggle Menu"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              class="navmenu-toggle"
+              fill-rule="evenodd"
+              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+            >
+            </path>
 
-          <path
-            class="navmenu-toggle hidden"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-          >
-          </path>
-        </svg>
-      </button>
+            <path
+              class="navmenu-toggle hidden"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+            >
+            </path>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="navmenu-toggle hidden md:flex gap-4 items-center">
+        <ul
+          class="flex flex-col md:flex-row md:items-center gap-4 md:gap-10 pt-2 md:pt-0"
+        >
+          {
+            navLinks.map((link) => (
+              <li class="list-none m-0">
+                <a href={link.href} class="text-zinc-700 hover:text-zinc-950">
+                  {link.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+        <div class="pt-4 md:pt-0 md:pl-4">
+          <!-- <ButtonSecondary
+            title="Submit"
+            link="https://tally.so/r/w4okxO"
+            target="_blank"
+          /> -->
+          <SearchButton />
+        </div>
+      </nav>
     </div>
 
-    <nav class="navmenu-toggle hidden md:flex gap-4 items-center">
-      <ul
-        class="flex flex-col md:flex-row md:items-center gap-4 md:gap-10 pt-2 md:pt-0"
-      >
-        {
-          navLinks.map((link) => (
-            <li class="list-none m-0">
-              <a href={link.href} class="text-zinc-700 hover:text-zinc-950">
-                {link.label}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-      <div class="pt-4 md:pt-0 md:pl-4">
-        <!-- <ButtonSecondary
-          title="Submit"
-          link="https://tally.so/r/w4okxO"
-          target="_blank"
-        /> -->
-        <SearchButton />
-      </div>
-    </nav>
-  </div>
+    <script>
+      const menuButton = document.getElementById("menu");
 
-  <script>
-    const menuButton = document.getElementById("menu");
-
-    menuButton!.addEventListener("click", () => {
-      [...document.querySelectorAll(".navmenu-toggle")].forEach((Element) => {
-        Element.classList.toggle("hidden");
+      menuButton!.addEventListener("click", () => {
+        [...document.querySelectorAll(".navmenu-toggle")].forEach((Element) => {
+          Element.classList.toggle("hidden");
+        });
       });
-    });
-  </script>
+    </script>
+  </div>
+  <AdBannerNav />
 </header>
