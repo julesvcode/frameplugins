@@ -6,7 +6,7 @@ description: "Create advanced, customizable forms directly in Framer."
 link: "/framerforms"
 thumbnailImage: "./images/framerforms-thumb.webp"
 thumbnailAlt: "Screenshot of the FramerForms plugin for Framer"
-categories: ["forms", "data", "paid"]
+categories: ["forms", "data", "waitlist", "paid"]
 free: false
 price: "Paid"
 icon: "./favicons/framerforms.png"

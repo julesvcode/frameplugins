@@ -47,7 +47,7 @@ const categories = entry.data.categories;
       {entry.data.discount && (
         <p class="text-zinc-700 text-lg leading-relaxed font-normal">
           <b>Discount:</b>
-          {entry.data.discount} with code <b>{entry.data.code}</b>.
+          {entry.data.discount}{entry.data.code && (<span> with code</span> <b>{entry.data.code}</b>)}.
         </p>
       )}
     </div>
