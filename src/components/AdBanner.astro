@@ -37,30 +37,49 @@ const bannerScript = `
 
 <div
   id="ad-banner"
-  class="fixed bottom-6 right-6 z-50 w-80 h-32 bg-zinc-50 rounded-lg shadow-lg border border-zinc-300 transition-opacity duration-300"
+  class="fixed bottom-2 right-5 z-50 flex flex-col gap-3"
 >
-  <button
-    onclick="closeBanner()"
-    class="absolute -top-3 -right-3 bg-zinc-50 text-white border border-zinc-300 rounded-full w-6 h-6 flex items-center justify-center hover:bg-zinc-200 hover:text-zinc-800 transition-colors"
-    aria-label="Close banner"
+  <div
+  class="w-80 h-32 bg-zinc-50 rounded-lg shadow-lg border border-zinc-200 transition-opacity duration-300"
   >
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-    </svg>
-  </button>
+    <button
+      onclick="closeBanner()"
+      class="absolute -top-3 -right-3 bg-zinc-50 text-zinc-600 border border-zinc-200 rounded-full w-6 h-6 flex items-center justify-center hover:bg-zinc-100 hover:text-zinc-900 transition-colors"
+      aria-label="Close banner"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
 
-  <a href={link} class="w-full h-full flex gap-4 p-4 hover:opacity-90 transition-opacity" target="_blank">
-    {imageUrl && (
-      <Image
-        src={imageUrl}
-        alt={description}
-        width={128}
-        height={96}
-        class="w-32 h-26 aspect-video rounded-md border border-zinc-100"
-      />
-    )}
-    <p class="text-zinc-700 text-sm flex-grow-1 p-0">{description}</p>
-  </a>
+    <a href={link} class="w-full h-full flex gap-3 p-3.5 hover:opacity-90 transition-opacity" target="_blank">
+      {imageUrl && (
+        <Image
+          src={imageUrl}
+          alt={description}
+          width={128}
+          height={96}
+          class="w-32 h-26 aspect-video rounded-md border border-zinc-100"
+        />
+      )}
+      <p class="text-zinc-700 text-sm flex-grow-1 p-0">{description}</p>
+    </a>
+  </div>
+  <div class="w-full flex justify-end">
+    <a 
+      href="https://adlet.io?utm_source=fmpl" 
+      target="_blank"
+      class="text-xs text-zinc-500 flex items-center gap-1 whitespace-nowrap hover:text-zinc-700 transition-colors"
+    >
+      Powered by 
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="black"  xmlns="http://www.w3.org/2000/svg" class="inline">
+        <path d="M10.1699 3.3125H11.6895C12.294 3.3125 12.8737 3.50325 13.3012 3.8428C13.7286 4.18234 13.9688 4.64286 13.9688 5.12305C13.9688 7.47992 13.9688 8.80133 13.9688 11.1582C13.9688 11.6384 13.7286 12.0989 13.3012 12.4385C12.8737 12.778 12.294 12.9688 11.6895 12.9688H4.0918C3.48729 12.9688 2.90754 12.778 2.48009 12.4385C2.05264 12.0989 1.8125 11.6384 1.8125 11.1582V9.95117M10.1699 3.3125H4.0918C3.48729 3.3125 2.90754 3.50325 2.48009 3.8428C2.05264 4.18234 1.8125 4.64286 1.8125 5.12305V9.95117" fill="currentColor" fill-opacity="0.1"/>
+        <path d="M13.9688 6.5C13.9688 5.82617 13.9688 6.25 13.9688 4.87305C13.9688 4.39286 13.7286 3.93234 13.3012 3.5928C12.8737 3.25325 12.294 3.0625 11.6895 3.0625H10.1699H4.0918C3.48729 3.0625 2.90754 3.25325 2.48009 3.5928C2.05264 3.93234 1.8125 4.39286 1.8125 4.87305V9.70117V10.9082C1.8125 11.3884 2.05264 11.8489 2.48009 12.1885C2.90754 12.528 3.48729 12.7188 4.0918 12.7188H6.14062" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12.1941 7.90625H12.9907C13.3076 7.90625 13.6116 8.00626 13.8357 8.18427C14.0598 8.36228 14.1857 8.60372 14.1857 8.85547V12.0195C14.1857 12.2713 14.0598 12.5127 13.8357 12.6907C13.6116 12.8687 13.3076 12.9688 12.9907 12.9688H9.00747C8.69055 12.9688 8.3866 12.8687 8.1625 12.6907C7.9384 12.5127 7.8125 12.2713 7.8125 12.0195V11.3867M12.1941 7.90625H9.00747C8.69055 7.90625 8.3866 8.00626 8.1625 8.18427C7.9384 8.36228 7.8125 8.60372 7.8125 8.85547V11.3867" fill="currentColor" stroke="currentColor" stroke-width="0.524272" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Adlet
+    </a>
+  </div>
 </div>
 
 <script set:html={bannerScript} />
