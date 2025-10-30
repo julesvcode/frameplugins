@@ -14,7 +14,7 @@ icon: "./favicons/assetmanager.png"
 
 This plugin makes managing images and other assets in your Framer projects much simpler and more organised. It acts as a central hub where you can upload, update, and control how your assets are used across your entire project.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Centralised Management - keep all your project assets in one easy-to-access place, making it simple to find and use what you need
 - Smart Alt Text Control - set image alt text once and automatically apply it everywhere that image appears, saving time while improving accessibility
