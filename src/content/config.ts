@@ -13,6 +13,7 @@ const pluginCollection = defineCollection({
     categories: z.array(z.string()),
     free: z.boolean().default(true),
     price: z.string(),
+    bfdeal: z.boolean().default(false),
     discount: z.string().optional(),
     code: z.string().optional(),
     icon: image(),

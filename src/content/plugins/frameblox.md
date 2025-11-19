@@ -9,6 +9,9 @@ thumbnailAlt: "Screenshot of the Frameblox plugin for Framer"
 categories: ["design", "ui", "library", "components", "templates", "paid"]
 free: true
 price: "Paid"
+bfdeal: true
+discount: "50% OFF"
+code: "BLACKFRIDAY25"
 icon: "./favicons/frameblox.png"
 ---
 

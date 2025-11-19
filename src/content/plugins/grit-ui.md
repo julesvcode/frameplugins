@@ -9,6 +9,9 @@ thumbnailImage: "./images/gritui-thumb.jpg"
 categories: ["design", "ui", "components", "freemium", "paid"]
 free: false
 price: "Paid"
+bfdeal: true
+discount: "50% OFF"
+code: "GUIBF2025"
 icon: "./favicons/gritui.png"
 ---
 

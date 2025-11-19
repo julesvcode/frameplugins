@@ -9,8 +9,9 @@ thumbnailImage: "./images/framify-thumb.jpg"
 categories: ["design", "ui", "components", "templates", "freemium", "free"]
 free: false
 price: "Paid"
-discount: "15% OFF"
-code: "FRAMEPLATE15"
+bfdeal: true
+discount: "40% OFF"
+code: "FRIDAY40"
 icon: "./favicons/framify.jpg"
 ---
 

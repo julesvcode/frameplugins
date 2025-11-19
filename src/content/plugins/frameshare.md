@@ -9,8 +9,9 @@ thumbnailImage: "./images/frameshare-thumb.jpg"
 categories: ["socials", "icons", "utilities", "paid"]
 free: false
 price: "Paid"
-discount: "27% OFF"
-code: "IWMZC4NW"
+bfdeal: true
+discount: "30% OFF"
+code: "BLACKFRIDAY25"
 icon: "./favicons/frameshare.png"
 ---
 
