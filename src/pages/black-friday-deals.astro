@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+import ToolCardDeal from "../components/ToolCardDeal.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const allPlugins = await getCollection("plugins");
+const discountedPlugins = allPlugins.filter(plugin => plugin.data.discount !== undefined);
+
+const bfDealsPlugins = allPlugins.filter(plugin => plugin.data.bfdeal === true);
+
+---
+
+<BaseLayout
+  title="Black Friday 2025 Framer Plugin Deals"
+  description="Find the top Black Friday 2025 discounts on Framer plugins. Save money while boosting your workflow with exclusive, limited-time offers."
+>
+  <section class="w-full flex gap-4">
+    <div class="flex flex-col md:basis-2/3 gap-4">
+      <h1>Black Friday 2025 Framer Deals</h1>
+      <p class="text-lg">
+        Find the top Black Friday 2025 discounts on Framer plugins. Save money while boosting your workflow with exclusive, limited-time offers.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+      {bfDealsPlugins.map((plugin) => <ToolCardDeal plugins={plugin} />)}
+    </div>
+  </section>
+</BaseLayout>

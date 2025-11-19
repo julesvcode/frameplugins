@@ -9,6 +9,7 @@ import SignupForm from "../components/SignupForm.astro";
 import { Image } from "astro:assets";
 import puzzlePiece from "../assets/images/puzzle_piece.jpg";
 import SectionCard from "../components/SectionCard.astro";
+import ToolCardDeal from "../components/ToolCardDeal.astro";
 
 const allPlugins = await getCollection("plugins");
 
@@ -63,6 +64,11 @@ const homeAiPlugins = allPlugins
 
 const featuredPlugins = allPlugins.filter((tool) => tool.data.feat === true);
 
+const bfDealsPlugins = allPlugins
+  .filter(plugin => plugin.data.bfdeal === true)
+  .sort((a, b) => new Date(b.data.updateDate).getTime() - new Date(a.data.updateDate).getTime())
+  .slice(0, 3);
+
 const latestPlugins = allPlugins.sort(
   (a, b) =>
     new Date(b.data.updateDate).getTime() -
@@ -102,6 +108,15 @@ let topicDisplay;
     </div>
     <div class="hidden md:block max-w-72">
       <Image src={puzzlePiece} alt="Framer Plugins" />
+    </div>
+  </section>
+  <section class="py-4">
+    <div class="group flex items-end justify-between">
+      <h2 class="">🎁 Black Friday Deals</h2>
+      <a href="/black-friday-deals" class="text-sm hover:underline">View all → </a>
+    </div>
+    <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
+      {bfDealsPlugins.map((plugin) => <ToolCardDeal plugins={plugin} />)}
     </div>
   </section>
   <section class="py-4">
