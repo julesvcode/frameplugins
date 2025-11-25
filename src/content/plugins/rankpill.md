@@ -9,6 +9,8 @@ thumbnailImage: "./images/rankpill-thumb.webp"
 categories: ["seo", "blog", "content", "ai", "paid"]
 free: false
 price: "Paid"
+bfdeal: true
+discount: "50% OFF"
 icon: "./favicons/rankpill.png"
 ---
 
