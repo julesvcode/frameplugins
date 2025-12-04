@@ -9,9 +9,6 @@ thumbnailImage: "./images/josie-thumb.webp"
 categories: ["design", "ui", "components", "paid"]
 free: false
 price: "Paid"
-bfdeal: true
-discount: "30% OFF"
-code: "JOSIEBF25"
 icon: "./favicons/josie.png"
 ---
 

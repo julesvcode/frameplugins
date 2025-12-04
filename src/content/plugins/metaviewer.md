@@ -9,9 +9,6 @@ thumbnailImage: "./images/metaviewer-thumb.webp"
 categories: ["seo", "metadata", "accessibility", "paid"]
 free: false
 price: "Paid"
-bfdeal: true
-discount: "30% OFF"
-code: "BLACKFRIDAY25"
 icon: "./favicons/metaviewer.png"
 ---
 
