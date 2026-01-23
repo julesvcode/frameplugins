@@ -1,7 +1,7 @@
 ---
 title: "Rankpill"
 updateDate: 2025-06-25
-feat: true
+feat: false
 description: "An AI-powered content generator for Framer."
 link: "/rankpill"
 thumbnailAlt: "Screenshot of the Rankpill plugin for Framer"

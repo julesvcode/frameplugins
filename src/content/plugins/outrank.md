@@ -1,7 +1,7 @@
 ---
 title: "Outrank"
 updateDate: 2025-06-03
-feat: false
+feat: true
 description: "Automatically generate SEO content for your Framer site."
 link: "/outrank"
 thumbnailAlt: "Screenshot of the Outrank plugin for Framer"
