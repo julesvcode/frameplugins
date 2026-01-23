@@ -3,7 +3,7 @@ title: "Smart Contrast"
 feat: false
 updateDate: 2026-01-23
 description: "Accessibility checking made easy. Select a text layer and get instant contrast results."
-link: "https://www.framer.com/marketplace/plugins/smart-contrast/"
+link: "https://www.framer.com/marketplace/plugins/smart-contrast?via=julesvcode"
 thumbnailAlt: "Screenshot of the Smart Contrast plugin for Framer"
 thumbnailImage: "./images/smart-contrast-thumb.webp"
 categories: ["accessibility", "utilities", "design", "colors"]

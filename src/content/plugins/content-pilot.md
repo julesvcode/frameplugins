@@ -3,7 +3,7 @@ title: "ContentPilot"
 feat: false
 updateDate: 2026-01-23
 description: "The ultimate writing assistant for Framer text layers and CMS collections."
-link: "https://www.framer.com/marketplace/plugins/contentpilot/"
+link: "https://www.framer.com/marketplace/plugins/contentpilot?via=julesvcode"
 thumbnailAlt: "Screenshot of the ContentPilot plugin for Framer"
 thumbnailImage: "./images/contentpilot-thumb.webp"
 categories: ["ai", "content", "cms", "productivity"]

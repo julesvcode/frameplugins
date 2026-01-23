@@ -3,7 +3,7 @@ title: "Pomodoro Timer"
 feat: false
 updateDate: 2026-01-23
 description: "A distraction-free Pomodoro timer that lives inside Framer."
-link: "https://www.framer.com/marketplace/plugins/pomodoro-timer/"
+link: "https://www.framer.com/marketplace/plugins/pomodoro-timer?via=julesvcode"
 thumbnailAlt: "Screenshot of the Pomodoro Timer plugin for Framer"
 thumbnailImage: "./images/pomodoro-timer-thumb.webp"
 categories: ["productivity", "utilities", "focus"]
