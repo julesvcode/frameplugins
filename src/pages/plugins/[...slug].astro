@@ -30,6 +30,19 @@ const categories = entry.data.categories;
 ---
 
 <TwoColumnsLayout title={`${entry.data.title} Framer plugin`}>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": entry.data.title,
+    "operatingSystem": "Framer",
+    "applicationCategory": entry.data.categories[0],
+    "offers": {
+      "@type": "Offer",
+      "price": entry.data.price === "Free" ? "0" : entry.data.price.replace("$", ""),
+      "priceCurrency": "USD"
+    },
+    "description": entry.data.description,
+  })} />
   <section class="flex flex-col gap-4">
     <div class="flex items-center">
       <h1 class="text-zinc-950 text-4xl font-bold">
