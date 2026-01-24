@@ -1,0 +1,47 @@
+---
+import { Image } from "astro:assets";
+import Tag from "./Tag.astro";
+import type { CollectionEntry } from "astro:content";
+import FeaturedTag from "./FeaturedTag.astro";
+
+type Props = {
+    plugins: CollectionEntry<"plugins">;
+};
+
+const { plugins } = Astro.props;
+const { icon, title, description, categories, feat } = plugins.data;
+
+const categoryDisplay = categories[0].replace(/-/g, " ");
+---
+
+<a
+    href={`/plugins/${plugins.slug}`}
+    class="relative flex gap-6 group overflow-hidden p-6 rounded-lg bg-zinc-100 border border-zinc-200 w-full cursor-pointer hover:border-zinc-300 hover:bg-opacity-80 items-center transition-all"
+>
+    <div
+        class="flex-shrink-0 flex items-center justify-center border border-zinc-200 rounded-md w-16 h-16 bg-white"
+    >
+        <Image
+            src={icon}
+            alt={`${title} icon`}
+            class="rounded w-full h-full object-cover"
+        />
+    </div>
+
+    <div class="flex flex-col gap-1 w-full min-w-0">
+        <div class="flex items-center gap-2 justify-between w-full">
+            <h3 class="text-zinc-950 font-bold text-lg leading-tight truncate">
+                {title}
+            </h3>
+            <div class="hidden sm:block">
+                <Tag category={categoryDisplay} />
+            </div>
+        </div>
+        <p
+            class="text-zinc-600 text-sm sm:text-base p-0 leading-tight truncate"
+        >
+            {description}
+        </p>
+    </div>
+    {feat && <FeaturedTag />}
+</a>

@@ -9,6 +9,8 @@ import CategoryTag from "../../components/CategoryTag.astro";
 import TopicTag from "../../components/TopicTag.astro";
 import SocialShare from "../../components/SocialShare.astro";
 
+import RelatedPlugins from "../../components/RelatedPlugins.astro";
+
 export const prerender = true;
 
 export async function getStaticPaths() {
@@ -99,6 +101,9 @@ const categories = entry.data.categories;
       url={`frameplugins.com/plugins/${entry.slug}`}
     />
   </section>
+
+  <RelatedPlugins currentSlug={entry.slug} categories={entry.data.categories} />
+
   <section class="py-4 group">
     <a 
       href="/plugins" 

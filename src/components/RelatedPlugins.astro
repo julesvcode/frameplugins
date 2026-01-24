@@ -1,0 +1,51 @@
+---
+import { getCollection } from "astro:content";
+import ToolCardHorizontal from "./ToolCardHorizontal.astro";
+
+interface Props {
+    currentSlug: string;
+    categories: string[];
+}
+
+const { currentSlug, categories } = Astro.props;
+
+const allPlugins = await getCollection("plugins");
+
+// Filter plugins that match at least one category and are not the current plugin
+const relatedPlugins = allPlugins
+    .filter((plugin) => {
+        if (plugin.slug === currentSlug) return false;
+        return plugin.data.categories.some((cat) => categories.includes(cat));
+    })
+    // Sort by number of matching categories (optional, but good for relevance)
+    // or just shuffle/randomize. For now, let's just take the most recent ones that match.
+    .sort(
+        (a, b) =>
+            new Date(b.data.updateDate).getTime() -
+            new Date(a.data.updateDate).getTime(),
+    )
+    .slice(0, 3);
+---
+
+{
+    relatedPlugins.length > 0 && (
+        <section class="">
+            <div class="flex items-baseline justify-between mb-6">
+                <h2 class="text-2xl font-bold text-zinc-900">
+                    Related Plugins
+                </h2>
+                <a
+                    href="/plugins"
+                    class="text-sm font-medium text-zinc-600 hover:text-zinc-900 hover:underline"
+                >
+                    View all →
+                </a>
+            </div>
+            <div class="grid grid-cols-1 gap-4">
+                {relatedPlugins.map((plugin) => (
+                    <ToolCardHorizontal plugins={plugin} />
+                ))}
+            </div>
+        </section>
+    )
+}
