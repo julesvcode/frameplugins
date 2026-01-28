@@ -22,3 +22,8 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# SEO strategy document (private)
+seo-strategy.md
+content-ideas.md
+

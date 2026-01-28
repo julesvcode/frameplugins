@@ -5,7 +5,6 @@ import CategoryCard from "../../components/CategoryCard.astro";
 import ToolCard from "../../components/ToolCard.astro";
 import ButtonSecondary from "../../components/ButtonSecondary.astro";
 
-
 const allPlugins = await getCollection("plugins");
 const allCategories = [
   ...new Set(allPlugins.map((plugin) => plugin.data.categories).flat()),
@@ -14,25 +13,30 @@ const alphabeticalCategories = allCategories.sort((a, b) => {
   return a.localeCompare(b);
 });
 
-let groupedWords = alphabeticalCategories.reduce<Record<string, string[]>>((acc, word) => {
-  let firstLetter = word[0].toUpperCase();
-  if (!acc[firstLetter]) {
-    acc[firstLetter] = [];
-  }
-  acc[firstLetter].push(word);
-  return acc;
-}, {} as Record<string, string[]>);
+let groupedWords = alphabeticalCategories.reduce<Record<string, string[]>>(
+  (acc, word) => {
+    let firstLetter = word[0].toUpperCase();
+    if (!acc[firstLetter]) {
+      acc[firstLetter] = [];
+    }
+    acc[firstLetter].push(word);
+    return acc;
+  },
+  {} as Record<string, string[]>,
+);
 
-const categorizedWords = Object.entries(groupedWords).sort((a, b) => a[0].localeCompare(b[0]));
+const categorizedWords = Object.entries(groupedWords).sort((a, b) =>
+  a[0].localeCompare(b[0]),
+);
 
-const iconsPlugins = allPlugins.filter(plugin => plugin.data.categories.includes("icons")).slice(0, 3)
-
-
+const iconsPlugins = allPlugins
+  .filter((plugin) => plugin.data.categories.includes("icons"))
+  .slice(0, 3);
 ---
 
 <BaseLayout
-  title="All Framer Plugins Categories"
-  description="Browse all the categories of Framer plugins"
+  title="Best Framer Plugins by Category (2026) | Free & Paid"
+  description="Browse the complete directory of Framer plugins categorized by function. Find the best tools for CMS, SEO, AI, and more to enhance your website."
 >
   <section class="w-full flex gap-4">
     <div class="flex flex-col md:basis-2/3 gap-4">
@@ -71,7 +75,7 @@ const iconsPlugins = allPlugins.filter(plugin => plugin.data.categories.includes
   </section> -->
   <section>
     <!-- <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4"> -->
-      <!-- {
+    <!-- {
         alphabeticalCategories.map((category) => (
           <CategoryCard
             link={category}
@@ -79,11 +83,12 @@ const iconsPlugins = allPlugins.filter(plugin => plugin.data.categories.includes
           />
         ))
       } -->
-      {categorizedWords.map(([letter, words]) => (
+    {
+      categorizedWords.map(([letter, words]) => (
         <div class="">
           <h2>{letter}</h2>
           <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4 mb-16">
-            {words.map(word => (
+            {words.map((word) => (
               <CategoryCard
                 link={`/${word}`}
                 category={word.length < 4 ? word.toUpperCase() : word}
@@ -91,7 +96,8 @@ const iconsPlugins = allPlugins.filter(plugin => plugin.data.categories.includes
             ))}
           </div>
         </div>
-      ))}
+      ))
+    }
     <!-- </div> -->
   </section>
 </BaseLayout>

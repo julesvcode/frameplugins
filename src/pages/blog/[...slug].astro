@@ -26,21 +26,42 @@ const { Content, headings } = await entry.render();
 
 const subheadings = headings.filter((heading) => heading.depth === 2);
 
-var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+var month = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
 
 const publishedDate = `${month[entry.data.pubDate.getMonth()]} ${entry.data.pubDate.getDate()}, ${entry.data.pubDate.getFullYear()}`;
 ---
 
-<TwoColumnsLayout title={entry.data.title}>
+<TwoColumnsLayout
+  title={`${entry.data.title} (2026)`}
+  description={entry.data.description}
+>
   <section class="blog-content flex flex-col gap-4">
     <div class="relative flex flex-col items-start gap-2 justify-between pb-4">
-      <a href="/blog" class="hidden md:flex absolute top-[2px] -left-14 w-10 h-8 items-center justify-center !no-underline bg-zinc-200 border font-bold border-zinc-100 text-sm text-zinc-950 rounded-md hover:bg-opacity-80">←</a>
+      <a
+        href="/blog"
+        class="hidden md:flex absolute top-[2px] -left-14 w-10 h-8 items-center justify-center !no-underline bg-zinc-200 border font-bold border-zinc-100 text-sm text-zinc-950 rounded-md hover:bg-opacity-80"
+        >←</a
+      >
       <h1 class="text-zinc-950 text-3xl font-bold">{entry.data.title}</h1>
       <p class="text-sm text-zinc-600">
         {publishedDate} - {entry.data.readingSpeed} min read
       </p>
     </div>
-    {subheadings.length > 1 && (
+    {
+      subheadings.length > 1 && (
         <div class="flex flex-col gap-2 leading-7 p-6 rounded-lg bg-zinc-100 max-w-xs mb-8">
           <span class="uppercase font-medium text-xs">In this article:</span>
           <ul>
@@ -68,7 +89,11 @@ const publishedDate = `${month[entry.data.pubDate.getMonth()]} ${entry.data.pubD
       />
     </div>
     <div class="py-4 group">
-      <a href="/blog" class="w-fit flex items-center justify-center gap-2 py-3 px-3 !no-underline bg-zinc-200 border font-medium border-zinc-100 text-sm text-zinc-950 rounded-md hover:bg-opacity-80">← Back to all posts</a>
+      <a
+        href="/blog"
+        class="w-fit flex items-center justify-center gap-2 py-3 px-3 !no-underline bg-zinc-200 border font-medium border-zinc-100 text-sm text-zinc-950 rounded-md hover:bg-opacity-80"
+        >← Back to all posts</a
+      >
     </div>
   </section>
 </TwoColumnsLayout>

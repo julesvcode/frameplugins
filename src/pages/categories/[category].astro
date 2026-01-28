@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 
   return uniqueCategory.map((category) => {
     const filteredPlugins = allPlugins.filter((plugin) =>
-      plugin.data.categories.includes(category)
+      plugin.data.categories.includes(category),
     );
     return {
       params: { category },
@@ -32,8 +32,8 @@ const categoryCapitalizeDisplay = categoryCapitalize.replace(/-/g, " ");
 ---
 
 <BaseLayout
-  title={`${category.length < 4 ? category.toUpperCase() : categoryCapitalizeDisplay} Framer plugins`}
-  description={`A collection of the best ${category.length < 4 ? category.toUpperCase() : category} plugins.`}
+  title={`Best ${category.length < 4 ? category.toUpperCase() : categoryCapitalizeDisplay} Plugins for Framer (2026)`}
+  description={`Explore the top-rated ${category.length < 4 ? category.toUpperCase() : categoryDisplay} plugins for Framer. Enhance your design and functionality with these curated tools. Updated for 2026.`}
 >
   <section id="plugins">
     <div class="flex flex-col md:basis-2/3 gap-4">

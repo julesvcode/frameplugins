@@ -7,8 +7,8 @@ import AdBanner from "../components/AdBanner.astro";
 import framerBanner from "../assets/images/framer_ad.png";
 
 interface Props {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 }
 
 const { title, description } = Astro.props as Props;
@@ -16,9 +16,13 @@ const { title, description } = Astro.props as Props;
 const { url } = Astro.request;
 const canonicalUrl = new URL(url, Astro.site);
 
-const makeTitle = title
-  ? title + " | " + "Frameplugins"
-  : "Frameplugins - All the best Framer plugins in one place.";
+const siteName = "Frameplugins";
+const defaultTitle = "Frameplugins - All the best Framer plugins in one place.";
+const makeTitle = title ? `${title} | ${siteName}` : defaultTitle;
+
+const defaultDescription =
+  "Discover a curated list of Framer plugins to help you enhance your website. From CMS to SEO, find the perfect tools for your projects.";
+const makeDescription = description || defaultDescription;
 ---
 
 <!doctype html>
@@ -29,7 +33,7 @@ const makeTitle = title
     <meta name="viewport" content="width=device-width" />
 
     <title>{makeTitle}</title>
-    <meta name="description" content={description} />
+    <meta name="description" content={makeDescription} />
 
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="canonical" href={canonicalUrl.href} />
@@ -38,7 +42,7 @@ const makeTitle = title
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://frameplugins.com" />
     <meta property="og:title" content={makeTitle} />
-    <meta property="og:description" content={description} />
+    <meta property="og:description" content={makeDescription} />
     <meta
       property="og:image"
       content="https://frameplugins.com/og-banner.jpg"
@@ -48,7 +52,7 @@ const makeTitle = title
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://frameplugins.com" />
     <meta property="twitter:title" content={makeTitle} />
-    <meta property="twitter:description" content={description} />
+    <meta property="twitter:description" content={makeDescription} />
     <meta
       property="twitter:image"
       content="https://frameplugins.com/og-banner.jpg"

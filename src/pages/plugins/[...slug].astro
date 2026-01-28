@@ -29,9 +29,15 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 
 const categories = entry.data.categories;
+const primaryCategory = categories[0].charAt(0).toUpperCase() + categories[0].slice(1);
+
+const seoTitle = `${entry.data.title} - Framer Plugin | ${primaryCategory}`;
+const seoDescription = entry.data.description.length > 155 
+  ? entry.data.description.substring(0, 152) + "..." 
+  : entry.data.description;
 ---
 
-<TwoColumnsLayout title={`${entry.data.title} Framer plugin`}>
+<TwoColumnsLayout title={seoTitle} description={seoDescription}>
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",

@@ -11,11 +11,9 @@ import CategoryCard from "../components/CategoryCard.astro";
 import CardAd from "../components/CardAd.astro";
 import BannerFrameplate from "../components/BannerFrameplate.astro";
 import BannerFrameshare from "../components/BannerFrameshare.astro";
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 
 const makeTitle = `${title} | Frameplugins`;
-const description =
-  "Frameplugins - All the best Framer plugins you need to supercharge your website.";
 
 // Latest plugins section
 const allPlugins = await getCollection("plugins");
@@ -24,7 +22,11 @@ const allPlugins = await getCollection("plugins");
 const pluginOne = Math.floor(Math.random() * allPlugins.length);
 const pluginTwo = Math.floor(Math.random() * allPlugins.length);
 const pluginThree = Math.floor(Math.random() * allPlugins.length);
-const browsePlugins = [allPlugins[pluginOne], allPlugins[pluginTwo], allPlugins[pluginThree]]
+const browsePlugins = [
+  allPlugins[pluginOne],
+  allPlugins[pluginTwo],
+  allPlugins[pluginThree],
+];
 
 // Browse Categories section
 const topCategories = [
@@ -34,14 +36,14 @@ const topCategories = [
   { label: "CMS", href: "/cms" },
   { label: "Membership", href: "/membership" },
   { label: "Utilities", href: "/utilities" },
-]
+];
 
 const featuredPlugins = allPlugins.filter((tool) => tool.data.feat === true);
 
 const latestPlugins = allPlugins.sort(
   (a, b) =>
     new Date(b.data.updateDate).getTime() -
-    new Date(a.data.updateDate).getTime()
+    new Date(a.data.updateDate).getTime(),
 );
 const latestThreePlugins = latestPlugins.slice(0, 3);
 const latestSixPlugins = latestPlugins.slice(0, 6);
@@ -64,7 +66,7 @@ var month = [
 ];
 const sortedPosts = allPosts.sort(
   (a, b) =>
-    new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+    new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime(),
 );
 const latestPosts = sortedPosts.slice(0, 5);
 ---
@@ -112,10 +114,7 @@ const latestPosts = sortedPosts.slice(0, 5);
     <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
       {
         topCategories.map((category) => (
-          <CategoryCard
-            link={category.href}
-            category={category.label}
-          />
+          <CategoryCard link={category.href} category={category.label} />
         ))
       }
     </div>

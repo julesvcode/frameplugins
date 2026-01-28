@@ -6,16 +6,20 @@ import TwoColumnsLayout from "../../layouts/TwoColumnsLayout.astro";
 const allPosts = await getCollection("posts");
 const sortedPosts = allPosts.sort(
   (a, b) =>
-    new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+    new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime(),
 );
 ---
 
-<TwoColumnsLayout title="Blog" description="Learn about all the latest Framer plugins.">
+<TwoColumnsLayout
+  title="Framer Plugin Tips & Guides (2026)"
+  description="Stay updated with the latest Framer plugin guides, comparisons, and tips. Learn how to supercharge your Framer website in 2026."
+>
   <section class="w-full flex gap-4">
     <div class="flex flex-col gap-4">
       <h1>Blog</h1>
       <p class="text-lg max-w-xl">
-        A collection of useful articles for Framer designers and developers to learn about the latest Framer plugins.
+        A collection of useful articles for Framer designers and developers to
+        learn about the latest Framer plugins.
       </p>
     </div>
   </section>
