@@ -14,7 +14,7 @@ icon: "./favicons/shadesandtints.png"
 
 Shades and Tints is a Framer plugin that quickly generates color variations from any background fill. This tool simplifies the process of creating cohesive color palettes, allowing designers to expand their color schemes with ease.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Easy-to-Use Interface: generate shades and tints in just a few clicks, streamlining your color palette creation process.
 - Customizable Output: choose the number of shades and tints you want, giving you control over the depth of your color palette.

@@ -15,7 +15,7 @@ icon: "./favicons/save-image.png"
 The Save Image plugin is a handy plugin that lets you download and copy images from your Framer projects.
 It streamlines the process of reusing, moving, or backing up images in your designs. With a few clicks, you can save images from frames, components, CMS collections, and other elements without breaking a sweat.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Seamless integration: it works flawlessly with all images in Framer, whether they're in frames, component variables, CMS items, or elsewhere.
 - Unlimited usage: no need to worry about pesky paywalls or usage limits – this plugin is 100% free to use.
 - Pristine quality: export images at their original resolution without any downscaling or resizing.

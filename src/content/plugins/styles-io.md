@@ -14,7 +14,7 @@ icon: "./favicons/stylesio.png"
 
 Styles IO is a handy Framer plugin that lets you move your text and colour styles between different projects with ease. This clever tool saves you loads of time by making style management a breeze, letting you keep your designs consistent across multiple projects without the faff of manual copying.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Easy Style Export: export all your text and colour styles to a JSON file with just a couple of clicks.
 - Flexible Import Options: choose whether to import colours, text styles, or both, giving you complete control over what you bring into your project.

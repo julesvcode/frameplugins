@@ -16,7 +16,7 @@ The Effects Framer plugin is a powerful tool that allows you to apply various cu
 
 This plugin streamlines the design process by eliminating the need to switch between different applications for image editing.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Diverse Effect Options: from blurring and duotone effects to sepia tones, grayscale, brightness adjustments, and saturation control, this plugin offers a wide range of image effects to choose from.
 - Customisation Galore: each effect comes with customisation controls, enabling you to fine-tune the look and feel to match your desired style.
 - Efficient Workflow: by keeping the image editing process within Framer, you save time and maintain a smooth, uninterrupted workflow.

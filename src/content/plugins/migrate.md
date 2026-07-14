@@ -16,7 +16,7 @@ Migrate is a Framer plugin that uses AI to adapt existing content to new website
 
 This tool analyses your current website or content needs and generates new content that fits seamlessly into your chosen Framer template. It aims to streamline the process of creating and customizing website content.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - AI-powered content generation: automatically creates new content based on your existing website or description.
 - Template compatibility: ensures generated content fits the structure and style of your chosen Framer template.

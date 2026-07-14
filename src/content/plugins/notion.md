@@ -23,7 +23,7 @@ icon: "./favicons/notion.png"
 
 This plugin allows designers to seamlessly integrate their Notion content into Framer projects. It bridges the gap between content management in Notion and design implementation in Framer.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Automatic synchronization: your Notion databases stay in sync with Framer CMS without manual updates.
 - One-click refresh: easily update your Framer content with the latest Notion data using a single click.

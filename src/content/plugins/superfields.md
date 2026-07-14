@@ -16,7 +16,7 @@ icon: "./favicons/superfields.png"
 
 This plugin bridges the gap between simple CMS collections and the dynamic functionality your visitors actually expect. It adds professional-grade features that make browsing and discovering content effortless for your users.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Advanced Filtering: create dropdown menus, toggles, and checkboxes that let visitors filter content by categories, tags, dates, or any CMS field with instant updates
 - Favourites System: allow users to bookmark and save their preferred items, perfect for product catalogues or content libraries they want to revisit
 - Real-Time Search: add a powerful search bar that scans through titles, descriptions, or any content fields you choose for immediate results

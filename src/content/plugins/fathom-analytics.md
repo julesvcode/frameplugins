@@ -16,7 +16,7 @@ Fathom Analytics is a straightforward, privacy-focused website analytics tool fo
 
 This plugin allows you to effortlessly integrate Fathom Analytics into your Framer projects. No need to edit the header code in your Framer site's head section – just plug and play.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Simple to use and quick to understand, unlike complex tools like Google Analytics.
 - Respects visitor privacy and complies with GDPR regulations.
 - Offers unlimited data retention, allowing you to view your stats forever.

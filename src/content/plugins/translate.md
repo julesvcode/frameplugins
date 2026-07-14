@@ -14,7 +14,7 @@ icon: "./favicons/translate.png"
 
 The Translate plugin supports over 130 languages and provides fast, accurate translations, making it easy to localise your designs for different markets. With this tool, you can preview translations directly in Framer, catch layout issues in other languages, and streamline your design workflow.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Mixed Text Style Compatibility - translated content retains its original formatting, so even text with different styles within a layer stays looking just right.
 - Design-Wide Translation-  choose to translate individual layers or entire groups and frames, allowing for seamless multilingual adaptation across your project.

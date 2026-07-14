@@ -14,7 +14,7 @@ icon: "./favicons/formflow.png"
 
 Formflow seamlessly integrates into Framer, allowing you to create high-converting multi-step forms that feel native to your website.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Visual branching logic: create dynamic forms that adapt based on user responses, providing a tailored experience.
 - Form style editor: customise the appearance of your forms to match your brand's aesthetics seamlessly.

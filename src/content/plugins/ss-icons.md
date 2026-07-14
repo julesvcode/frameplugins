@@ -14,7 +14,7 @@ icon: "./favicons/ssicons.png"
 
 SS Icons simplifies icon management by bringing a vast library of ready-to-use icons directly into your Framer workspace. The plugin combines powerful search capabilities with custom upload options, making it a complete solution for both beginners and experienced designers.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Icon Library Access - browse through thousands of pre-made icons right inside Framer, saving you time searching external resources
 - Smart Search - find the perfect icon quickly with a search feature that updates results as you type

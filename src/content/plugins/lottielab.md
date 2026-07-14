@@ -14,7 +14,7 @@ icon: "./favicons/lottielab.png"
 
 Lottielab is a Framer plugin that seamlessly connects your Lottie animations with Framer projects. This integration tool allows designers to create dynamic user experiences by directly linking Framer interactions with specific animation states from Lottielab.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Direct Integration: bring Lottielab animations into Framer without leaving the platform or manually uploading files.
 - One-Click Sync: keep your animations up-to-date with any changes made in Lottielab through simple synchronization.

@@ -16,7 +16,7 @@ Depth Grid is a tool that lets you create eye-catching perspective grids and tun
 
 Looking to inject some artistic flair into your projects? Depth Grid has you covered. This versatile plugin allows you to craft custom depth effects that make your designs pop. 
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Plane Mode: generate clean geometric grids. Customise the rows, columns, perspective, and thickness.  
 - Tunnel Mode: form layered, immersive shapes for a dynamic look. Tweak the angles for unique depth.
 - Interactive Preview: drag your cursor to adjust the camera and perspective angles in real-time.

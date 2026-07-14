@@ -14,7 +14,7 @@ icon: "./favicons/monkeyframespro.png"
 
 Whether you're building a sleek UI or a bold website, Monkeyframes Pro offers a wide selection of professionally crafted icons to enhance your designs. With its intuitive drag-and-drop functionality, you can quickly and seamlessly incorporate these icons into your Framer canvas.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Vast Icon Selection: explore a diverse range of static icons to elevate the visual appeal of your Framer designs.
 - Effortless Integration: drag and drop icons directly onto the Framer canvas for a seamless design experience.

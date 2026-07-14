@@ -14,7 +14,7 @@ icon: "./favicons/soundwaves.png"
 
 The Sound Waves plugin lets you add stunning audio visualisations to your Framer designs. Breathe life into music players, podcasting apps and more with animated soundwave graphics that react to audio in real-time.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Source: Visualise audio from frequency or time data for accurate soundwave patterns
 - Layout: Choose between linear or radial layouts to fit your design 

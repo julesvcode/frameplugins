@@ -24,7 +24,7 @@ icon: "./favicons/spellcheck.png"
 
 This tool provides comprehensive language checks for text in Framer, helping designers ensure error-free content. It offers multi-language support and collaborative features to enhance your design workflow.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Comprehensive checks: identifies spelling, grammar, and typo issues throughout your Framer project.
 - One-click corrections: fix all typos on a page simultaneously with a single click.

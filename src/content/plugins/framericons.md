@@ -17,7 +17,7 @@ FramerIcons is a game-changer for designers using Framer.
 
 It's a single plugin that gives you access to an incredible 22k+ icons from a curated list of 12 icon sets. But that's not all – you can also upload and use your own icon sets, making it a truly versatile tool.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Streamlined Workflow: with FramerIcons, you can instantly access all the icons you need right within Framer.
 - Component-Friendly: FramerIcons integrates seamlessly with Framer's component system, allowing you to add icons anywhere without breaking your design.

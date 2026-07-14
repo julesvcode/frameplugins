@@ -14,7 +14,7 @@ icon: "./favicons/doodles.png"
 
 This plugin integrates a freeform drawing grid into Framer, enabling users to add personalized, hand-drawn elements to their designs. Doodles brings a unique, artistic touch to digital creations without leaving the Framer environment.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Freeform doodle grid: provides an open canvas for sketching organic, hand-drawn elements directly in your project.
 - Intuitive drawing experience: offers a user-friendly interface for creating illustrations easily within Framer.

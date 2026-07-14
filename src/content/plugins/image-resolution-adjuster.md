@@ -18,7 +18,7 @@ This nifty tool allows you to select individual images, frames with nested layer
 
 You can choose from a variety of resolution options: Auto, Auto (Lossless), Small, Medium, Large, or Full, and apply your selected resolution to all applicable elements with a single click.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Effortlessly adjust image resolutions across your entire project.
 - Tackle standalone images or intricate, nested frame structures with equal ease.  

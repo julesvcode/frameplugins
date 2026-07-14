@@ -17,7 +17,7 @@ Content Pilot is an advanced writing assistant that brings the power of AI direc
 
 Whether you need a punchy headline, a full blog post, or accurate product descriptions, this plugin uses context-aware AI to generate copy that fits your design perfectly. It supports a "Bring Your Own Key" model, ensuring privacy and flexibility.
 
-<b>Key features:</b>
+## Key features:
 - **Layer Generation:** Instantly rewrite selected text layers with specific tones (e.g., Professional, Witty) and context awareness.
 - **CMS Population:** Automatically fill your database fields like "Bio" or "Price" with rich, varied content in bulk.
 - **BYOK Flexibility:** Connect your own API keys from OpenAI (GPT-4o), Anthropic (Claude 3.5), Google Gemini, or Mistral AI.

@@ -14,7 +14,7 @@ icon: "./favicons/qrcode.png"
 
 This plugin brings QR code creation directly into your Framer workspace, letting you generate and customize codes without leaving your design environment.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Quick Generation - turn any text or URL into a QR code with just a few clicks, saving you time and effort
 - Live Preview - watch your QR code update in real-time as you type or make changes, helping you spot any issues immediately

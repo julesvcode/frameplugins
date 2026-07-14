@@ -14,7 +14,7 @@ icon: "./favicons/smartarget.png"
 
 Smartarget WhatsApp Contact Us is a Framer plugin that adds a WhatsApp chat button to your website, making customer communication a breeze. This clever tool taps into WhatsApp's popularity to help businesses connect with customers in a way that feels natural and familiar to them.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Multi-Team Support: add multiple team members to handle customer queries, making sure someone's always available to respond.
 - Language Flexibility: support multiple languages with different WhatsApp settings for each, helping you reach a global audience.

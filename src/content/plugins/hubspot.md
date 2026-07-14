@@ -14,7 +14,7 @@ icon: "./favicons/hubspot.png"
 
 The HubSpot plugin allows designers to easily add powerful HubSpot features to their Framer websites. It brings lead generation, communication, and tracking tools right into your design workflow.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Ready-made widgets: drag and drop HubSpot forms and calendars into your designs for quick integration.
 - One-click tracking: easily activate HubSpot tracking to monitor your site's performance and user interactions.

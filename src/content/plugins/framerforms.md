@@ -16,7 +16,7 @@ This plugin allows designers to build complex, multi-step forms with features li
 
 FramerForms goes beyond basic form elements to offer a wide range of functionality for creating interactive and user-friendly forms.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Multi-step forms: create step-by-step forms similar to Typeform, improving user experience for longer surveys or applications.
 - File uploads: allow users to upload files without any subscription fees, expanding form capabilities.

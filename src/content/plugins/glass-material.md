@@ -14,7 +14,7 @@ icon: "./favicons/glass-material.png"
 
 Glass Material brings realistic glass effects to your Framer designs without the need for complex coding or external tools. Created by Aframe Studio, this paid plugin has already attracted 683 users who want to add sophisticated visual depth to their interfaces.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Transform any element: turn buttons, cards, or backgrounds into realistic glass surfaces with just a few clicks
 - Light-bending effects: creates authentic glass distortion that mimics how light behaves through real glass materials
 - Easy integration: works seamlessly within Framer's component system without affecting your workflow

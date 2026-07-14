@@ -14,7 +14,7 @@ icon: "./favicons/framergenie.png"
 
 Framergenie is a game-changing Framer plugin that integrates with Supabase, providing a robust backend solution for authentication, databases, and storage. By combining the simplicity of Framer with the robustness of Supabase, Framergenie enables dynamic, data-driven experiences directly within Framer.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Effortless Web App Development: create fully functional web applications without the hassle of writing complex code.
 - E-commerce Made Easy: build online stores and manage your e-commerce platform with FramerGenie's intuitive interface.

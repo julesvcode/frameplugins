@@ -14,7 +14,7 @@ icon: "./favicons/calcom.png"
 
 Cal.com is an open-source scheduling platform trusted by individuals, startups, and enterprises worldwide for managing appointments and automating booking workflows. The Framer plugin makes it incredibly simple to embed their powerful scheduling tools into your website with just a few clicks.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Quick integration: connect your Cal.com account and start accepting bookings in minutes without any coding required
 - Full customisation: adjust themes, colours for light and dark modes, and layouts to perfectly match your brand identity

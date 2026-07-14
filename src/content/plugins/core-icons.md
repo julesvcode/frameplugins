@@ -14,7 +14,7 @@ icon: "./favicons/coreicons.png"
 
 This comprehensive collection comprises 8,000 free vector icons, meticulously crafted in eight unique styles. Inspired by the enduring appeal of classics like Helvetica, The Beatles, and pizza, Core Icons embodies simplicity and neutrality, making it a perfect choice for functional design.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Versatility: with eight distinct styles – Line, Duo, Solid, Flat, Remix, Pop, and two bonus styles – Core Icons offers a wealth of options to complement any design aesthetic.
 - Legibility: designed on a 14x14 grid with minimal detail and generous inner space, these icons remain highly legible even at small sizes, ensuring optimal user experience.

@@ -14,7 +14,7 @@ icon: "./favicons/framersync.png"
 
 This plugins allows Framer designers to import and synchronize content from Notion, Airtable, and Google Sheets directly into the CMS. It streamlines the process of managing and updating content within Framer designs.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Multiple data source support: connect with Notion, Airtable, and Google Sheets to import content.
 - One-click synchronization: update your Framer CMS content instantly with a single click.

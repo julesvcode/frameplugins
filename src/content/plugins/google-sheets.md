@@ -14,7 +14,7 @@ icon: "./favicons/sheets.png"
 
 The Google Sheets plugin for Framer allows you to effortlessly sync your spreadsheet content directly with the Framer Content Management System (CMS). This powerful integration streamlines the process of incorporating data-driven elements into your Framer-built projects.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - One-Click Syncing: easily sync your Google Sheets content with the Framer CMS via the convenient CMS Toolbar. With just a single click, you can update your Framer project with the latest data from your connected spreadsheet.
 - Intuitive Sheet Selection: quickly select the Google Sheet you want to sync using the plugin's dropdown menu, making the integration process a breeze.

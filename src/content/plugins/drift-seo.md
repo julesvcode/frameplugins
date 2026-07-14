@@ -14,7 +14,7 @@ icon: "./favicons/driftseo.png"
 
 Drift SEO makes it simple to optimise your Framer site for search engines without needing to be an SEO expert. The plugin uses AI technology to automatically fix common SEO problems and provides easy-to-use tools that help your website rank better on Google.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Personalised SEO Checklist: get a free audit that spots SEO issues directly on your Framer canvas, showing exactly what needs fixing
 - Image Manager: easily manage alt tags for all your images in one place, helping search engines understand your visual content

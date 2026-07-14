@@ -14,7 +14,7 @@ icon: "./favicons/framercommerce.png"
 
 Framer Commerce is a powerful Framer plugin that allows you to design and launch your dream e-commerce store or template directly within Framer, while seamlessly managing all your products on Shopify. This integration keeps everything in perfect sync between the two platforms, unlocking their full potential.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Powerful CMS Integration: seamlessly sync your Shopify storefront data, including products, prices, images, descriptions, tags, collections, and more.
 - Product Components: Framer Commerce provides a range of customisable product components, such as a Purchase Button with different states, a Variant Selector for scalable variant selection, and many more.
 - Live Stock Status: monitor and display live stock status based on your customised conditions.

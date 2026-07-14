@@ -14,7 +14,7 @@ icon: "./favicons/tidyup.png"
 
 This plugin streamlines the process of arranging pages, breakpoints, and frames in Framer projects. It offers various layout options and customization features to help designers maintain clean, organized designs.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - One-click organization: instantly arrange your design elements with just one click.
 - Multiple layout styles: choose from horizontal, vertical, or grid arrangements to suit your design needs.

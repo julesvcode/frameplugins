@@ -16,7 +16,7 @@ This plugins integrates LottieFiles' vast library of animations directly into Fr
 
 It allows designers to easily incorporate engaging animations into their projects, enhancing user experience and potentially boosting conversions.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Extensive library: Access over 500,000 free and premium Lottie animations ready for use in your designs.
 - Team integration: Use your team's private animation library directly within Framer.

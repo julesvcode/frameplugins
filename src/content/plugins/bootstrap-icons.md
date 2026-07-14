@@ -14,7 +14,7 @@ icon: "./favicons/bootstrapicons.png"
 
 Bootstrap Icons plugin brings the complete Bootstrap icon library directly into your Framer workspace, allowing you to easily search, filter, and implement professional icons in your designs. This powerful integration gives you instant access to thousands of free, open-source icons from the creators of Bootstrap.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Extensive Icon Library: access more than 2,000 professionally designed icons, available in both filled and outline variants, giving you plenty of options for any design scenario.
 - Smart Search Functionality: quickly find the perfect icon using the fuzzy search feature, which lets you search by both categories and keywords, similar to the official Bootstrap library website.

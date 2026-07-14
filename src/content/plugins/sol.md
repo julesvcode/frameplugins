@@ -14,7 +14,7 @@ icon: "./favicons/sol.png"
 
 This plugin allows designers to add dynamic, customizable visual effects to their Framer projects without coding. It offers a range of features for creating engaging backgrounds and shapes directly within Framer.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Interactive dot grids: create responsive grid patterns that react to user interactions.
 - Animated gradients: design flowing color gradients with up to 16 colors and subtle grain effects.

@@ -14,7 +14,7 @@ icon: "./favicons/framerauth.png"
 
 This plugins allows creators to sell premium content, manage paid memberships, and create personalized user experiences directly within Framer. It integrates seamlessly with Framer sites, requiring no technical expertise to set up and use.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Content gating: easily restrict access to specific pages or sections until users purchase or sign up.
 - Customizable authentication: drag and drop sign-in, sign-up, and user account components that match your site's branding.

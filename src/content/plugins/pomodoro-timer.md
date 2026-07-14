@@ -17,7 +17,7 @@ The Pomodoro Timer plugin is a simple tool to help you stay focused whilst worki
 
 This plugin allows you to set focus intervals and breaks, helping you maintain a healthy workflow. It's designed to be unobtrusive, sitting quietly on your canvas until you need it.
 
-<b>Key features:</b>
+## Key features:
 - **Flexible Timing:** Customise your focus sessions (1–60 mins), short breaks, and long breaks to suit your rhythm.
 - **Two Views:** Choose between a full circular timer or a compact bar that takes up less space.
 - **Session Tracking:** Keep track of how many focus sessions you've completed in a day. The count resets at midnight.

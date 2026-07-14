@@ -14,7 +14,7 @@ icon: "./favicons/contrastchecker.png"
 
 The Contrast Checker is a game-changer for designers who prioritise accessibility and visual optimisation within Framer. This plugin enables you to effortlessly verify WCAG compliance, right on the canvas, by inputting HEX, RGB, or HSL values or leveraging the built-in colour picker.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Instant Contrast Ratio Calculation: the plugin instantly computes the contrast ratio between your chosen colours, keeping you informed about WCAG compliance.
 - Colour Picker Integration: select colours directly from the canvas using the integrated colour picker for seamless accessibility checks.

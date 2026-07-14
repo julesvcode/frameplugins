@@ -16,7 +16,7 @@ This handy tool lets you search and insert professional stock photos directly in
 
 The Pexels plugin taps into an extensive library of over 3 million high-quality, royalty-free images across multiple categories. With advanced search filters, you can quickly find the perfect photo to complement your design compositions.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Browse and search the vast Pexels image library from within Framer
 - Preview images in light and dark mode before inserting 

@@ -16,7 +16,7 @@ Alt Text Go is a Framer plugin that automatically generates alt text for your im
 
 This nifty tool not only enhances accessibility for visually impaired users but also gives your website an SEO boost.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - AI-Powered Alt Text Generation: let the plugin's AI wizardry do the hard work of analysing your images and generating clear, descriptive alt text.
 - CMS & Asset Images Support: works seamlessly with both static image assets and images from your content management system (CMS) or galleries.

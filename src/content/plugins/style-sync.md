@@ -14,7 +14,7 @@ icon: "./favicons/style-sync.png"
 
 Style Sync is a free plugin that makes it dead simple to maintain consistent design systems without the hassle of recreating styles from scratch. Whether you're working on multiple projects or collaborating with a team, Style Sync ensures your brand colours and typography stay perfectly aligned across everything you build.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - One-click export: save all your colour and text styles as a JSON file instantly, no complicated steps required
 - Smart importing: bring styles into new projects without creating duplicates, as existing styles update automatically
 - Selective control: choose exactly what you need with simple checkboxes, whether it's just colours, text styles, or both

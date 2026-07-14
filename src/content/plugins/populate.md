@@ -14,7 +14,7 @@ icon: "./favicons/populate.png"
 
 Populate is a Framer plugin that instantly fills your designs with realistic user data like names, emails, and phone numbers. This smart tool eliminates the tedious task of creating fake data manually, making it super easy to demonstrate your designs with authentic-looking content.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Quick Data Generation: choose from different types of data (like names or emails) and fill your design with just one click.
 - Multiple Data Types: get access to various data categories including full names, email addresses, phone numbers, and more - perfect for building user profiles or contact lists.

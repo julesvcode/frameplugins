@@ -16,7 +16,7 @@ Imagegen is a Framer plugin that lets you generate AI images with your own OpenA
 
 AI image generation is the future, but many existing plugins lock you into costly monthly or yearly plans. Imagegen bucks that trend, offering a one-time payment model that works with your OpenAI account to generate unlimited images for just $0.02 each.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - No more subscription fees - pay once and generate forever
 - Use your existing OpenAI account or create a new one 
 - Generate an unlimited number of images at $0.02 each

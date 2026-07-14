@@ -14,7 +14,7 @@ icon: "./favicons/logofy.png"
 
 Logofy integrates a vast library of logos from simpleicons.org directly into Framer. It allows designers to quickly find and add well-known brand logos to their projects without leaving the Framer environment.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Extensive library: access over 3,000 logos from various popular brands and companies.
 - Direct integration: drag and drop logos straight onto your Framer canvas with ease.

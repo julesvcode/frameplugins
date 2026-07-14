@@ -14,7 +14,7 @@ icon: "./favicons/magicpattern.png"
 
 MagicPattern is a versatile Framer plugin that simplifies creating visually stunning graphics. It's a collection of 18 design tools that generate assets like mesh gradients, patterns, backgrounds, shapes and image effects with ease.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Generate endless patterned backgrounds, ideal for websites, apps and marketing materials  
 - Create unique blob shapes and compositions to make your designs pop

@@ -16,7 +16,7 @@ The Iconify Framer plugin offers a seamless integration with the vast Iconify li
 
 This powerful tool streamlines your design workflow by providing a comprehensive solution for all your icon needs within the Framer environment.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Vast Icon Library: explore a vast array of icons from renowned sets like Material Design, Phosphor, Lucide, and many more, ensuring you have the perfect icon for any project.
 - Real-time Preview: enjoy the convenience of viewing icons directly within the Framer canvas, allowing you to make informed decisions during the design process.
 - Easy Search: the plugin's intuitive search functionality enables you to quickly find the desired icon, saving valuable time and enhancing efficiency.

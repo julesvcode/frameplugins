@@ -14,7 +14,7 @@ icon: "./favicons/styleguidegenerator.png"
 
 This plugin allows designers to quickly generate and insert styleguide components based on their project's color and text styles. It streamlines the process of creating and maintaining consistent design documentation within Framer.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Automatic generation: creates styleguide components from your existing color and text styles with just a few clicks.
 - Easy updates: allows you to update existing styleguide components by selecting them and clicking "Update Styles" in the plugin.

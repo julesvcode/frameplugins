@@ -14,7 +14,7 @@ icon: "./favicons/kompa.png"
 
 Kompa is a powerful Framer plugin that supercharges your design workflow with ready-to-use UI elements. This tool brings a massive library of components and smart features right into your Framer workspace, making design tasks quicker and easier than ever.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Huge component library: choose from over 800 responsive UI elements, saving you tons of time on building basic components from scratch.
 - Color palette generator: whip up unique color schemes in seconds or pick from preset options, keeping your designs fresh and consistent.

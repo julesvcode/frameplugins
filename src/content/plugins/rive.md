@@ -14,7 +14,7 @@ icon: "./favicons/rive.png"
 
 This tool integrates Rive's powerful animation capabilities directly into Framer, allowing designers to create dynamic, state-driven graphics. It bridges the gap between design and development, making it easier to build interactive elements for web, apps, and games.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Native support: drag and drop .riv files straight into your Framer projects without any extra steps.
 - State machine control: access and manipulate Rive's state machine inputs directly within Framer's component variants.

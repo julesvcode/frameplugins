@@ -16,7 +16,7 @@ The Image Alt Manager is a handy Framer plugin that streamlines the process of g
 
 This tool uses OpenAI's cutting-edge GPT-4 multimodal model to generate descriptive alt text in over 110 languages. It seamlessly works across pages, collections, and components within your Framer project.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - AI-powered alt text generation in 110+ languages
 - No credits required for manual editing – it's free forever
 - Compatible with PNG, JPEG, WEBP, and SVG image formats

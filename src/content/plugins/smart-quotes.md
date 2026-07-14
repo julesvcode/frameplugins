@@ -16,7 +16,7 @@ The Smart Quotes plugin lets you quickly transform straight quotes into elegant 
 
 This handy tool streamlines the design process by automatically detecting and converting quotes within one or more text layers. Whether refining typography or aligning your work with professional standards, Smart Quotes saves time and ensures precision.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Select multiple text layers to process simultaneously  
 - See the number of layers selected at a glance
 - Convert quotes across layers with one click

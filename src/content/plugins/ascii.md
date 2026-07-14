@@ -14,7 +14,7 @@ icon: "./favicons/ascii.png"
 
 This tool allows designers to add a unique, retro-inspired visual element to their Framer projects. It converts regular images and text into artistic ASCII representations, bringing a distinctive style to your designs.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Image conversion: transform any image into ASCII art with just a few clicks.
 - Text transformation: turn regular text into ASCII-style typography for a unique look.

@@ -16,7 +16,7 @@ SEObot is an AI-powered tool that handles all aspects of SEO and content creatio
 
 This plugin automatically generates SEO-optimised blog content to drive organic traffic to your website. It takes care of keyword research, content planning, article generation, and more.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Fully automated content creation process, from research to writing
 - Supports over 50 languages for global reach

@@ -14,7 +14,7 @@ icon: "./favicons/patternstudio.png"
 
 With Pattern Studio, you can access a meticulously curated collection of patterns across various categories, including Lines, Dots, and Geometric. The plugin allows you to fully customize each pattern, giving you control over the background and foreground colors, opacity, stroke width, rotation angle, and even the visibility of the background.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Extensive Pattern Library: explore a diverse range of high-quality vector patterns that cater to different design styles and aesthetics.
 - Real-Time Previewing: instantly see how your selected pattern will look in your Framer project, thanks to the plugin's live preview functionality.

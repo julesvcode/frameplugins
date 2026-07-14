@@ -14,7 +14,7 @@ icon: "./favicons/affiliatelink.png"
 
 The Affiliate Link Generator plugin streamlines the process of creating and managing Framer affiliate links directly within your workspace. This time-saving tool allows you to quickly transform your project or template URLs into properly formatted affiliate links by simply adding your partner ID.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - One-Click Generation: create affiliate links instantly by pasting your project URL and partner ID, with automatic formatting and structure for optimal compatibility.
 - Partner ID Management: store and manage your partner ID within the plugin, eliminating the need to remember or re-enter it for future link generation.

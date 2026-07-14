@@ -14,7 +14,7 @@ icon: "./favicons/unsplash.png"
 
 This plugin integrates Unsplash's vast library of free-to-use images into Framer, allowing designers to easily find and add stunning visuals to their projects. It streamlines the process of sourcing and incorporating images into your designs.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Extensive library: access millions of high-quality stock photos covering a wide range of subjects and styles.
 - Keyword search: quickly find relevant images by searching with specific terms or phrases.

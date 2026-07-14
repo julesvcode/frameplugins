@@ -14,7 +14,7 @@ icon: "./favicons/json-sync.png"
 
 JSON Sync is a Framer plugin that allows you to import and export your CMS collections with JSON files. This handy tool makes it a breeze to manage your data outside of Framer, backup or move your data, and even use your CMS content with other tools that may not support CSV files.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Seamless Data Transfer: upload a .json file, drag and drop, or simply paste from the clipboard to instantly add items to your collection.
 - Conflict Resolution: any conflicts, such as items with the same slug as an existing item, are resolved through an easy-to-use interface.
 - Backup and Restore: easily backup your CMS data by exporting it as a JSON file, which you can then import back into Framer whenever needed.

@@ -14,7 +14,7 @@ icon: "./favicons/neverdrafts.png"
 
 Neverdrafts handles everything from research to publishing, so you can grow your site's traffic without writing a single word. The plugin connects directly to your Framer site and creates engaging, SEO-optimised content that's designed to rank on Google.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - AI-powered content creation: Automatically researches, writes, and optimises blog posts that are built to rank on search engines
 - Multi-language publishing: create and publish content in over 150 languages to reach global audiences

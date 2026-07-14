@@ -14,7 +14,7 @@ icon: "./favicons/gritui.png"
 
 The Grit UI Framer plugin offers a collection of production-ready sections, components, and forms, saving you valuable time and ensuring consistent design across your projects.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Ready-to-go Forms: built using Framer Forms, these forms provide a seamless user experience, enabling you to add contact or sign-up forms in seconds.
 - Highly Customisable: you have complete control over every aspect of the design. Tweak elements via Framer properties or detach layers for custom edits directly on the canvas.
 - Theme Switcher: changing the theme for one or multiple components or sections is a breeze, making it easier than ever to maintain a consistent design or experiment with new looks.

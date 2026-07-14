@@ -14,7 +14,7 @@ icon: "./favicons/vectorizzer.png"
 
 Vectorizzer is a handy Framer plugin that lets you convert PNG, JPG, or bitmap images into clean, scalable SVG graphics directly within the Framer app. No more fiddling with manual tracing tools or external software!
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - One-click vectorization: transform images into SVGs with just a single click
 - Smart preset system: pre-configured settings optimised for icons, logos, illustrations, and photos
 - Advanced parameter control: fine-tune line thresholds, path optimisation, colour counts, and stroke widths

@@ -14,7 +14,7 @@ icon: "./favicons/humblytics.png"
 
 This plugin integrates seamlessly with Framer, allowing you to track traffic, custom events, and run A/B tests effortlessly. It's designed specifically for Framer users who want to gain insights without complex setups.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Easy A/B testing: compare different versions of your content to boost conversion rates without leaving Framer.
 - One-click analytics: instantly track custom events and measure content impact directly within your Framer projects.

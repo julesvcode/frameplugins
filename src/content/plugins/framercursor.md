@@ -16,7 +16,7 @@ FramerCursor is a powerful Framer plugin that enhances your design projects with
 
 This versatile tool allows you to transform the standard cursor into visually captivating and interactive elements, capturing your visitors' attention and providing an immersive browsing experience. With FramerCursor, you can seamlessly integrate components like product showcases, animations, or calls-to-action directly into your cursors.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Universal Compatibility: FramerCursor works flawlessly across all your Framer projects, ensuring a consistent and polished user experience.
 - Performance Optimisation: enjoy smooth cursor transitions and animations without compromising performance.

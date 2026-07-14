@@ -14,7 +14,7 @@ icon: "./favicons/airtable.png"
 
 The Airtable Framer plugin allows you to effortlessly sync your Airtable bases with the Framer CMS. It streamlines the process of integrating your data, providing a smooth workflow for designers working with Framer.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - One-click syncing via the CMS Toolbar: no more tedious manual importing. Sync your Airtable data with just a single click from the Framer CMS toolbar.
 - Easy base and table selection: choose the desired Airtable base and table from user-friendly dropdowns, making the selection process a breeze.
 - Field mapping with the Manage button: map Airtable fields to their corresponding CMS fields using the intuitive Manage button.

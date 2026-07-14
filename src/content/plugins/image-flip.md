@@ -14,7 +14,7 @@ icon: "./favicons/imageflip.png"
 
 The Image Flip plugin lets you flip images instantly within Framer, eliminating the need to switch between apps. It's a straightforward tool that streamlines your design workflow.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Time-saving: flip images without leaving Framer, saving you valuable time and effort.
 - Seamless Integration: the plugin blends seamlessly into your Framer workflow, ensuring a smooth design experience.
 - Versatile: works with any image on the canvas or your own uploaded images.

@@ -15,7 +15,7 @@ icon: "./favicons/loremipsum.png"
 
 Lorem Ipsum is a Framer plugin designed to quickly add placeholder text for design prototypes and templates. This tool simplifies the process of filling text layers with dummy content, helping designers focus on layout and design without getting stuck on text.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Flexible Text Generation: add Lorem Ipsum text as words, sentences, or paragraphs with just a click.
 - Multi-Layer Editing: edit single or multiple text layers simultaneously, saving valuable design time.

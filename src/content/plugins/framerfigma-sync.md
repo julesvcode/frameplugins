@@ -14,7 +14,7 @@ icon: "./favicons/framerfigma-sync.png"
 
 Framer/Figma Sync is a plugin that lets you import color styles from Figma to Framer. This tool makes it easier for designers to keep their work consistent across both platforms, saving time and reducing errors.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Color Style Import: quickly bring your Figma color palette into Framer, ensuring your designs stay on-brand.
 - Automatic Syncing: keep your colors up-to-date with easy synchronization between Figma and Framer.

@@ -14,7 +14,7 @@ icon: "./favicons/typesystem.png"
 
 TypeSystem is a Framer plugin that generates responsive text styles based on popular type scales. This tool streamlines the process of creating consistent and scalable typography for your Framer projects, allowing designers to focus more on creative aspects.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Quick Style Generation: create a complete set of text styles for headings and body text with just one click.
 - Customizable Presets: choose from popular type scales or tweak preset text styles to match your design needs.

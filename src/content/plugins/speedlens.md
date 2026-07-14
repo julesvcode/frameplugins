@@ -14,7 +14,7 @@ icon: "./favicons/speedlens.png"
 
 SpeedLens is a handy Framer plugin that brings Google PageSpeed Insights directly into your design workflow. With a single click, you can analyse your Framer pages for performance, SEO, accessibility, and best practices.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - One-click PageSpeed analysis for any Framer page
 - Detailed insights on performance, including load times, resource usage, and optimisation opportunities
 - SEO evaluation to ensure your designs are search engine friendly

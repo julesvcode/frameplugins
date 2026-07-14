@@ -14,7 +14,7 @@ icon: "./favicons/cms-export.png"
 
 This tool bridges the gap between Framer and other software by allowing easy data export. It's perfect for designers who need to work with their Framer data outside the platform.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Easy exporting: turn any Framer collection into a CSV file with just a few clicks.
 - Preview function: check your data before exporting to make sure everything looks right.

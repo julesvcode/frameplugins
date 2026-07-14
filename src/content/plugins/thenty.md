@@ -14,7 +14,7 @@ icon: "./favicons/thenty.png"
 
 This plugin allows designers to add product sales, user authentication, and content gating directly within their Framer projects. Thenty integrates seamlessly with Framer, providing a range of features for creating dynamic, interactive websites.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - E-commerce integration: sell digital products through your site with a customizable checkout experience, powered by Stripe.
 - Membership management: create member-only areas with sign-up/login forms and Single Sign-On (SSO) options.

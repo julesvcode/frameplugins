@@ -15,7 +15,7 @@ icon: "./favicons/colorcontrast.png"
 
 The Color Contrast plugin simplifies the process of ensuring your designs meet accessibility standards. This handy tool calculates the colour contrast ratio between your text and background colours.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Instant contrast calculation: simply input your text and background colors, and the plugin will immediately display the contrast ratio.
 - Small and large text support: get contrast ratios for both small and large text, ensuring your designs are accessible across various text sizes.
 - Colour-coded ratings: the plugin uses a traffic light system, with blue indicating very good contrast, yellow for acceptable contrast, and red for poor contrast.

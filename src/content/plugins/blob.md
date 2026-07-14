@@ -14,7 +14,7 @@ icon: "./favicons/blob.png"
 
 Blob is a revolutionary Framer plugin that leverages the power of Three.js and GLSL to infuse your designs with stunning, organic 3D animations. This cutting-edge tool empowers you to create interactive, fluid visual elements that captivate your audience and set your projects apart.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Reactive 3D Animation: the Blob element responds dynamically to mouse movements, creating a captivating visual experience that engages users and adds a touch of magic to your designs.
 - Customizable Colours: easily personalize the Blob's appearance by adjusting the top and bottom colours, as well as the background colour and border radius, ensuring a seamless integration with your brand and design aesthetic.

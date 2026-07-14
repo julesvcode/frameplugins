@@ -14,7 +14,7 @@ icon: "./favicons/stopoverscrolling.png"
 
 This nifty plugin injects a small, efficient script into your Framer projects, setting the overscroll-behavior to "none". This simple change prevents the annoying bounce effect that occurs when users scroll past the top or bottom of the page, keeping your pages locked in place.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Instantly Disables Overscrolling: with just a single click, you can eliminate the frustrating page bouncing that detracts from your user experience.
 - Works with All Framer Projects:tThe plugin is designed to be compatible with any Framer project, making it a versatile solution.

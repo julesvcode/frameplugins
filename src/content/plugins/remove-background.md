@@ -14,7 +14,7 @@ icon: "./favicons/removebackground.png"
 
 This plugin streamlines image editing by eliminating the need to switch between Framer and photo editing software for background removal. It uses advanced AI technology to detect and remove backgrounds instantly, maintaining high-quality results.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - One-Click Removal - remove image backgrounds with a single click, making the process quick and effortless
 - In-Place Replacement - your original image is automatically replaced with the background-free version, keeping your workspace organized

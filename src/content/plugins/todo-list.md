@@ -16,7 +16,7 @@ Stay organised while designing with this handy to-do list plugin that lets you m
 
 The plugin seamlessly integrates with your design workflow, allowing you to add, edit, and complete tasks directly on the canvas while keeping your workspace clean and distraction-free.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Quick Task Entry: add new tasks instantly by typing and hitting Enter or clicking the "+" icon, making it effortless to capture your ideas and to-dos while designing.
 - Automatic Saving: never lose track of your tasks thanks to real-time updates that save your list automatically, ensuring your tasks remain intact even when you close and reopen Framer.

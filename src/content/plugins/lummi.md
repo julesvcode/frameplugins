@@ -14,7 +14,7 @@ icon: "./favicons/lummi.png"
 
 Lummi is a Framer plugin that provides easy access to a vast library of AI-generated images. This tool allows designers to quickly find and add high-quality visuals to their projects, ranging from photos and illustrations to 3D renders.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - AI-Powered Search: find the perfect image faster with smart search technology that understands your needs.
 - Diverse Selection: access a wide variety of visuals, from abstract designs to realistic photos, to make your projects stand out.

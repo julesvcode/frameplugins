@@ -16,7 +16,7 @@ Alt Text Generator is a handy Framer plugin that automates the process of adding
 
 This tool leverages AI-powered technology to generate descriptive alt text for individual images or in bulk, saving you time and effort. With Alt Text Generator, managing alt text for your website becomes a breeze.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Efficiency: no need to manually click through all your website images and type out alt text, as the plugin can generate alt text in bulk for up to 100 images at once.
 - Improved SEO: boost your website's search engine rankings by adding descriptive alt text to images, making them more visible in image search results.

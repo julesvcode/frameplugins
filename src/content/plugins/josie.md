@@ -17,7 +17,7 @@ Josie is a game-changing Framer plugin that lets you bypass weeks of tedious des
 
 This handy tool offers a collection of 62 meticulously crafted sections spanning various categories like hero sections, feature showcases, testimonials, pricing tables, about/team sections, and contact forms.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Time-Saver Extraordinaire: say goodbye to the dreaded blank canvas. Each section is expertly designed, ready for you to customise with your content, shaving off a whopping 10+ hours from your project timeline.
 - Conversion-Focused Design: these sections aren't just pretty faces; they're crafted using proven design patterns that have been shown to convert visitors into customers effectively.

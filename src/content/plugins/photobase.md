@@ -14,7 +14,7 @@ icon: "./favicons/photobase.png"
 
 Whether you’re looking for high-quality stock photos or want to generate unique visuals from scratch, PhotoBase seamlessly integrates with Framer to boost creativity and save time. Say goodbye to endless searching and hello to personalised, professional images right in your workspace.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Vast Stock Photo Library - access a wide selection of AI-generated stock photos, perfect for adding visual flair to any project without leaving Framer.
 - Custom Image Creation - use PhotoBase’s AI photo generator to design unique, one-of-a-kind images that align perfectly with your vision and style.

@@ -14,7 +14,7 @@ icon: "./favicons/confetti.png"
 
 Confetti is a delightful Framer plugin that turns any layer or component into eye-catching confetti patterns. This creative tool brings life to your designs by letting you scatter elements across your canvas in perfectly organised yet seemingly random arrangements.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Layer Flexibility: turn any layer or component into confetti particles, giving you endless creative possibilities.
 - Comprehensive Controls: Fine-tune your patterns with adjustable settings for transparency, rotation, size, and overlap.

@@ -16,7 +16,7 @@ Device Mockups is a premium plugin that brings a comprehensive library of high-q
 
 This powerful tool helps designers showcase their work professionally by offering a vast collection of customizable mockups for various devices, from smartphones to wearables.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Extensive Device Library: access a wide range of mockups including smartphones, tablets, laptops, desktops, screens, and wearables in various configurations, all optimised for high-resolution displays.
 - Multiple Variants: easily switch between different mockup versions, angles, and colours to perfectly match your presentation needs and brand requirements.

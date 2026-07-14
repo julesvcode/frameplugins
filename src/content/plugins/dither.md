@@ -14,7 +14,7 @@ icon: "./favicons/dither.png"
 
 Dither allows designers to transform their images with various dithering effects, bringing a unique, vintage aesthetic to Framer projects. It offers a range of customization options to achieve the perfect pixelated look.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Multiple dither patterns: choose from various dithering styles to create different pixelated effects.
 - Color mode options: experiment with different color modes to achieve your desired visual style.

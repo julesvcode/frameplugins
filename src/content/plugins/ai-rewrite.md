@@ -16,7 +16,7 @@ The AI Rewrite plugin allows you to update text and modify attributes across mul
 
 This plugin harnesses the power of AI to streamline your workflow within Framer. Just select the layers you want to change, feed your instructions to the AI, and let it work its magic.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Duplicate content precisely: whether you need to replicate sections or generate variations, the AI replicates your content flawlessly.
 - Remove unwanted elements easily: cluttered designs? No problem. AI Rewrite can identify and remove unnecessary elements.

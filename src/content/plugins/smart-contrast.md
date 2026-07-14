@@ -17,7 +17,7 @@ Smart Contrast ensures your accessible typography doesn't slow down your design 
 
 The plugin automatically detects the background colour from the parent layer and evaluates the contrast ratio instantly. It's a seamless way to build inclusive designs without leaving your canvas.
 
-<b>Key features:</b>
+## Key features:
 - **Instant Evaluation:** Get the contrast ratio the moment you select a layer. No manual input required.
 - **Smart Detection:** Automatically finds the relevant background colour from the first valid parent layer.
 - **Dual Mode Checks:** View contrast results for both light and dark modes simultaneously to ensure consistency.

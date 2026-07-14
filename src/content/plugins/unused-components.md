@@ -14,7 +14,7 @@ icon: "./favicons/unused-components.png"
 
 This plugin helps designers keep their projects tidy by identifying which components are still active and which ones are just taking up space. It's particularly useful for larger projects where it's easy to lose track of what you've created.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Complete project scanning: the plugin checks your entire Framer project in one go, so you don't have to hunt through pages manually
 - Easy navigation between components: wwitch between viewing used and unused components with simple controls
 - One-click deletion: Rrmove unwanted components instantly without having to select them individually

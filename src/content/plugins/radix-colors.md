@@ -14,7 +14,7 @@ icon: "./favicons/radixcolors.png"
 
 Supercharge your Framer projects with Radix Colors, an intuitive plugin that streamlines your colour styles workflow. This comprehensive, accessible colour system lets you effortlessly import 30 professionally curated colour scales, complete with automatic light and dark mode support.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - 30 cohesive colour scales to choose from
 - Automatic light/dark mode switching

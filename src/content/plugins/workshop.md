@@ -14,7 +14,7 @@ icon: "./favicons/workshop.png"
 
 Workshop is an AI-powered assistant that generates custom Framer Components based on your descriptions—no coding required. This tool bridges the gap between design vision and development reality, empowering everyone, regardless of coding experience, to turn ideas into working components.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Natural Language Processing: describe your desired component in plain language, and Workshop translates it into functional Framer code.
 - Iterative Refinement: easily tweak and refine your components through the chat interface, with real-time updates.

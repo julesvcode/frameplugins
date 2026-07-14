@@ -14,7 +14,7 @@ icon: "./favicons/outseta.png"
 
 Outseta integrates Stripe payments, authentication, and protected content features into your Framer site. It's designed for creating membership websites, SaaS products, online courses, and productized services.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Easy authentication: add sign-up and login forms to your site using embeddable forms, pop-ups, or payment links.
 - Flexible pricing: Offer free trials, subscriptions, one-time products, and various pricing models to suit your business needs.

@@ -14,7 +14,7 @@ icon: "./favicons/typescalegenerator.png"
 
 The Typescale Generator plugin helps you establish consistent typography hierarchies in your Framer projects with just a few clicks. This powerful tool combines mathematical precision with industry-standard presets to help you create professional type systems that maintain perfect visual harmony throughout your designs.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - One-Click Typography: generate complete typography hierarchies instantly by selecting from various scale ratios ranging from Minor Second to Golden Ratio, saving you valuable time and effort.
 - Pre-Built Design Systems: access professionally crafted type systems from industry leaders like Material Design 3, Atlassian, Shopify Polaris, and IBM Carbon, ensuring your designs align with established standards.

@@ -17,7 +17,7 @@ Shopiframe is a Framer plugin that allows you to integrate your Shopify store wi
 
 This nifty tool bridges the gap between design and development, ensuring your Shopify store and Framer designs remain in sync. With Shopiframe, you can build your online store quickly using drag-and-drop components or ready-made templates, without the need for complex coding.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Effortless Integration: Shopiframe makes it a breeze to connect your Shopify store with Framer, saving you time and effort.
 - Live Sync: product data (prices, inventory, variants, availability) and cart data are always up-to-date, thanks to the seamless synchronisation between Shopify and Framer.

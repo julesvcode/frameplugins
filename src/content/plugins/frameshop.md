@@ -16,7 +16,7 @@ Frameshop is a powerful plugin that allows you to turn your Framer site into a f
 
 This versatile plugin lets you customise every aspect of your online store, from product listings to checkout, ensuring a seamless brand experience. With Frameshop, managing your products and inventory becomes a breeze. You can effortlessly sync with Stripe for secure payments and prevent overselling by tracking stock levels within Framer's CMS.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Customisable Components: tailor the look and feel of your store to align with your brand's identity. Each component, from product displays to checkout, is fully adaptable to your design preferences.
 - Seamless Product & Stock Management: keep your products and inventory organised within Framer's CMS. Update stock levels with a single click and prevent overselling.
 - Sync with Stripe: integrate Stripe for real-time, secure transactions, ensuring a smooth and trustworthy checkout process for your customers.

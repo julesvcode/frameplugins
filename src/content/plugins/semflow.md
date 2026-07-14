@@ -14,7 +14,7 @@ icon: "./favicons/semflow.png"
 
 This plugin crawls your Framer website, performs SEO audits, and provides detailed recommendations to improve your site's search engine ranking. It offers a comprehensive set of features to enhance your website's visibility and performance in search results.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Site audits: crawls your website to check for important ranking factors, allowing you to run multiple audits as needed.
 - SEO scoring: provides a score based on a complex algorithm, indicating how "rankable" your site is in search engines.

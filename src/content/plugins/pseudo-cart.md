@@ -16,7 +16,7 @@ Pseudo Cart is a lightweight Framer plugin that lets you build fast, free, and f
 
 Perfect for scenarios where you need a checkout-style flow but aren't processing transactions, such as taking quotes, pre-orders, sample requests, or service bookings. Seamlessly connect to your CMS collections and redirect orders to email, Google Sheets, or any custom endpoint using Framer's native forms.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Build realistic checkout experiences without handling payments
 - Fully customisable and integrates with your existing designs

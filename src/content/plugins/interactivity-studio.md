@@ -16,7 +16,7 @@ The Interactivity Studio Framer Plugin allows you to create and embed interactiv
 
 This nifty plugin enables you to seamlessly integrate interactive images you've created in Interactivity Studio by simply adding a Smartlink.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Increase engagement rate: tired of users bouncing off your Framer site without sticking around? Interactive images will keep them hooked!
 - Boost conversions: these clickable images encourage more site visitors to take action.

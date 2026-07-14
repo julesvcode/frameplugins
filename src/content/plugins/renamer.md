@@ -16,7 +16,7 @@ Renamer helps you organize and manage layer names in your designs.
 
 This plugin streamlines the process of renaming layers, making it easier to keep your Framer projects tidy and well-organized. It offers a range of features to quickly update layer names and improve overall project structure.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Bulk renaming: quickly rename multiple layers at once, saving time on repetitive tasks.
 - Partial renaming: update specific parts of layer names, allowing for more precise organization.

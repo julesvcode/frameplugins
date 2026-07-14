@@ -16,7 +16,7 @@ icon: "./favicons/clonify.png"
 
 Clonify is a Framer plugin offering a vast library of pre-designed sections, wireframes, and templates. This tool empowers designers to quickly build responsive websites by providing over 1,000 assets that can be easily integrated into Framer projects.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Drag-and-Drop Functionality: easily assemble your website by dragging and dropping sections, like putting together Lego blocks.
 - Versatile Design Options: choose between fully designed sections or wireframes, giving you flexibility in your design process.

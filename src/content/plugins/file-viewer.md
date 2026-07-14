@@ -14,7 +14,7 @@ icon: "./favicons/fileviewer.png"
 
 This Framer plugin streamlines the process of uploading files, generating thumbnails, and creating download links in your projects. It's designed to make file sharing a seamless part of your website design workflow.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Universal file support: upload and share any type of file within your Framer project.
 - Automatic thumbnail generation: creates visual previews for your files without extra effort.

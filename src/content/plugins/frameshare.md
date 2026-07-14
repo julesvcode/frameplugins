@@ -16,7 +16,7 @@ The FrameShare Framer plugin allows you to easily insert social share buttons in
 
 This handy plugin lets you add share button so your visitors can share your content across over 20 popular platforms like Facebook, Twitter, LinkedIn and Reddit. The share buttons automatically pull in the current page URL and title for a seamless sharing experience.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Drag & drop social share buttons from the plugin onto the canvas
 - Supports all major networks like Facebook, Twitter, LinkedIn, Reddit, WhatsApp and more

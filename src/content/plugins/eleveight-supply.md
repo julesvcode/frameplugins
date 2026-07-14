@@ -16,7 +16,7 @@ Eleveight Supply is a nifty plugin that provides a curated library of premium co
 
 This plugin comes packed with powerful pre-built solutions that you can simply drag and drop into your Framer canvas. From tackling complex use cases to enhancing functionality beyond Framer's default capabilities, Eleveight Supply equips you with the tools you need to take your designs to the next level.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Time-saver: the ready-made components and overrides save you the hassle of building everything from scratch, allowing you to focus on the creative aspects of your project.
 - Advanced features: unlock a wide range of advanced features that extend Framer's capabilities, giving you more flexibility and control over your designs.
 - Versatile: whether you're a Framer beginner or an experienced pro, Eleveight Supply caters to all skill levels with its intuitive customisation options.

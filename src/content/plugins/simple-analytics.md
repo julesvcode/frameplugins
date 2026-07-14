@@ -14,7 +14,7 @@ icon: "./favicons/simple-analytics.png"
 
 Simple Analytics is an EU-based website analytics tool that provides clean insights without tracking individual users or using cookies. The plugin integrates seamlessly with Framer, allowing you to add website analytics to your projects with just a few clicks.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - No cookie banners needed: the tool doesn't use cookies or track personal data, so you can skip those annoying consent pop-ups that clutter your site
 - GDPR compliant by design: built with European privacy standards in mind, meaning you won't have legal headaches about data protection
 - Lightweight script: the analytics code is tiny and won't slow down your website or hurt your performance scores

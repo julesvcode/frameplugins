@@ -16,7 +16,7 @@ Framer Toys is a meticulously crafted UI kit that elevates your design workflow 
 
 This premium plugin for Framer offers a comprehensive suite of tools tailored for creators who demand pixel-perfect results without sacrificing speed. With Framer Toys, you can effortlessly drag and drop high-quality elements, responsive sections, and professionally designed templates, allowing you to focus on unleashing your creativity while the plugin handles the intricate details.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - 100+ Components: explore a curated collection of buttons, cards, code components, forms, toggles, and more, each component meticulously crafted with flexibility, clarity, and pixel-perfect spacing in mind.
 - 20+ Responsive Sections: seamlessly integrate hero banners, waitlists, pricing sections, FAQs, CTAs, footers, and more, ensuring a consistent and visually stunning experience across all devices.
 - 4 Premium Templates: unlock four premium templates from the Framer Marketplace, saving you both time and money while providing access to professional-grade designs right out of the box.

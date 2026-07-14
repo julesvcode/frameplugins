@@ -14,7 +14,7 @@ icon: "./favicons/iconstack.png"
 
 Iconstack is a Framer plugin that provides access to over 40,000 icons from various popular icon sets directly into Framer. It allows designers to browse, customize, and insert icons without leaving their Framer workspace.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Extensive library: access icons from 20+ popular icon packs, including Material UI, Tabler Icons, and Lucide Icons.
 - Powerful search: find the exact icon you need quickly with advanced search and filtering options.

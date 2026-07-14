@@ -14,7 +14,7 @@ icon: "./favicons/colorpalleteextractor.png"
 
 The Color Palette Extractor is a handy plugin that allows you to upload any image and instantly generate a five-colour palette based on its hues. Whether you're working with a photograph, logo, or illustration, this tool makes it a breeze to obtain a harmonious set of colours that complement your design.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Quick and straightforward colour extraction from images
 - Generates a versatile five-colour palette for each upload
 - Option to save your favourite palettes for future use

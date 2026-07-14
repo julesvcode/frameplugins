@@ -14,7 +14,7 @@ icon: "./favicons/remixicon.png"
 
 The Remixicon Framer Plugin seamlessly integrates the Remix Icon library into Framer, allowing designers to effortlessly incorporate stunning icons into their projects.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Vast Icon Library: access a vast collection of icons from the widely-used Remix Icon library, ensuring you have a wide range of options to choose from.
 - Seamless Integration: the plugin is designed to work seamlessly within Framer, providing a natural and intuitive experience for designers.
 - Search and Drag-and-Drop: quickly search for icons by tags and instantly add them to your canvas with a simple drag-and-drop action, saving you time and effort.

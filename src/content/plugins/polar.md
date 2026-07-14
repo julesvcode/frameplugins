@@ -14,7 +14,7 @@ icon: "./favicons/polar.png"
 
 The Polar plugin brings simplicity to selling digital goods through your Framer site. This official integration streamlines setting up, managing and embedding products within your projects.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Create a Polar organisation to house your offerings 
 - Set up one-off purchases or subscription-based products
 - Issue licence keys, digital downloads and custom benefits 

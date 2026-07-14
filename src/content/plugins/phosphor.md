@@ -14,7 +14,7 @@ icon: "./favicons/phosphor.png"
 
 This plugin integrates the Phosphor Icons collection into Framer, giving you easy access to a wide range of beautiful icons. It simplifies the process of adding and customizing icons in your Framer projects.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Extensive library: access a large collection of icons for various design needs.
 - One-click paste: add icons to your canvas quickly with just a single click.

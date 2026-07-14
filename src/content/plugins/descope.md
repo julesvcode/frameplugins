@@ -16,7 +16,7 @@ Descope is a handy Framer plugin that adds authentication and user management ca
 
 Descope provides an array of sign-in methods like social logins, passwordless links, and more. This streamlines the user onboarding process, boosting conversions. Additionally, it offers multi-factor authentication to safeguard user accounts from cyber threats.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Frictionless user authentication with social, email, and passwordless sign-in options
 - Robust security through multi-factor authentication 

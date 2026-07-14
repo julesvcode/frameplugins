@@ -14,7 +14,7 @@ icon: "./favicons/rankpill.png"
 
 Rankpill is a game-changer for designers who struggle with creating content that ranks well on search engines. This plugin harnesses the power of AI to generate human-like blog posts, saving you time and effort while boosting your website's visibility.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 - Automatic Keyword Research: Rankpill analyses your website, competitors, and industry to provide a tailored list of high-ranking keywords.
 - AI-Generated Content: utilising advanced language models, the plugin crafts 3,000-word articles that read naturally and target the right opportunities.
 - SEO Optimisation: built-in scoring and editing tools ensure your content meets all SEO requirements, guaranteeing better rankings.

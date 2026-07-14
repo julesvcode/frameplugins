@@ -14,7 +14,7 @@ icon: "./favicons/typeskale.png"
 
 Typeskale tackles one of the most tedious parts of web design – setting up consistent typography across different screen sizes. Instead of manually adjusting font sizes, line heights, and spacing for every heading and body text, this plugin does the heavy lifting for you by creating a complete type system in just one click.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - One-click generation: enter your desktop font sizes once and the plugin automatically calculates responsive styles for all breakpoints
 - Complete heading hierarchy: creates H1 through H6 headings plus body text styles (XL to S sizes) that work seamlessly together

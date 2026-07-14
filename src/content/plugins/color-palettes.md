@@ -14,7 +14,7 @@ icon: "./favicons/colorpalettes.png"
 
 This innovative plugin brings the power of Tailwind's carefully curated color systems right onto your Framer canvas, allowing you to build your own color styles with unparalleled ease and efficiency.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Instant Color Palette Integration: with just a single click, you can select and add any of Tailwind's default color palettes to your Framer project, saving you valuable time and effort.
 - Customizable Shade Selection: fine-tune your color styles by choosing specific shades from the Tailwind color system, giving you the flexibility to create unique and harmonious color combinations.

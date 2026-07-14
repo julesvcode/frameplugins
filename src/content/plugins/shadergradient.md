@@ -16,7 +16,7 @@ ShaderGradient is an innovative Framer plugin that empowers you to create mesmer
 
 This plugin harnesses the potential of WebGL shaders, offering unparalleled control over the colours, shapes, and advanced effects like grains and lighting.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Boundless Customisation: with WebGL shaders at its core, ShaderGradient grants you unlimited freedom to tailor gradients to your unique vision. From vibrant hues to intricate shapes and captivating effects, every aspect is yours to sculpt.
 - Optimised Performance: prepare to be amazed by the plugin's seamless integration and efficient performance. ShaderGradient has undergone significant improvements, ensuring a lightweight package and smooth execution, even in complex projects.
