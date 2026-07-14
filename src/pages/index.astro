@@ -10,6 +10,7 @@ import { Image } from "astro:assets";
 import puzzlePiece from "../assets/images/puzzle_piece.jpg";
 import SectionCard from "../components/SectionCard.astro";
 import ToolCardDeal from "../components/ToolCardDeal.astro";
+import ToolCardFeatured from "../components/ToolCardFeatured.astro";
 
 const allPlugins = await getCollection("plugins");
 
@@ -162,6 +163,7 @@ let topicDisplay;
     </div>
     <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
       {featuredPlugins.map((plugin) => <ToolCard plugins={plugin} />)}
+      <!-- {featuredPlugins.map((plugin) => <ToolCardFeatured plugins={plugin} />)} -->
     </div>
   </section>
   <section class="py-4">

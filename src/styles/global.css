@@ -91,6 +91,15 @@
     @apply font-mono font-medium text-sm;
     @apply border-none;
   }
+
+  .blog-content .video-embed {
+    @apply relative w-full rounded-md border border-zinc-200 overflow-hidden;
+    padding-bottom: 56.25%;
+  }
+
+  .blog-content .video-embed iframe {
+    @apply absolute top-0 left-0 w-full h-full border-0;
+  }
 }
 
 @layer utilities {

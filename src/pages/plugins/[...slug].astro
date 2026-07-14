@@ -91,11 +91,13 @@ const seoDescription = entry.data.description.length > 155
   </a>
   <section class="flex flex-col gap-4 leading-7 text-zinc-700 blog-content">
     <Content />
-    <ButtonPrimary
-      link={entry.data.link}
-      title="Get the plugin"
-      target="_blank"
-    />
+    <div class="pt-8">
+      <ButtonPrimary
+        link={entry.data.link}
+        title="Get the plugin"
+        target="_blank"
+      />
+    </div>
   </section>
   <section class="flex flex-col gap-4 leading-7">
     <h4>Categories:</h4>

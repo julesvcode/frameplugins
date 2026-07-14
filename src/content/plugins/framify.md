@@ -16,7 +16,7 @@ Framify is a robust Framer plugin that offers pre-built components, sections, te
 
 Simplify your design process and create stunning websites swiftly by dragging and dropping elements instead of building everything from scratch.
 
-<b>Key features and benefits:</b>
+## Key features and benefits:
 
 - Vast library of professionally-designed resources to choose from, saving you time and effort.
 - Intuitive interface for seamless integration of elements into your Framer projects.
@@ -25,3 +25,11 @@ Simplify your design process and create stunning websites swiftly by dragging an
 - Freedom to customise imported elements according to your preferences.
 
 Framify expedites your workflow, allowing you to focus on refining creative aspects rather than getting bogged down in foundational design tasks. Whether new to Framer or a seasoned user, this plugin proves immensely valuable for producing pixel-perfect websites efficiently.
+
+## See the Framify plugin in action
+
+Watch this tutorial to help you decide if this is the right plugin for you.
+
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/uTXlrZheW8s" title="Get Started with Framify Plugin" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
