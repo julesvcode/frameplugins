@@ -4,7 +4,7 @@ import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import AdBanner from "../components/AdBanner.astro";
-import framerBanner from "../assets/images/framer_ad.png";
+import framerBanner from "../assets/images/framer-icon.png";
 
 interface Props {
   title?: string;
@@ -66,10 +66,10 @@ const makeDescription = description || defaultDescription;
       data-code="yjIapJudIMFaGFyKRFFqruQWAiOPgbTu"></script>
 
     <!-- Inset script -->
-    <script
+    <!-- <script
       async
       src="https://app.getinset.io/embed.js"
-      data-inset="4fd77dfe-8933-4a02-a962-c95e8d2bdb49"></script>
+      data-inset="4fd77dfe-8933-4a02-a962-c95e8d2bdb49"></script> -->
   </head>
   <body
     class="mx-auto flex min-h-screen max-w-[60rem] flex-col gap-12 p-4 md:px-8 md:py-6"
@@ -79,10 +79,10 @@ const makeDescription = description || defaultDescription;
       <slot />
     </main>
     <Footer />
-    <!-- <AdBanner
-      description="Publish your website in minutes with Framer."
+    <AdBanner
+      description="Build standout websites with AI in no time."
       link="/framer-link"
       imageUrl={framerBanner}
-    /> -->
+    />
   </body>
 </html>
