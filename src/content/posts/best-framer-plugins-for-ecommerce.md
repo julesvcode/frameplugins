@@ -15,7 +15,7 @@ If you're looking for a powerful way to build Shopify stores, [Frameship](/plugi
 
 The plugin comes with over 20 ready-made e-commerce components that you can simply drag and drop into your design. Everything syncs automatically with your Shopify data, so you don't have to worry about keeping product information up to date. Plus, it's built with SEO in mind, helping your store get noticed online.
 
-Price: **Paid** (10% OFF with code **FMPT10**) <br>
+Price: **Paid** (5% OFF with code **FMPT10**) <br>
 Plugin link: [Frameship](/plugins/frameship)
 
 ## 2. [Frameshop](/plugins/frameshop)

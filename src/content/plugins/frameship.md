@@ -9,7 +9,7 @@ thumbnailAlt: "Screenshot of the Frameship plugin for Framer"
 categories: ["ecommerce", "shop", "shopify", "paid"]
 free: false
 price: "Paid"
-discount: "10% OFF"
+discount: "5% OFF"
 code: "FMPT10"
 icon: "./favicons/frameship.png"
 ---
@@ -25,7 +25,7 @@ Frameship is a powerful plugin that lets you build complete Shopify stores using
 - Code-Free Experience: design and build your entire store without writing any code, perfect for designers who want to focus on creativity.
 - One-Time Payment: no recurring fees or hidden costs - just pay once and build as many stores as you like.
 
-[Get 10% OFF with the code FMPT10](https://frameship.io)
+[Get 5% OFF with the code FMPT10](https://frameship.io)
 
 Frameship is a proper game-changer for designers who want to create professional Shopify stores without getting bogged down in technical details. It's like having a development team in your pocket, letting you focus on what you do best - designing brilliant shopping experiences.
 

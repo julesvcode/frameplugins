@@ -9,6 +9,8 @@ thumbnailAlt: "Screenshot of the FramerForms plugin for Framer"
 categories: ["forms", "data", "waitlist", "paid"]
 free: false
 price: "Paid"
+discount: "5% OFF"
+code: "FMPT10"
 icon: "./favicons/framerforms.png"
 ---
 
