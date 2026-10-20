@@ -1,7 +1,7 @@
 ---
 title: "Framify"
 updateDate: 2025-03-07
-feat: false
+feat: true
 description: "Streamline your Framer design process with pre-built components, sections & templates."
 link: "/framify"
 thumbnailAlt: "Screenshot of the Framify plugin for Framer"

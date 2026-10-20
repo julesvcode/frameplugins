@@ -1,6 +1,6 @@
 ---
 title: "FrameAuth"
-feat: true
+feat: false
 updateDate: 2024-10-11
 description: "Add membership functionalities to your Framer website without coding."
 link: "/go/frameauth"

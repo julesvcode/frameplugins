@@ -1,7 +1,7 @@
 ---
 title: "Foxy Commerce"
 updateDate: 2026-07-22
-feat: true
+feat: false
 description: "Connect any Framer element to a secure, headless Foxy store without touching code."
 link: "https://www.framer.com/marketplace/plugins/foxy-commerce?via=julesvcode"
 thumbnailAlt: "Screenshot of the Foxy Commerce plugin for Framer"

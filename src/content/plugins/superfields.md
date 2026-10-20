@@ -1,7 +1,7 @@
 ---
 title: "Superfields"
 updateDate: 2025-07-30
-feat: false
+feat: true
 description: "Transform your basic Framer CMS into a powerful content management system with advanced filtering, search, and layout features."
 link: "https://www.framer.com/marketplace/plugins/superfields/?via=julesvcode"
 thumbnailAlt: "Screenshot of the Superfields plugin for Framer"
